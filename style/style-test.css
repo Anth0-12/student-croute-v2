@@ -1,0 +1,185 @@
+/* 
+  
+  #slider [type=radio] {
+    display: none;
+  }
+  
+  .carousel {
+    height: 20vh;
+    width: 100%;
+  }
+  
+  #slider {
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #slider label {
+    margin: auto;
+    width: 10%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    overflow:hidden;
+  }
+    
+  #s1:checked ~ #slide3,
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2
+  {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-70%,0,-400px);
+    opacity: 0.3;
+    margin-left: 41%;
+  }
+  
+  //main
+  #s1:checked ~ #slide1,
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3
+  {
+    box-shadow: 0 5px 15px 0 rgba(256,256,256,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,400px);
+  }
+    
+  
+  #s1:checked ~ #slide2,
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide1
+  {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(70%,0,-400px);
+    opacity: 0.3;
+    margin-right: 41%;
+  }
+  
+  
+  #slide1 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #slide2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #slide3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.slider-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+  .image-container {
+    width: 60%;
+    height: auto;
+  }
+
+  .image-container-sandwich {
+    width: 80%;
+    height: auto;
+  } */
+/* #slider {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.carousel {
+  background-color: blue;
+}
+.carousel-item {
+  height: 30vh;
+  width: 50vw;
+  background-color: aqua;
+}
+
+.photo {
+  height: 100%;
+}
+
+.image {
+    height: 20%;
+    width: 90%;
+  } */
+
+  body {
+    background-color: blue;
+  }
+
+  .slider {
+    width: 70%;
+    margin: 0 auto;
+    background-color: aqua;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex {
+    height: 30vh;
+    width: 20%;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+  }
+
+  .photo {
+    height: 22vh;
+    width: auto;
+  }
+
+  .astro {
+    background: url("/assets/img/sandwich.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .dessert {
+    background: url("/assets/img/sandwich.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .boisson {
+    background: url("/assets/img/sandwich.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .panini {
+    background: url("/assets/img/panini.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .pates {
+    background: url("/assets/img/pates.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .salade {
+    background: url("/assets/img/salades\ 2.png") center no-repeat;
+    background-size: cover;
+  }
