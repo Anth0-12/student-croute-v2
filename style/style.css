@@ -27,6 +27,10 @@ header {
 
 }
 
+
+
+/*----------------------------- affichage menu deroulant page accueil --------------------------------*/
+
 #menu {
     height: 100%;
     width: 35%;
@@ -40,7 +44,7 @@ header {
     background-color: white;
 }
 
-        .liste {
+        .liste-accueil {
             height: 50%;
             width: 100%;
 
@@ -49,9 +53,9 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        
-        .menu-deroulant{
+        }  
+
+        .menu-deroulant-accueil {
             height: 100%;
             width: 50%;
 
@@ -88,7 +92,7 @@ header {
             font-size: 120%;
           }
           
-          .menu-deroulant:hover > .sous-menu {
+          .menu-deroulant-accueil:hover > .sous-menu {
             animation: apparitionSousMenu 1s forwards;
           }
           
@@ -123,14 +127,14 @@ header {
             color: white;
           }
 
-          .menu-deroulant > a:after{
+          .menu-deroulant-accueil > a:after{
             content: '❯';
             font-size: 20px;
             margin-left: 7px;
             display: inline-block;
           }
           
-          .menu-deroulant:hover > a:after{
+          .menu-deroulant-accueil:hover > a:after{
             animation: rotationFleche 0.2s linear forwards;
           }
           
@@ -145,6 +149,91 @@ header {
               transform: rotate(90deg);
             }
           }
+
+          /*----------------------------- fin affichage menu deroulant page accueil --------------------------------*/
+
+
+          /*----------------------------- affichage menu deroulant pour autre page --------------------------------*/ 
+
+          .accueil {
+            height: 50%;
+            width: 50%;
+
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            color: #141d3a;
+            text-decoration: none;
+          }
+
+              .lien_accueil {
+                color: #141d3a;
+                text-decoration: none;
+                font-size: 120%;
+              }
+
+          .liste {
+            height: 50%;
+            width: 50%;
+
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+              .menu-deroulant {
+                height: 100%;
+                width: 100%;
+
+                text-align: center;
+              }
+
+              .menu-deroulant:hover > .sous-menu {
+                animation: apparitionSousMenu 1s forwards;
+              }
+              
+              @keyframes apparitionSousMenu {
+                0% {
+                  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+                  border-top: 3px solid #141d3a;
+                }
+                30% {
+                  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+                }
+                100% {
+                  max-height: 50em;
+                  border-top: 3px solid #141d3a;
+                  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+                }
+              }
+    
+              .menu-deroulant > a:after{
+                content: '❯';
+                font-size: 20px;
+                margin-left: 7px;
+                display: inline-block;
+              }
+              
+              .menu-deroulant:hover > a:after{
+                animation: rotationFleche 0.2s linear forwards;
+              }
+              
+              @keyframes rotationFleche {
+                0% {
+                  transform: rotate(0deg);
+                }
+                50% {
+                  transform: rotate(45deg);
+                }
+                100%{
+                  transform: rotate(90deg);
+                }
+              }
+
+              /*----------------------------- fin affichage menu deroulant pour autre page --------------------------------*/
 
 #logo {
     height: 80%;
