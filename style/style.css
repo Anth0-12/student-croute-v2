@@ -66,14 +66,14 @@ header {
             justify-content: center;
             align-items: center;
 
-            color: #1f305e;
+            color: #141d3a;
             text-decoration: none;
 
             font-size: 120%;
         }
 
         .produit {
-            color: #1f305e;
+            color: #141d3a;
             text-decoration: none;
         }
           
@@ -95,20 +95,20 @@ header {
           @keyframes apparitionSousMenu {
             0% {
               box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-              border-top: 3px solid #1f305e;
+              border-top: 3px solid #141d3a;
             }
             30% {
               box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
             }
             100% {
               max-height: 50em;
-              border-top: 3px solid #1f305e;
+              border-top: 3px solid #141d3a;
               box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
             }
           }
           
           .sous-menu > .liste_sous_menu:hover {
-            background-color: #1f305e;
+            background-color: #141d3a;
           }
           
           .sous-menu > li > a {
@@ -162,7 +162,7 @@ header {
             width: 90%;
         }
 
-#horaire {
+#horaire-contact {
     height: 100%;
     width: 35%;
 
@@ -175,12 +175,19 @@ header {
     background-color: white;
 
     font-size: 120%;
+}
 
-    gap: 2%;
+.horaire, .contacts {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .lien_horaire {
-  color: #1f305e;
+  color: #141d3a;
   text-decoration: none;
 }
 /* 
@@ -323,7 +330,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-color: #1f305e;
+    background-color: #141d3a;
 
     margin-top: 1%;
 
@@ -363,7 +370,7 @@ header {
     .titre_fav:hover {
         background-color: white;
 
-        color:#1f305e ;
+        color:#141d3a ;
 
         border-radius: 5px;
     }
@@ -386,7 +393,7 @@ header {
 
 .separation {
   width: 50%;
-  border-bottom: 1px solid #1f305e;
+  border-bottom: 1px solid #141d3a;
 
   position: relative;
   left: 25vw;
@@ -482,7 +489,7 @@ h1 {
   height: 60px;
   width: 70%;
 
-  background-color:  #1f305e;
+  background-color:  #141d3a;
 
   color: white !important;
   font-size: 170%;
@@ -519,7 +526,7 @@ h1 {
 }
 
 .slick-next:before, .slick-prev:before {
-  color:#1f305e;
+  color:#141d3a;
   
 }
 
@@ -593,14 +600,14 @@ h1 {
 h3 {
   font-size: 110%;
   font-weight: 400;
-  color: #1f305e;
+  color: #141d3a;
   margin-top: 3%;
 } 
 
 .separation_principale {
   height: 5%;
   width: 50%;
-  border-bottom: 1px solid #1f305e;
+  border-bottom: 1px solid #141d3a;
 }
 
 
@@ -614,7 +621,7 @@ h3 {
 
   font-size: 130%;
 
-  color: #1f305e;
+  color: #141d3a;
 }
 
     .semaine {
@@ -655,7 +662,7 @@ footer {
     height: 25vh;
     width: 100vw;
 
-    background-color: #1f305e;
+    background-color: #141d3a;
     border-top: 2px solid rgb(0, 0, 0);
     box-shadow: 0px -3px 9px 0px rgba(0,0,0,0.3);
     }
@@ -747,15 +754,24 @@ footer {
     color: white
 }
 
-.fb_insta {
-    height: 20%;
-    width: 50%;
+    .icone {
+      color: white;
+      text-decoration: none;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    color: rgb(255, 255, 255);
-}
+      gap: 10%;
+    }
+
+        .fb_insta {
+            height: 20%;
+            width: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
   /*----------------------------------------------------------------- fin footer --------------------------------------------------------------------*/
