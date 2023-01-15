@@ -129,57 +129,85 @@
 
   body {
     background-color: blue;
-  }
-
-  .slider {
-    width: 70%;
-    margin: 0 auto;
-    background-color: aqua;
 
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .flex {
-    height: 30vh;
-    width: 20%;
-    margin-left: 2px;
-    margin-right: 2px;
-    text-align: center;
-  }
+  .ligne {
+    height: 60vh;
+    width: 85vw;
 
-  .photo {
-    height: 22vh;
-    width: auto;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  .astro {
-    background: url("/assets/img/sandwich.jpg") center no-repeat;
-    background-size: cover;
-  }
+    background-color: aqua;
+}
 
-  .dessert {
-    background: url("/assets/img/sandwich.jpg") center no-repeat;
-    background-size: cover;
-  }
+.slider {
+  width: 90%;
+  margin-top: 5%;
 
-  .boisson {
-    background: url("/assets/img/sandwich.jpg") center no-repeat;
-    background-size: cover;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .panini {
-    background: url("/assets/img/panini.png") center no-repeat;
-    background-size: cover;
-  }
 
-  .pates {
-    background: url("/assets/img/pates.png") center no-repeat;
-    background-size: cover;
-  }
 
-  .salade {
-    background: url("/assets/img/salades\ 2.png") center no-repeat;
-    background-size: cover;
-  }
+    .slick-next, .slick-prev  {
+      color:#ffffff;
+
+      height: 40px;
+      width: 600px;
+
+      background-color: #141d3a;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+      font-size: 100%;
+    }
+
+.flex {
+  width: 20%;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+.photo {
+  height: 20vh;
+  width: auto;
+}
+
+.astro {
+  background: url("/assets/img/sandwich.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.dessert {
+  background: url("/assets/img/sandwich.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.boisson {
+  background: url("/assets/img/sandwich.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.panini {
+  background: url("/assets/img/panini.png") center no-repeat;
+  background-size: contain;
+}
+
+.pates {
+  background: url("/assets/img/pates.png") center no-repeat;
+  background-size: contain;
+}
+
+.salade {
+  background: url("/assets/img/salades\ 2.png") center no-repeat;
+  background-size: contain;
+}

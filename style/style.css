@@ -25,6 +25,8 @@ header {
 
     background-color: white;
 
+    box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.3);
+
 }
 
 
@@ -570,7 +572,7 @@ main {
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 4%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -597,8 +599,8 @@ h1 {
 
 
 .ligne {
-    height: 30vh;
-    width: 80vw;
+    height: 60vh;
+    width: 85vw;
 
     display: flex;
     align-items: center;
@@ -606,21 +608,51 @@ h1 {
 }
 
 .slider {
+  height: 100%;
   width: 90%;
-  margin-top: 5%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slick-next:before, .slick-prev:before {
-  color:#141d3a;
-  
+    .slick-next, .slick-prev  {
+      color:#ffffff;
+
+      height: 40px;
+      width: 600px;
+
+      background-color: #141d3a;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+      font-size: 100%;
+      cursor: pointer;
+    }
+
+.slick-track {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slick-list {
+  height: 100% !important;
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.slick-slide {
+  height: 100% !important;
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .flex {
-  width: 20%;
+  height: 100%;
+  width: 100% !important;
   margin-left: 2px;
   margin-right: 2px;
   text-align: center;
