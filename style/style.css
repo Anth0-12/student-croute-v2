@@ -528,7 +528,7 @@ header {
   width: 25%;
   
   position: absolute;
-  top: 184.5%;
+  top: 181%;
   right: 60%;
 
 
@@ -826,7 +826,7 @@ footer {
 
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             font-size: 120%;
         }
 
