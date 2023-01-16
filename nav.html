@@ -14,6 +14,8 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'>
 
+<script src="js/test.js" defer></script>
+
 <!-- <link rel="stylesheet" href="style/bootstrap.min.css"> -->
 
 <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
@@ -32,108 +34,107 @@
 </head>
 <body>
   
-
-  <!-- <div class="carousel">
-
-    <section id="slider">
-      <input type="radio" name="slider" id="s1">
-      <input type="radio" name="slider" id="s2" checked>
-      <input type="radio" name="slider" id="s3">
-
-      <label for="s1" id="slide1">
-        <div class="slider-image">
-          <img src="assets/img/sandwiches.png" class="image-container-sandwich"></img>
-          <p>Sandwiches</p>
-        </div>
-      </label>
-
-
-      <label for="s2" id="slide2">
-        <div class="slider-image">
-          <img src="assets/img/milkshake.png" class="image-container"></img>
-          <p>Desserts</p>
-        </div>
-      </label>
-
-
-      <label for="s3" id="slide3">
-        <div class="slider-image">
-            <img src="assets/img/boissons.png" class="image-container"></img>
-            <p>Boissons</p>
-        </div>
-      </label>
-    </section>
-  </div> -->
-
-  <div class="ligne">
-
-    <div class="slider">
-      
-        <div class="flex">
-            <div class="photo astro"></div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo dessert"> </div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo boisson"></div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo panini"></div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo pates"> </div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo salade"></div>
-            <h3>sandwich</h3>
-        </div>
-        
-        <div class="flex">
-            <div class="photo astro"></div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo dessert"> </div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo boisson"></div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo panini"></div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo pates"> </div>
-            <h3>sandwich</h3>
-        </div>
-    
-        <div class="flex">
-            <div class="photo salade"></div>
-            <h3>sandwich</h3>
-        </div>
-    
+  <div class="main">
+  <h1>MYLOGO.COM</h1>
+  <hr>
+  
+  <h2>PORTFOLIO</h2>
+  
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('poulet')"> Poulet</button>
+    <button class="btn" onclick="filterSelection('thon')"> Thon</button>
+    <button class="btn" onclick="filterSelection('divers')"> Divers</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column thon">
+      <div class="content">
+        <img src="assets/img/boissons 2.png" alt="Mountains" style="width:100%">
+        <h4>1</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
     </div>
+    <div class="column thon">
+      <div class="content">
+      <img src="assets/img/boissons 2.png" alt="Lights" style="width:100%">
+        <h4>2</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column thon">
+      <div class="content">
+      <img src="assets/img/boissons 2.png" alt="Nature" style="width:100%">
+        <h4>3</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column divers">
+      <div class="content">
+      <img src="assets/img/sandwiches.png" alt="Nature" style="width:100%">
+        <h4>4</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column divers">
+      <div class="content">
+      <img src="assets/img/sandwiches.png" alt="Nature" style="width:100%">
+        <h4>5</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    
+    <div class="column divers">
+      <div class="content">
+        <img src="assets/img/sandwiches.png" alt="Car" style="width:100%">
+        <h4>6</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column poulet">
+      <div class="content">
+      <img src="assets/img/panini 2.png" alt="Car" style="width:100%">
+        <h4>7</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column poulet">
+      <div class="content">
+      <img src="assets/img/panini 2.png" alt="Car" style="width:100%">
+        <h4>8</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  
+    <div class="column poulet">
+      <div class="content">
+        <img src="assets/img/panini 2.png" alt="Car" style="width:100%">
+        <h4>9</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column poulet">
+      <div class="content">
+      <img src="assets/img/panini 2.png" alt="Car" style="width:100%">
+        <h4>10</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column poulet">
+      <div class="content">
+      <img src="assets/img/panini 2.png" alt="Car" style="width:100%">
+        <h4>11</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/test.js"></script>
+
+
 </body>
 </html>
