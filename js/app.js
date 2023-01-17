@@ -16,6 +16,3 @@ $('.slider').slick({
 $(".slick-next").text("Suivant");
 
 $(".slick-prev").text("Précédent");
-
-
-

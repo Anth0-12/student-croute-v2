@@ -537,6 +537,28 @@ header {
   opacity: 0.3;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #141d3a; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 
 /*!----------------------------------------------------------------- fin arrière plan --------------------------------------------------------------------*/
 
@@ -1057,7 +1079,7 @@ footer {
   
  /* Center website */
 .main {
-  height: 130vh;
+  height: 150vh;
   width: 90%;
   margin: 5% 5%;
 }
@@ -1094,11 +1116,40 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
+  height: 30vh;
 }
 
-img {
-  width: 50%;
+.content h4 {
+  margin-bottom: 10px;
 }
+
+.image:hover + .description{
+  color: white;
+  background-color: #141d3a;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 2%;
+  border: none;
+  border-radius: 5px;
+}
+
+    .description {
+      display: none;
+    }
+
+    img {
+      width: 50%;
+      transform: scale(0.8);
+      transition: 0.5s;
+    }
+
+        img:hover {
+          transform: scale(1) rotate(-5deg);
+          transition: 0.5s;
+         
+        }
 
 /* The "show" class is added to the filtered elements */
 .show {
