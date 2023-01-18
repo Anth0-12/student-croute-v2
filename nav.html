@@ -34,15 +34,18 @@
 </head>
 <body>
   
-  <div class="hover">
-    <h4>coucou</h4>
-    <img src="assets/img/sandwiches.png" alt="">
-    
-    <p class="hide">I am shown when someone hovers over the div above.</p>
-  </div>
+  <h1 id="titre_fav" onmouseover="hover()" onmouseout="hoverOut()"> Register </h1>
+
   
 
 
-
+  <script>
+    function hover(){
+      document.getElementById("titre_fav").style.color = "blue";
+    }
+    function hoverOut(){
+      document.getElementById("titre_fav").style.color = "black";
+    }
+    </script>
 </body>
 </html>
