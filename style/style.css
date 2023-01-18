@@ -1030,15 +1030,15 @@ footer {
 }
 
 /* Add padding BETWEEN each column */
-.row,
+/* .row,
 .row > .column {
   padding: 8px;
-}
+} */
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 30%;
+  width: 33.33%;
   display: none; /* Hide all elements by default */
 }
 
@@ -1131,6 +1131,40 @@ footer {
 }
 
 /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
+.main_panini {
+  height: 145vh;
+  width: 80%;
+  margin: 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_panini h2 {
+  height: 60px;
+  width: 70%;
+
+  background-color:  #141d3a;
+
+  color: white !important;
+  font-size: 170%;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+  margin-bottom: 2%;
+}
+
+/* Create three equal columns that floats next to each other */
+.columns {
+  float: left;
+  width: 33.33%;
+}
 
 
 
