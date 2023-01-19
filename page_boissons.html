@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 
     <link rel="stylesheet" href="style/style.css">
-    <!-- <script src="js/page_sandwich.js" defer></script> -->
+    <script src="js/page_sandwich.js" defer></script>
     <script src="js/bouton_top.js" defer></script>
 
     <!-- <link rel="stylesheet" href="style/bootstrap.min.css">
@@ -135,15 +135,21 @@
 
 
 
-<div class="main_panini">
+<div class="main">
     
     <h2>
         Nos boissons
     </h2>
 
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Voir toutes les boissons</button>
+      <button class="btn" onclick="filterSelection('froides')"> Boissons froides</button>
+      <button class="btn" onclick="filterSelection('chaudes')"> boissons chaudes</button>
+    </div>
+
     <!-- Portfolio Gallery Grid -->
     <div class="row">
-      <div class="columns">
+      <div class="column froides">
         <div class="content">
           <h4>Sandwich au thon piquant</h4>
           <img src="assets/img/boissons 2.png" alt="Sandwich au thon piquant" class="image">
@@ -151,7 +157,7 @@
         </div>
       </div>
 
-      <div class="columns">
+      <div class="column froides">
         <div class="content">
           <h4>Sandwich au thon mayonnaise</h4>
           <img src="assets/img/boissons 2.png" alt="Sandwich au thon mayonnaise" class="image">
@@ -159,22 +165,22 @@
         </div>
       </div>
 
-      <div class="columns">
-        <div class="content">
+      <div class="column froides">
+        <div class="content ">
           <h4>Sandwich au thon andalouse</h4>
           <img src="assets/img/boissons 2.png" alt="Sandwich au thon andalouse" class="image">
           <p class="description">Thon, salade, sauce Andalouse <br> <span>2,90€</span></p>
         </div>
       </div>
 
-      <div class="columns">
+      <div class="column chaudes">
         <div class="content">
           <h4>Sandwich au jambon</h4>
           <img src="assets/img/boissons 2.png" alt="Sandwich au jambon" class="image">
           <p class="description">Jambon <br> <span>2,90€</span></p>
         </div>
       </div>
-      <div class="columns">
+      <div class="column chaudes">
         <div class="content">
           <h4>Sandwich jambon beurre</h4>
           <img src="assets/img/boissons 2.png" alt="Sandwich jambon beurre" class="image">

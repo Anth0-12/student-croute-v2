@@ -457,6 +457,9 @@ header {
         background-color: white;
 
         color:#141d3a;
+
+        border:none;
+        border-radius: 2px;
     }
 
 .sandwich {
@@ -476,6 +479,9 @@ header {
       background-color: white;
 
       color:#141d3a;
+
+      border:none;
+      border-radius: 2px;
     }
 
 
@@ -544,6 +550,9 @@ header {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
   margin-bottom: 2%;
+
+  border:none;
+  border-radius: 4px;
 }
 
 
@@ -578,6 +587,20 @@ header {
 
       font-size: 100%;
       cursor: pointer;
+
+      border:none;
+      border-radius: 2px;
+
+      transform: scale(1);
+      transition: 0.5s;
+    }
+
+    .slick-next:hover, .slick-prev:hover  {
+      transform: scale(1.1);
+      transition: 0.5s;
+
+      border:none;
+      border-radius: 3px;
     }
 
 .slick-track {
@@ -888,6 +911,11 @@ footer {
     margin-top: 2%;
 
     box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+
+    background-color: #141d3a;
+
+    border:none;
+    border-radius: 4px;
 }
 
     .contact_telephone {
@@ -898,8 +926,6 @@ footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
-        background-color: #141d3a;
 
         border-right: 1px solid white;
       }
@@ -935,8 +961,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  background-color: #141d3a;
 }
 
     .contact_reseau p {
@@ -994,6 +1018,9 @@ footer {
       background-color: #141d3a;
 
       box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+
+      border:none;
+      border-radius: 4px;
     }
 
     .contact_map iframe {
@@ -1001,6 +1028,9 @@ footer {
       width: 60%;
     
       box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+
+      border:none;
+      border-radius: 4px;
     }
 
   /*----------------------------------------------------------------- fin page contact --------------------------------------------------------------------*/
@@ -1023,6 +1053,29 @@ footer {
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6); */
+}
+
+.main h2 {
+  height: 60px;
+  width: 70%;
+
+  background-color:  #141d3a;
+
+  color: white !important;
+  font-size: 170%;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+  margin:auto;
+  margin-bottom: 2%;
+
+  border:none;
+  border-radius: 4px;
 }
 
 .row {
@@ -1066,6 +1119,8 @@ footer {
 
 .description {
       display: none;
+      border:none;
+      border-radius: 3px;
     }
 
     .image:hover + .description{
@@ -1107,6 +1162,8 @@ footer {
 
   gap: 1%;
 
+  border:none;
+  border-radius: 4px;
   }
 
 /* Style the buttons */
@@ -1117,7 +1174,8 @@ footer {
   cursor: pointer;
 
   font-size: 110%;
-  border: none;
+  border:none;
+  border-radius: 2px;
 }
 
 .btn:hover {
@@ -1158,6 +1216,9 @@ footer {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
   margin-bottom: 2%;
+
+  border:none;
+  border-radius: 4px;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -1328,7 +1389,8 @@ footer {
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  
+  border:none;
+  border-radius: 4px;
   font-size: 18px; /* Increase font size */
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
 
@@ -1336,6 +1398,8 @@ footer {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+  color: #141d3a;
+  background-color: #ffffff;
 }
 
 /*!----------------------------------------------------------------- fin fin image deco + bouton top --------------------------------------------------------------------*/
