@@ -71,14 +71,14 @@ header {
             justify-content: center;
             align-items: center;
 
-            color: #141d3a;
+            color: #172042;
             text-decoration: none;
 
             font-size: 120%;
         }
 
         .produit {
-            color: #141d3a;
+            color: #172042;
             text-decoration: none;
         }
           
@@ -99,20 +99,22 @@ header {
           @keyframes apparitionSousMenu {
             0% {
               box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-              border-top: 3px solid #141d3a;
+              border-top: 3px solid #172042;
             }
             30% {
               box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
             }
             100% {
               max-height: 50em;
-              border-top: 3px solid #141d3a;
+              border-top: 3px solid #172042;
               box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
             }
           }
           
           .sous-menu > .liste_sous_menu:hover {
-            background-color: #141d3a;
+            /* background-color: #172042; */
+            background: rgb(31,46,94);
+            background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
           }
           
           .sous-menu > li > a {
@@ -165,12 +167,12 @@ header {
             justify-content: end;
             align-items: center;
 
-            color: #141d3a;
+            color: #172042;
             text-decoration: none;
           }
 
               .accueil a {
-                color: #141d3a;
+                color: #172042;
                 text-decoration: none;
                 font-size: 120%;
               }
@@ -200,14 +202,14 @@ header {
               @keyframes apparitionSousMenu {
                 0% {
                   box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-                  border-top: 3px solid #141d3a;
+                  border-top: 3px solid #172042;
                 }
                 30% {
                   box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
                 }
                 100% {
                   max-height: 50em;
-                  border-top: 3px solid #141d3a;
+                  border-top: 3px solid #172042;
                   box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
                 }
               }
@@ -279,7 +281,7 @@ header {
 }
 
 .horaire > a, .contacts > a {
-  color: #141d3a;
+  color: #172042;
   text-decoration: none;
 }
 /* 
@@ -420,7 +422,9 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-color: #141d3a;
+    /* background-color: #1b2750; */
+    background: rgb(31,46,94);
+    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
@@ -478,7 +482,7 @@ header {
     .sandwich:hover + .titre_fav{
       background-color: white;
 
-      color:#141d3a;
+      color:#172042;
 
       border:none;
       border-radius: 2px;
@@ -499,7 +503,7 @@ header {
 
 .separation {
   width: 50%;
-  border-bottom: 1px solid #141d3a;
+  border-bottom: 1px solid #172042;
 
   position: relative;
   left: 25vw;
@@ -537,7 +541,9 @@ header {
   height: 60px;
   width: 70%;
 
-  background-color:  #141d3a;
+  /* background-color:  #141d3a; */
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
   color: white !important;
   font-size: 170%;
@@ -579,9 +585,11 @@ header {
       color:#ffffff;
 
       height: 40px;
-      width: 600px;
+      width: 40%;
 
-      background-color: #141d3a;
+      /* background-color: #141d3a; */
+      background: rgb(31,46,94);
+      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
  
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
@@ -694,16 +702,32 @@ header {
 .flex h3 {
   font-size: 110%;
   font-weight: 400;
-  color: #141d3a;
+  color: #172042;
   margin-top: 3%;
 } 
 
 .separation_principale {
   height: 5%;
   width: 50%;
-  border-bottom: 1px solid #141d3a;
+  border-bottom: 1px solid #172042;
 }
 
+.titre_ouverture {
+height: 5vh;
+width: 50%;
+
+margin-top: 3%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: red;
+font-weight: 400;
+
+border: 2px solid #172042;
+border-radius: 50px;
+}
 
 #horaires {
   height: 50vh;
@@ -715,7 +739,7 @@ header {
 
   font-size: 130%;
 
-  color: #141d3a;
+  color: #172042;
 }
 
     .semaine {
@@ -724,8 +748,9 @@ header {
 
       display: flex;
       align-items: center;
-      justify-content: center;
       flex-direction: column;
+
+      margin-top: 5%;
     }
 
         .semaine div {
@@ -752,7 +777,9 @@ footer {
     height: 25vh;
     width: 100%;
 
-    background-color: #141d3a;
+    /* background-color: #141d3a; */
+    background: rgb(31,46,94);
+    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
     border-top: 2px solid rgb(0, 0, 0);
     box-shadow: 0px -3px 9px 0px rgba(0,0,0,0.3);
     }
@@ -894,7 +921,7 @@ footer {
 
     .para_contact {
       font-size: 140%;
-      color: #141d3a;
+      color: #172042;
     }
 
 .contact_res_tel {
@@ -912,7 +939,9 @@ footer {
 
     box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
 
-    background-color: #141d3a;
+    /* background-color: #141d3a; */
+    background: rgb(31,46,94);
+    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
     border:none;
     border-radius: 4px;
@@ -1015,7 +1044,9 @@ footer {
 
       margin-bottom: 3%;
 
-      background-color: #141d3a;
+      /* background-color: #141d3a; */
+      background: rgb(31,46,94);
+      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
       box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
 
@@ -1059,7 +1090,9 @@ footer {
   height: 60px;
   width: 70%;
 
-  background-color:  #141d3a;
+  /* background-color:  #141d3a; */
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
   color: white !important;
   font-size: 170%;
@@ -1125,7 +1158,11 @@ footer {
 
     .image:hover + .description{
       color: white;
-      background-color: #141d3a;
+
+      /* background-color: #141d3a; */
+      background: rgb(31,46,94);
+      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+
       display: block;
       text-align: center;
       width: 100%;
@@ -1156,7 +1193,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #141d3a;
+  /* background-color: #141d3a; */
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
 
@@ -1169,7 +1208,8 @@ footer {
 /* Style the buttons */
 .btn {
   padding: 12px 16px;
-  background-color: #141d3a;
+  background-color: transparent;
+
   color: #ffffff;
   cursor: pointer;
 
@@ -1180,12 +1220,12 @@ footer {
 
 .btn:hover {
   background-color: rgb(255, 255, 255);
-  color: #141d3a;
+  color: #172042;
 }
 
 .btn.active {
   background-color: rgb(255, 255, 255);
-  color: #141d3a;
+  color: #172042;
 }
 
 /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
@@ -1203,7 +1243,9 @@ footer {
   height: 60px;
   width: 70%;
 
-  background-color:  #141d3a;
+  /* background-color:  #1b2750; */
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
   color: white !important;
   font-size: 170%;
@@ -1228,6 +1270,90 @@ footer {
 }
 
 
+
+/*----------------------------------------------------------------- page formule --------------------------------------------------------------------*/
+.formule {
+  height: 30vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  color: #172042;
+  font-size: 110%;
+}
+
+    .formule h2{
+      height: 8vh;
+      width: 50%;
+
+      margin-top: 5%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: rgb(31,46,94);
+      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+
+      color: white;
+      font-size: 130%;
+      font-weight: 400;
+
+      border: none;
+      border-radius: 5px;
+    }
+
+    .formule p {
+      height: 10vh;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+
+      color: #172042;
+      font-size: 110%;
+      margin-top: 2%;
+    }
+
+#gallerie_ocalme {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ligne_ocalme {
+  height: 40vh;
+  width: 85vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_ocalme {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_ocalme {
+  height: 100%;
+  width: 50% !important;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/*----------------------------------------------------------------- fin page formule --------------------------------------------------------------------*/
 
 /*!----------------------------------------------------------------- image deco + bouton top --------------------------------------------------------------------*/
 
@@ -1385,7 +1511,7 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #141d3a; /* Set a background color */
+  background-color: #1b2750; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -1398,7 +1524,7 @@ footer {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
-  color: #141d3a;
+  color: #1b2750;
   background-color: #ffffff;
 }
 
