@@ -1284,22 +1284,33 @@ footer {
 }
 
 #formule_ocalme, #formule_gourmande {
+  height: 75vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formule_ocalme, .formule_gourmande {
   height: 30vh;
   width: 100%;
 
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   color: white;
   font-size: 110%;
+
+  margin-top: 5%;
 }
 
-    #formule_ocalme h2, #formule_gourmande h2{
+    .formule_ocalme h2, .formule_gourmande h2 {
       height: 8vh;
       width: 50%;
-
-      margin-top: 5%;
 
       display: flex;
       align-items: center;
@@ -1316,7 +1327,7 @@ footer {
       box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
     }
 
-    #formule_ocalme p, #formule_gourmande p {
+    .formule_ocalme p, .formule_gourmande p {
       height: 10vh;
       width: 100%;
 
@@ -1331,7 +1342,7 @@ footer {
     }
 
 #gallerie_ocalme {
-  height: auto;
+  height: 35vh;
   width: 100%;
 
   display: flex;
