@@ -572,16 +572,16 @@ header {
 }
 
 #carrousel {
-  width: 1200px;
-  height: 200px;
+  width: 1200px !important;
+  height: 200px !important;
 
   position: relative;
   overflow: hidden;
 }
 
 #container, #container2 {
-  width: 400px;
-  height: 200px;
+  width: 400px !important;
+  height: 200px !important;
 
   display: flex;
 
@@ -627,8 +627,8 @@ header {
 }
 
 .photo_carousel {
-  width: 400px;
-  height: 200px;
+  width: 400px !important;
+  height: 200px !important;
 
   margin: 0;
 
