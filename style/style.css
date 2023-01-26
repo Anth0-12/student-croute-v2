@@ -1456,6 +1456,9 @@ footer {
 .flex_ocalme > .photo {
   height: 20vh !important;
   width: auto !important;
+
+  position: relative;
+  z-index: 10000;
 }
 
 /*----------------------------------------------------------------- fin page formule --------------------------------------------------------------------*/
