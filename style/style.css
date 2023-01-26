@@ -690,31 +690,30 @@ header {
     }
 
 .slick-track {
-  
   height: 100%;
   display: flex;
   justify-content: space-around;
 }
 
 .slick-list {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   display: flex !important;
   justify-content: space-around;
   flex-direction: column;
 }
 
 .slick-slide {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   display: flex !important;
   justify-content: space-around;
   flex-direction: column;
 }
 
 .flex {
-  height: 100% !important;
-  width: 100% !important;
+  height: 100%;
+  width: 100%;
   margin-left: 2px;
   margin-right: 2px;
   text-align: center;
@@ -1430,8 +1429,8 @@ footer {
 }
 
 .ligne_ocalme {
-  height: 40vh;
-  width: 85vw;
+  height: 40vh !important;
+  width: 85vw !important;
 
   display: flex;
   align-items: center;
@@ -1439,8 +1438,8 @@ footer {
 }
 
 .slider_ocalme {
-  height: 100%;
-  width: 50%;
+  height: 100% !important;
+  width: 50% !important;
 
   display: flex;
   align-items: center;
@@ -1448,7 +1447,7 @@ footer {
 }
 
 .flex_ocalme {
-  height: 100%;
+  height: 100% !important;
   width: 50% !important;
   margin-left: 2px;
   margin-right: 2px;
