@@ -1424,8 +1424,8 @@ footer {
   margin-right: 2px;
 
   display: flex !important;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .flex_ocalme img {
