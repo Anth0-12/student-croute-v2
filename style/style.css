@@ -690,7 +690,7 @@ header {
     }
 
 .slick-track {
-  width: 100% !important;
+  
   height: 100%;
   display: flex;
   justify-content: space-around;
