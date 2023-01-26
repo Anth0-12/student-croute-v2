@@ -722,7 +722,7 @@ header {
 
 .photo {
   height: 20vh !important;
-  width: auto !important;
+  width: 100% !important;
 }
 
 .astro {
