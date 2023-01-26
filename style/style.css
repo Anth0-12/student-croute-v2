@@ -718,38 +718,38 @@ header {
 }
 
 .photo {
-  height: 20vh;
-  width: auto;
+  height: 20vh !important;
+  width: auto !important;
 }
 
 .astro {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 .dessert {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 .boisson {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 .panini {
   background: url("/assets/img/panini.png") center no-repeat;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 .pates {
   background: url("/assets/img/pates.png") center no-repeat;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 .salade {
   background: url("/assets/img/salades\ 2.png") center no-repeat;
-  background-size: contain;
+  background-size: contain !important;
 }
 
 /* .photo {
