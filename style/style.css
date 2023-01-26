@@ -719,10 +719,10 @@ header {
   text-align: center;
 }
 
-.photo {
+/* .photo {
   height: 20vh !important;
   width: 100% !important;
-}
+} */
 
 .astro {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
@@ -1451,6 +1451,11 @@ footer {
   width: 50% !important;
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.flex_ocalme > .photo {
+  height: 20vh !important;
+  width: auto !important;
 }
 
 /*----------------------------------------------------------------- fin page formule --------------------------------------------------------------------*/
