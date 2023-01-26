@@ -729,7 +729,7 @@ header {
   background-size: contain !important;
 } */
 
-.dessert {
+/* .dessert {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
   background-size: contain !important;
 }
@@ -752,7 +752,7 @@ header {
 .salade {
   background: url("/assets/img/salades\ 2.png") center no-repeat;
   background-size: contain !important;
-}
+} */
 
 /* .photo {
     height: 100%;
@@ -1453,7 +1453,7 @@ footer {
   margin-right: 2px;
 }
 
-.flex_ocalme > .photo {
+.flex_ocalme img {
   height: 20vh !important;
   width: auto !important;
 
