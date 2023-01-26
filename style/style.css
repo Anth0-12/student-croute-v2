@@ -724,10 +724,10 @@ header {
   width: 100% !important;
 } */
 
-.astro {
+/* .astro {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
   background-size: contain !important;
-}
+} */
 
 .dessert {
   background: url("/assets/img/sandwich.jpg") center no-repeat;
