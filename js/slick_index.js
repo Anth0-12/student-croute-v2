@@ -21,8 +21,8 @@ $('.slider_ocalme').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
-  prevArrow: false,
-    nextArrow: false
+  // autoplaySpeed: 2000,
+  prevArrow: true,
+    nextArrow: true
 });
 
