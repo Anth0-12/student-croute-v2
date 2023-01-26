@@ -714,7 +714,7 @@ header {
 
 .titre_ouverture {
 height: 5vh;
-width: 50%;
+width: 35%;
 
 margin-top: 3%;
 
@@ -1272,7 +1272,7 @@ footer {
 
 
 /*----------------------------------------------------------------- page formule --------------------------------------------------------------------*/
-.formule {
+#formule_ocalme, #formule_gourmande {
   height: 30vh;
   width: 100%;
 
@@ -1284,7 +1284,7 @@ footer {
   font-size: 110%;
 }
 
-    .formule h2{
+    #formule_ocalme h2, #formule_gourmande h2{
       height: 8vh;
       width: 50%;
 
@@ -1303,9 +1303,11 @@ footer {
 
       border: none;
       border-radius: 5px;
+
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     }
 
-    .formule p {
+    #formule_ocalme p, #formule_gourmande p {
       height: 10vh;
       width: 100%;
 
@@ -1518,7 +1520,7 @@ footer {
   border:none;
   border-radius: 4px;
   font-size: 18px; /* Increase font size */
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
 }
 
