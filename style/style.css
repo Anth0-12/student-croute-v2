@@ -1272,6 +1272,17 @@ footer {
 
 
 /*----------------------------------------------------------------- page formule --------------------------------------------------------------------*/
+
+.contenu_formules {
+  height: auto;
+  width: 100%;
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+
+  position: relative;
+  z-index: -100;
+}
+
 #formule_ocalme, #formule_gourmande {
   height: 30vh;
   width: 100%;
@@ -1280,7 +1291,7 @@ footer {
   align-items: center;
   flex-direction: column;
 
-  color: #172042;
+  color: white;
   font-size: 110%;
 }
 
@@ -1294,17 +1305,15 @@ footer {
       align-items: center;
       justify-content: center;
 
-      background: rgb(31,46,94);
-      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+      background-color: white;
 
-      color: white;
+      color: #172042;
       font-size: 130%;
-      font-weight: 400;
 
       border: none;
       border-radius: 5px;
 
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
     }
 
     #formule_ocalme p, #formule_gourmande p {
@@ -1315,8 +1324,9 @@ footer {
       align-items: center;
       margin-left: 5%;
 
-      color: #172042;
-      font-size: 110%;
+      color: white;
+      font-size: 100%;
+      font-weight: 400;
       margin-top: 2%;
     }
 
@@ -1366,13 +1376,13 @@ footer {
   width: 30%;
   
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 10%;
 
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 
@@ -1381,13 +1391,13 @@ footer {
   width: 20%;
   
   position: absolute;
-  top: 119%;
-  right: 10%;
+  top: 210%;
+  right: 5%;
 
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
@@ -1396,13 +1406,13 @@ footer {
   width: 25%;
   
   position: absolute;
-  top: 181%;
+  top: 338.4%;
   right: 60%;
 
 
   z-index: 0;
 
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /*----------------------- fin deco accueil ---------------------------------*/
