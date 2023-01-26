@@ -580,8 +580,8 @@ header {
 }
 
 #container, #container2 {
-  width: 400px !important;
-  height: 200px !important;
+  width: 400px;
+  height: 200px;
 
   display: flex;
 
@@ -627,8 +627,8 @@ header {
 }
 
 .photo_carousel {
-  width: 400px !important;
-  height: 200px !important;
+  width: 400px;
+  height: 200px;
 
   margin: 0;
 
