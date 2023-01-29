@@ -7,22 +7,22 @@ document.body.onload=function(){
     gauche=document.getElementById("gauche");
     droit=document.getElementById("droit");
   
-    container.style.width=(400*nbr)+"px";
-    container2.style.width=(400*nbr)+"px";
+    // container.style.width=(400*nbr)+"px";
+    // container2.style.width=(400*nbr)+"px";
   
-    for(i=1; i<=nbr; i++){
-      div=document.createElement("div");
-      div.className="photo_carousel";
-      div.style.backgroundImage="url('assets/img/sandwich" +i+ ".jpg')";
-      container.appendChild(div);
-    }
+    // for(i=1; i<=nbr; i++){
+    //   div=document.createElement("div");
+    //   div.className="photo_carousel";
+    //   div.style.backgroundImage="url('assets/img/sandwich" +i+ ".jpg')";
+    //   container.appendChild(div);
+    // }
   
-    for(i=1; i<=nbr; i++){
-      var div=document.createElement("div");
-      div.className="photo_carousel";
-      div.style.backgroundImage="url('assets/img/sandwich" +i+ ".jpg')";
-      container2.appendChild(div);
-    }
+    // for(i=1; i<=nbr; i++){
+    //   var div=document.createElement("div");
+    //   div.className="photo_carousel";
+    //   div.style.backgroundImage="url('assets/img/sandwich" +i+ ".jpg')";
+    //   container2.appendChild(div);
+    // }
 }
 
   gauche.onclick=function(){

@@ -17,16 +17,19 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 1200px;
+  width: 100%;
   gap: 2px;
 }
 
 #carrousel {
-  width: 1200px;
-  height: 200px;
+  width: 1200px !important;
+  height: 200px !important;
 
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #container, #container2 {
@@ -38,9 +41,57 @@ body {
   gap: 2px;
 }
 
+.contenu_carousel {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.photo_carousel {
+  width: 400px;
+  height: 200px;
+
+  margin: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background-size: cover;
+}
+
+    .photo_carousel:hover + .paraC {
+      background-color: #d32424;
+      display: block;
+    }
+
+.paraC {
+  position: absolute;
+  top: 150px;
+  z-index: 1000;
+
+  display: none;
+  text-align: center;
+
+  height: 50px;
+  width: 400px;
+
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+
+  color: white;
+}
+
+.paraC p {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bouton {
   position: absolute;
-  top: 50%;
+  top: 69%;
 
   width: auto;
 
@@ -63,8 +114,9 @@ body {
 }
 
     .bouton:hover {
-      transform: scale(1.1);
+      transform: scale(1.5);
       transition: 0.5s;
+      color: red;
     }
 
 #gauche {
@@ -73,15 +125,4 @@ body {
 
 #droit {
   right: 14%;
-}
-
-.photo {
-  width: 400px;
-  height: 200px;
-
-  margin: 0;
-
-  display: inline-block;
-
-  background-size: cover;
 }

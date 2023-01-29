@@ -577,6 +577,9 @@ header {
 
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #container, #container2 {
@@ -588,13 +591,79 @@ header {
   gap: 2px;
 }
 
+.contenu_carousel {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.photo_carousel {
+  width: 398px;
+  height: 200px;
+
+  margin: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background-size: cover;
+}
+
+    .photo_carousel:hover + .paraC {
+      opacity: 1;
+      transform: scale(1);
+      transition: 0.5s;
+    }
+
+.paraC {
+  position: absolute;
+  z-index: 1000;
+  top:0;
+
+  transition: opacity 1s ease-out;
+  opacity: 0;
+
+  height: 200px;
+  width: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31, 46, 94, 0.6) 36%, rgba(23, 32, 66, 0.6) 100%);
+
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+    .paraC:hover {
+      opacity: 1;
+      transform: scale(1);
+      transition: 0.5s;
+    }
+
+.paraC p {
+  height: 100px;
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
 .bouton {
   position: absolute;
   top: 69%;
 
-  width: auto;
-
-  background-color: transparent;
+  height: 50px;
+  width: 160px;
 
   cursor: pointer;
 
@@ -609,36 +678,36 @@ header {
 
   overflow: visible !important;
 
-  color: #172042;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 100%;
+  font-weight: 400;
+
+  border: none;
+  border-radius: 5px;
+
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31, 46, 94) 36%, rgba(23, 32, 66) 100%);
+
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
     .bouton:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
       transition: 0.5s;
       color: red;
     }
 
 #gauche {
-  left: 14%;
+  left: 8%;
 }
 
 #droit {
-  right: 14%;
-}
-
-.photo_carousel {
-  width: 400px;
-  height: 200px;
-
-  margin: 0;
-
-  display: inline-block;
-
-  background-size: cover;
-}
-
-.hover_photo_carousel {
-  background-color: #d32424;
+  right: 8%;
 }
 
 /* .ligne {
@@ -780,7 +849,7 @@ border: 2px solid #172042;
 border-radius: 50px;
 }
 
-#horaires {
+#horaire {
   height: 50vh;
   width: 70%;
 
@@ -1331,7 +1400,6 @@ footer {
   background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
 
   position: relative;
-  z-index: -100;
 }
 
 #formule_ocalme, #formule_gourmande {
@@ -1345,15 +1413,13 @@ footer {
 }
 
 .formule_ocalme, .formule_gourmande {
-  height: 30vh;
+  height: 35vh;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  margin-top: 5%;
 }
 
     .formule_ocalme h2, .formule_gourmande h2 {
@@ -1373,6 +1439,7 @@ footer {
       border-radius: 5px;
 
       box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+      margin-top: 3%;
     }
 
     .formule_ocalme p, .formule_gourmande p {
@@ -1390,7 +1457,7 @@ footer {
     }
 
 #gallerie_ocalme {
-  height: 35vh;
+  height: 30vh;
   width: 100%;
 
   display: flex;
@@ -1400,7 +1467,7 @@ footer {
 }
 
 .ligne_ocalme {
-  height: 40vh !important;
+  height: 30vh !important;
   width: 85vw !important;
 
   display: flex;
@@ -1463,7 +1530,7 @@ footer {
   right: 5%;
 
 
-  z-index: -100;
+  z-index: 1;
 
   opacity: 1;
 }
