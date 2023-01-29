@@ -1,6 +1,6 @@
 document.body.onload=function(){
     nbr = 6;
-    position = 0;
+    // position = 0;
     container=document.getElementById("container");
     container2=document.getElementById("container2");
     
@@ -26,8 +26,8 @@ document.body.onload=function(){
 }
 
   gauche.onclick=function(){
-    if (position > -nbr+1)
-      position--;
+    // if (position > -nbr+1)
+      // position--;
       container.style.transform="translate(" +-1200+ "px)";
       container.style.transition="all 1s ease";
   
@@ -36,11 +36,11 @@ document.body.onload=function(){
   }
   
   droit.onclick=function(){
-    if (position < 0)
-      position++;
-      container.style.transform="translate(" +position*0+ "px)";
+    // if (position < 0)
+      // position++;
+      container.style.transform="translate(" +0+ "px)";
       container.style.transition="all 1s ease";
   
-      container2.style.transform="translate(" +position*0+ "px)";
+      container2.style.transform="translate(" +0+ "px)";
       container2.style.transition="all 1s ease";
   }
