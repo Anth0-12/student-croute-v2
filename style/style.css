@@ -132,13 +132,17 @@ header {
             color: white;
           }
 
-          .menu-deroulant-accueil > a:after{
+          /* .menu-deroulant-accueil > a:after{
             content: '❯';
             font-size: 20px;
             margin-left: 7px;
             display: inline-block;
           }
           
+          .menu-deroulant-accueil:hover > a:after{
+            animation: rotationFleche 0.2s linear forwards;
+          }
+
           .menu-deroulant-accueil:hover > a:after{
             animation: rotationFleche 0.2s linear forwards;
           }
@@ -153,6 +157,18 @@ header {
             100%{
               transform: rotate(90deg);
             }
+          } */
+
+          .derouler > i {
+            font-size: 100% !important;
+            transform: rotate(0deg);
+            transition: 0.4s;
+            margin-left: 5px;
+          }
+
+          .derouler:hover > i {
+            transform: rotate(90deg);
+            transition: 0.4s;
           }
 
           /*----------------------------- fin affichage menu deroulant page accueil --------------------------------*/
