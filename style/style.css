@@ -579,7 +579,7 @@ header {
   overflow: hidden;
 
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 #container, #container2 {
