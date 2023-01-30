@@ -159,14 +159,14 @@ header {
             }
           } */
 
-          .derouler > i {
+          .derouler i {
             font-size: 100% !important;
             transform: rotate(0deg);
             transition: 0.4s;
             margin-left: 5px;
           }
 
-          .derouler:hover > i {
+          .derouler:hover i {
             transform: rotate(90deg);
             transition: 0.4s;
           }
@@ -233,7 +233,7 @@ header {
                 }
               }
     
-              .menu-deroulant > a:after{
+              /* .menu-deroulant > a:after{
                 content: '❯';
                 font-size: 20px;
                 margin-left: 7px;
@@ -254,7 +254,7 @@ header {
                 100%{
                   transform: rotate(90deg);
                 }
-              }
+              } */
 
               /*----------------------------- fin affichage menu deroulant pour autre page --------------------------------*/
 
