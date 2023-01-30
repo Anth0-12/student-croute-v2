@@ -8,6 +8,12 @@
     font-size: 100%;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /*----------------------------------------------------------------- header --------------------------------------------------------------------*/
 
@@ -195,6 +201,18 @@ header {
                 text-decoration: none;
                 font-size: 120%;
               }
+              
+              .accueil a:after {
+                display:block;
+                content: '';
+                border-bottom: 2px solid #141d3a;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+              }
+
+              .accueil a:hover:after {
+                transform: scaleX(1)
+              }
 
           .liste {
             height: 50%;
@@ -302,6 +320,18 @@ header {
 .horaire > a, .contacts > a {
   color: #172042;
   text-decoration: none;
+}
+
+.horaire > a:after, .contacts > a:after {
+  display:block;
+  content: '';
+  border-bottom: 2px solid #141d3a;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.horaire > a:hover:after, .contacts > a:hover:after {
+  transform: scaleX(1);
 }
 /* 
         .formulaire {
@@ -449,7 +479,7 @@ header {
 }
 
  #produit_fav a {
-    height: 100%;
+    height: 50%;
     width: 10%;
 
     display: flex;
@@ -457,54 +487,45 @@ header {
     align-items: center;
     flex-direction: column;
 
-    padding-top: 20px;
-
     text-decoration: none;
+
+    gap: 20%;
 }
 
 .titre_fav {
     height: 40px;
-    width: 150px;
 
-    margin-top: 10px;
     font-weight: 400;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color:white;
+    text-align: center;
 }
 
-    .titre_fav:hover {
-        background-color: white;
+.titre_fav:after {
+  display:block;
+  content: '';
+  border-bottom: 2px solid white;  
+  padding-bottom: 2px;
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
 
-        color:#141d3a;
+  
+}
+.fav:hover > .titre_fav:after {
+  transform: scaleX(1);
+}
 
-        border:none;
-        border-radius: 2px;
+    .fav:hover > .sandwich {
+      transform: scale(1.2) rotate(-5deg);
+      transition: 0.5s
     }
 
 .sandwich {
-    height: 30%;
+    height: 70%;
     width: auto;
     transform: scale(0.9);
     transition: 0.5s;
 }
-    .sandwich:hover {
-        height: 30%;
-        width: auto;
-        transform: scale(1.2) rotate(-5deg);
-        transition: 0.5s
-    }
-
-    .sandwich:hover + .titre_fav{
-      background-color: white;
-
-      color:#172042;
-
-      border:none;
-      border-radius: 2px;
-    }
 
 
 
@@ -667,7 +688,7 @@ header {
 
 .bouton {
   position: absolute;
-  top: 69%;
+  top: 68%;
 
   height: 50px;
 
@@ -860,7 +881,8 @@ align-items: center;
 justify-content: center;
 
 color: red;
-font-weight: 400;
+font-weight: 600;
+font-size: 130%;
 
 border: 2px solid #172042;
 border-radius: 50px;
@@ -1214,7 +1236,7 @@ footer {
   
  /* Center website */
 .main {
-  height: 145vh;
+  height: 165vh;
   width: 80%;
   margin: 5% 10%;
   /* background-color: #141d3a17;
@@ -1228,24 +1250,23 @@ footer {
   width: 70%;
 
   /* background-color:  #141d3a; */
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+  /* background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
 
   color: white !important;
   font-size: 170%;
   font-weight: 400;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
   margin:auto;
   margin-bottom: 2%;
 
   border:none;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 .row {
@@ -1263,14 +1284,15 @@ footer {
   float: left;
   width: 33.33%;
   display: none; /* Hide all elements by default */
+  margin: 2% 0px;
 }
 
 /* Clear floats after rows */ 
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Content */
 .content {
@@ -1283,39 +1305,52 @@ footer {
   height: 28vh;
 }
 
+.content:hover > .description {
+  color: white;
+
+      background-color: #141d3a;
+      background: rgb(31,46,94);
+      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+
+      visibility: visible;
+      text-align: center;
+      width: 90%;
+      margin-top: 2%;
+}
+
+.description {
+  visibility: hidden;
+  border:none;
+  border-radius: 3px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .content h4 {
   margin-bottom: 10px;
 }
 
-.description {
-      display: none;
-      border:none;
-      border-radius: 3px;
-    }
-
-    .image:hover + .description{
-      color: white;
-
-      /* background-color: #141d3a; */
-      background: rgb(31,46,94);
-      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-      display: block;
-      text-align: center;
-      width: 100%;
-      margin-top: 2%;
-    } 
-
-.image {
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  transform: scale(1);
-  transition: 0.5s;
+  height: 80%;
 }
 
-    .image:hover {
+    .img:hover > .image {
       transform: scale(0.8) rotate(-5deg);
       transition: 0.5s;   
     }
+
+.image {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.5s;
+}
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -1324,12 +1359,13 @@ footer {
 
 
 #myBtnContainer {
-  height: 80px;
+  height: 140px;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   /* background-color: #141d3a; */
   background: rgb(31,46,94);
   background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
@@ -1365,8 +1401,13 @@ footer {
   color: #172042;
 }
 
+.categ_boutons {
+  height: 60px;
+}
+
 /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
-.main_panini {
+
+.main_autre {
   height: 100vh;
   width: 80%;
   margin: 2% 10%;
@@ -1376,7 +1417,7 @@ footer {
   flex-direction: column;
 }
 
-.main_panini h2 {
+.main_autre h2 {
   height: 60px;
   width: 70%;
 
@@ -1398,6 +1439,40 @@ footer {
 
   border:none;
   border-radius: 4px;
+}
+
+.main_boisson {
+  height: 100vh;
+  width: 80%;
+  margin: 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_boisson h2 {
+  height: 60px;
+  width: 70%;
+
+  /* background-color:  #141d3a; */
+  /* background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
+
+  color: white !important;
+  font-size: 170%;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+  margin:auto;
+  margin-bottom: 2%;
+
+  border:none;
+  border-radius: 4px; */
 }
 
 /* Create three equal columns that floats next to each other */
@@ -1471,6 +1546,10 @@ footer {
       font-size: 110%;
       font-weight: 400;
       margin-top: 2%;
+    }
+
+    .bag {
+      transform: scale(0.1);
     }
 
 #gallerie_ocalme {
@@ -1617,6 +1696,104 @@ footer {
 }
 
 /*----------------------- deco sandwich ---------------------------------*/
+
+
+/*----------------------- deco autre ---------------------------------*/
+
+#fusee_autre {
+  height: auto;
+  width: 30%;
+  
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#astronaute_autre {
+  height: auto;
+  width: 20%;
+  
+  position: absolute;
+  top: 85%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#lune_autre {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 149.5%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 0.3;
+}
+
+/*----------------------- deco autre ---------------------------------*/
+
+
+/*----------------------- deco boisson ---------------------------------*/
+
+#fusee_boisson {
+  height: auto;
+  width: 30%;
+  
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#astronaute_boisson {
+  height: auto;
+  width: 20%;
+  
+  position: absolute;
+  top: 96.5%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#lune_boisson {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 161%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 0.3;
+}
+
+/*----------------------- deco boisson ---------------------------------*/
 
 /*----------------------- deco contact ---------------------------------*/
 

@@ -100,37 +100,37 @@
   </a>
 
 
-  <a href="page_panini.html">
+  <a href="page_panini.html" class="fav">
     <img src="assets/img/panini 2.png" alt="panini" class="sandwich">
 
     <h2 class="titre_fav">Panini</h2>
   </a>
 
-  <a href="page_wraps.html">
+  <a href="page_wraps.html" class="fav">
     <img src="assets/img/wrap.png" alt="wrap" class="sandwich">
 
     <h2 class="titre_fav">Wraps</h2>
   </a>
 
-  <a href="page_pates.html">
+  <a href="page_pates.html" class="fav">
     <img src="assets/img/pates.png" alt="pâtes" class="sandwich">
 
     <h2 class="titre_fav">Pâtes</h2>
   </a>
 
-  <a href="page_salades.html">
+  <a href="page_salades.html" class="fav">
     <img src="assets/img/salades 2.png" alt="salade" class="sandwich">
 
     <h2 class="titre_fav">Salades</h2>
   </a>
 
-  <a href="page_delices_sucres.html">
+  <a href="page_delices_sucres.html" class="fav">
     <img src="assets/img/dessert.png" alt="desserts" class="sandwich">
 
     <h2 class="titre_fav">Desserts</h2>
   </a>
 
-  <a href="page_boissons.html">
+  <a href="page_boissons.html" class="fav">
     <img src="assets/img/boissons 2.png" alt="boissons" class="sandwich">
 
     <h2 class="titre_fav">Boissons</h2>
@@ -141,38 +141,60 @@
 
 <div class="main">
 
-    <h2>
-      Nos Sandwiches
-    </h2>
+    
     
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Voir tous nous sandwiches</button>
-      <button class="btn" onclick="filterSelection('poulet')"> Poulet</button>
-      <button class="btn" onclick="filterSelection('thon')"> Thon</button>
-      <button class="btn" onclick="filterSelection('divers')"> Divers</button>
+
+      <h2>Nos Sandwiches</h2>
+
+      <div class="categ_boutons">
+        <button class="btn active" onclick="filterSelection('all')"> Voir tous nous sandwiches</button>
+        <button class="btn" onclick="filterSelection('poulet')"> Poulet</button>
+        <button class="btn" onclick="filterSelection('thon')"> Thon</button>
+        <button class="btn" onclick="filterSelection('divers')"> Divers</button>
+      </div>
+      
     </div>
     
     <!-- Portfolio Gallery Grid -->
     <div class="row">
+
       <div class="column thon">
         <div class="content">
           <h4>Sandwich au thon piquant</h4>
-          <img src="assets/img/boissons 2.png" alt="Sandwich au thon piquant" class="image">
+
+          <div class="img">
+            <img src="assets/img/sandwiches.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Thon, piments, sauce piquante <br> <span>2,90€</span> </p>
+
         </div>
       </div>
+
       <div class="column thon">
         <div class="content">
           <h4>Sandwich au thon mayonnaise</h4>
-          <img src="assets/img/boissons 2.png" alt="Sandwich au thon mayonnaise" class="image">
+
+          <div class="img">
+            <img src="assets/img/sandwiches.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Thon, salade, oeufs cuit dure, sauce mayonnaise <br> <span>2,90€</span></p>
+
         </div>
       </div>
+
       <div class="column thon">
         <div class="content">
           <h4>Sandwich au thon andalouse</h4>
-          <img src="assets/img/boissons 2.png" alt="Sandwich au thon andalouse" class="image">
+
+          <div class="img">
+            <img src="assets/img/sandwiches.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Thon, salade, sauce Andalouse <br> <span>2,90€</span></p>
+
         </div>
       </div>
 
@@ -180,23 +202,39 @@
       <div class="column divers">
         <div class="content">
           <h4>Sandwich au jambon</h4>
-          <img src="assets/img/sandwiches.png" alt="Sandwich au jambon" class="image">
+
+          <div class="img">
+            <img src="assets/img/boissons 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Jambon <br> <span>2,90€</span></p>
+
         </div>
       </div>
+
       <div class="column divers">
         <div class="content">
           <h4>Sandwich jambon beurre</h4>
-          <img src="assets/img/sandwiches.png" alt="Sandwich jambon beurre" class="image">
+
+          <div class="img">
+            <img src="assets/img/boissons 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Jambon, beurre <br> <span>2,90€</span></p>
+
         </div>
       </div>
       
       <div class="column divers">
         <div class="content">
           <h4>Sandwich au fromage</h4>
-          <img src="assets/img/sandwiches.png" alt="Sandwich au fromage" class="image">
+
+          <div class="img">
+            <img src="assets/img/boissons 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Beurre, fromage <br> <span>2,90€</span></p>
+
         </div>
       </div>
 
@@ -204,37 +242,65 @@
       <div class="column poulet">
         <div class="content">
           <h4>Sandwich au poulet mayonnaise</h4>
-          <img src="assets/img/panini 2.png" alt="Sandwich au poulet mayonnaise" class="image">
+
+          <div class="img">
+            <img src="assets/img/panini 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Poulet, salade, oeufs cuit dur, sauce mayaonnaise <br> <span>2,90€</span></p>
+
         </div>
       </div>
+
       <div class="column poulet">
         <div class="content">
           <h4>Sandwich au poulet piquant</h4>
-          <img src="assets/img/panini 2.png" alt="Sandwich au poulet piquant" class="image">
+
+          <div class="img">
+            <img src="assets/img/panini 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Poulet, piments, sauce piquante <br> <span>2,90€</span></p>
+
         </div>
       </div>
     
       <div class="column poulet">
         <div class="content">
           <h4>Sandwich au poulet andalouse</h4>
-          <img src="assets/img/panini 2.png" alt="Sandwich au poulet andalouse" class="image">
+          
+          <div class="img">
+            <img src="assets/img/panini 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Poulet, salade, sauce Andalouse <br> <span>2,90€</span></p>
+
         </div>
       </div>
+
       <div class="column poulet">
         <div class="content">
           <h4>Sandwich au poulet curry</h4>
-          <img src="assets/img/panini 2.png" alt="Sandwich au poulet curry" class="image">
+
+          <div class="img">
+            <img src="assets/img/panini 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Poulet, salade, poivrons, curry <br> <span>2,90€</span></p>
+
         </div>
       </div>
+
       <div class="column poulet">
         <div class="content">
           <h4>Sandwich au poulet rôti</h4>
-          <img src="assets/img/panini 2.png" alt="Sandwich au poulet rôti" class="image">
+
+          <div class="img">
+            <img src="assets/img/panini 2.png" alt="Sandwich au jambon" class="image">
+          </div>
+
           <p class="description">Poulet rôti, salade, oeufs cuit dur <br> <span>2,90€</span></p>
+
         </div>
       </div>
     <!-- END GRID -->
@@ -303,7 +369,13 @@
 <img src="assets/img/lune-2.png" alt="" id="lune_sandwich">
 <img src="assets/img/fusee.png" alt="" id="fusee_sandwich">
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><div class="top"><i class="fa-solid fa-angles-up"></i><div>Top</div> </div></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <div class="top">
+      <i class="lni lni-chevron-up"></i>
+      <div>Top</div>
+      <i class="lni lni-chevron-up"></i>
+  </div>
+</button>
 
 <!---------------------------------------------------------------- fin image deco + bouton top -------------------------------------------------------------------------------------->
 
