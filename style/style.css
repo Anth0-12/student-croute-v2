@@ -493,7 +493,7 @@ header {
 }
 
 .titre_fav {
-    height: 40px;
+    height: 20%;
 
     font-weight: 400;
 
@@ -515,25 +515,18 @@ header {
   transform: scaleX(1);
 }
 
-    .fav:hover > .sandwich {
+    .fav:hover > .choix {
       transform: scale(1.2) rotate(-5deg);
       transition: 0.5s
     }
 
-.sandwich {
-    height: 70%;
+.choix {
+    height: 55px;
     width: auto;
     transform: scale(0.9);
     transition: 0.5s;
 }
 
-
-
-.boissons {
-    height: auto;
-    position: relative;
-    width: 50%;
-}
 
   /*----------------------------------------------------------------- fin nav --------------------------------------------------------------------*/
 
@@ -561,8 +554,8 @@ header {
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 6%;
+    margin-bottom: 10%;
 }
 
 #gallerie h1 {
@@ -688,7 +681,7 @@ header {
 
 .bouton {
   position: absolute;
-  top: 68%;
+  top: 70%;
 
   height: 50px;
 
@@ -864,11 +857,122 @@ header {
   margin-top: 3%;
 }  */
 
-.separation_principale {
-  height: 5%;
-  width: 50%;
-  border-bottom: 1px solid #172042;
+
+/*--------------------- formule --------------------------------*/
+
+.contenu_formules {
+  height: auto;
+  width: 100%;
+  background: rgb(31,46,94);
+  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+
+  position: relative;
 }
+
+#formule_ocalme, #formule_gourmande {
+  height: 70vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.formule_ocalme, .formule_gourmande {
+  height: 35vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    .formule_ocalme h2, .formule_gourmande h2 {
+      height: 8vh;
+      width: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: white;
+
+      color: #172042;
+      font-size: 140%;
+      font-weight: 600;
+
+      border: none;
+      border-radius: 5px;
+
+      box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+      margin-top: 5%;
+    }
+
+    .formule_ocalme p, .formule_gourmande p {
+      height: 10vh;
+      width: 90%;
+
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+
+      color: white;
+      font-size: 110%;
+      font-weight: 400;
+      margin-top: 2%;
+    }
+
+    .bag {
+      transform: scale(0.1);
+    }
+
+#gallerie_ocalme {
+  height: 30vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ligne_ocalme {
+  height: 30vh !important;
+  width: 30vw !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_ocalme {
+  height: 100% !important;
+  width: 100% !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_ocalme {
+  /* height: 100% !important; */
+  width: 30% !important;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.flex_ocalme img {
+  height: 30vh !important;
+  width: auto !important;
+}
+
+/*------------------ fin formule ---------------------*/
 
 .titre_ouverture {
 height: 5vh;
@@ -1495,12 +1599,12 @@ footer {
 }
 
 #formule_ocalme, #formule_gourmande {
-  height: 75vh;
+  height: 70vh;
   width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -1526,12 +1630,13 @@ footer {
 
       color: #172042;
       font-size: 140%;
+      font-weight: 600;
 
       border: none;
       border-radius: 5px;
 
       box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
-      margin-top: 3%;
+      margin-top: 5%;
     }
 
     .formule_ocalme p, .formule_gourmande p {
@@ -1564,7 +1669,7 @@ footer {
 
 .ligne_ocalme {
   height: 30vh !important;
-  width: 85vw !important;
+  width: 30vw !important;
 
   display: flex;
   align-items: center;
@@ -1573,7 +1678,7 @@ footer {
 
 .slider_ocalme {
   height: 100% !important;
-  width: 50% !important;
+  width: 100% !important;
 
   display: flex;
   align-items: center;
@@ -1581,8 +1686,8 @@ footer {
 }
 
 .flex_ocalme {
-  height: 100% !important;
-  width: 50% !important;
+  /* height: 100% !important; */
+  width: 30% !important;
   margin-left: 2px;
   margin-right: 2px;
 
@@ -1592,8 +1697,8 @@ footer {
 }
 
 .flex_ocalme img {
-  height: 20vh !important;
-  width: 20vw !important;
+  height: 30vh !important;
+  width: auto !important;
 }
 
 /*----------------------------------------------------------------- fin page formule --------------------------------------------------------------------*/
@@ -1622,7 +1727,7 @@ footer {
   width: 20%;
   
   position: absolute;
-  top: 198%;
+  top: 200%;
   right: 5%;
 
 
@@ -1637,7 +1742,7 @@ footer {
   width: 25%;
   
   position: absolute;
-  top: 324%;
+  top: 326%;
   right: 60%;
 
 
