@@ -646,7 +646,7 @@ header {
   color: white;
 
   background: rgb(41,59,117);
-  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  background: linear-gradient(45deg, rgba(41,59,117,0.5) 37%, rgba(23,32,66,0.5) 100%);
 
   transform: scale(0);
   transition: 0.5s;
