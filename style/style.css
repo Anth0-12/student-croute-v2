@@ -49,8 +49,6 @@ header {
     justify-content: center;
     align-items: center;
 
-    /* border-bottom: 1px solid #1f305e; */
-
     background-color: white;
 }
 
@@ -122,8 +120,8 @@ header {
 
           .sous-menu > .liste_sous_menu:hover {
             /* background-color: #172042; */
-            background: rgb(31,46,94);
-            background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+            background: rgb(41,59,117);
+            background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
           }
           
           .sous-menu > li > a {
@@ -301,8 +299,6 @@ header {
     justify-content: center;
     align-items: center;
 
-    /* border-bottom: 1px solid #1f305e; */
-
     background-color: white;
 
     font-size: 120%;
@@ -472,10 +468,8 @@ header {
     align-items: center;
 
     /* background-color: #1b2750; */
-    background: rgb(31,46,94);
-    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 
  #produit_fav a {
@@ -563,8 +557,8 @@ header {
   width: 70%;
 
   /* background-color:  #141d3a; */
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
   color: white !important;
   font-size: 170%;
@@ -573,8 +567,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
   margin-bottom: 2%;
 
@@ -600,7 +592,6 @@ header {
   overflow: hidden;
 
   display: flex;
-  /* flex-direction: column; */
 }
 
 #container, #container2 {
@@ -654,8 +645,8 @@ header {
 
   color: white;
 
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31, 46, 94, 0.6) 36%, rgba(23, 32, 66, 0.6) 100%);
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
   transform: scale(0);
   transition: 0.5s;
@@ -710,10 +701,8 @@ header {
   border: 1px solid #141d3a;
   border-radius: 5px;
 
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31, 46, 94) 36%, rgba(23, 32, 66) 100%);
-
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 
     .bouton:hover {
@@ -725,8 +714,6 @@ header {
       background: linear-gradient(45deg, rgb(255, 255, 255) 36%, rgb(255, 255, 255) 100%);
 
       border: 1px solid #141d3a;
-
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
     }
 
 #gauche {
@@ -863,10 +850,8 @@ header {
 .contenu_formules {
   height: auto;
   width: 100%;
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-  position: relative;
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 
 #formule_ocalme, #formule_gourmande {
@@ -875,7 +860,6 @@ header {
 
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -890,14 +874,14 @@ header {
 }
 
     .formule_ocalme h2, .formule_gourmande h2 {
-      height: 8vh;
+      height: 60px;
       width: 50%;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      background-color: white;
+      background-color: rgb(255, 255, 255);
 
       color: #172042;
       font-size: 140%;
@@ -905,8 +889,9 @@ header {
 
       border: none;
       border-radius: 5px;
+    }
 
-      box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+    .formule_ocalme h2 {
       margin-top: 5%;
     }
 
@@ -922,10 +907,6 @@ header {
       font-size: 110%;
       font-weight: 400;
       margin-top: 2%;
-    }
-
-    .bag {
-      transform: scale(0.1);
     }
 
 #gallerie_ocalme {
@@ -957,7 +938,6 @@ header {
 }
 
 .flex_ocalme {
-  /* height: 100% !important; */
   width: 30% !important;
   margin-left: 2px;
   margin-right: 2px;
@@ -1041,8 +1021,9 @@ footer {
     width: 100%;
 
     /* background-color: #141d3a; */
-    background: rgb(31,46,94);
-    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
     border-top: 2px solid rgb(0, 0, 0);
     box-shadow: 0px -3px 9px 0px rgba(0,0,0,0.3);
     }
@@ -1200,11 +1181,8 @@ footer {
     margin-bottom: 5%;
     margin-top: 2%;
 
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
-
-    /* background-color: #141d3a; */
-    background: rgb(31,46,94);
-    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
     border:none;
     border-radius: 4px;
@@ -1307,11 +1285,8 @@ footer {
 
       margin-bottom: 3%;
 
-      /* background-color: #141d3a; */
-      background: rgb(31,46,94);
-      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-      box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+      background: rgb(41,59,117);
+      background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
       border:none;
       border-radius: 4px;
@@ -1363,6 +1338,7 @@ footer {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
@@ -1401,32 +1377,31 @@ footer {
 /* Content */
 .content {
   padding: 10px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
-  height: 28vh;
+  height: 30vh;
 }
 
 .content:hover > .description {
-  color: white;
+  color: #141d3a;
 
-      background-color: #141d3a;
-      background: rgb(31,46,94);
-      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+  background-color: rgba(255, 255, 255, 0.7);
 
-      visibility: visible;
-      text-align: center;
-      width: 90%;
-      margin-top: 2%;
+  visibility: visible;
+  text-align: center;
+  width: 90%;
+  border: 2px solid #141d3a;
 }
 
 .description {
   visibility: hidden;
   border:none;
   border-radius: 3px;
-  height: 100px;
+  height: 6vh;
 
   display: flex;
   flex-direction: column;
@@ -1435,14 +1410,30 @@ footer {
 
 .content h4 {
   margin-bottom: 10px;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+  height: 4vh;
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  border: none;
+  border-radius: 3px;
 }
 
 .img {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 50%;
-  height: 80%;
+  height: 20vh;
 }
 
     .img:hover > .image {
@@ -1470,11 +1461,9 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #141d3a; */
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+ 
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
   gap: 1%;
 
@@ -1490,7 +1479,8 @@ footer {
   color: #ffffff;
   cursor: pointer;
 
-  font-size: 110%;
+  font-size: 100%;
+  font-weight: 400;
   border:none;
   border-radius: 2px;
 }
@@ -1514,7 +1504,7 @@ footer {
 .main_autre {
   height: 100vh;
   width: 80%;
-  margin: 2% 10%;
+  margin: 5% 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1526,8 +1516,8 @@ footer {
   width: 70%;
 
   /* background-color:  #1b2750; */
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
   color: white !important;
   font-size: 170%;
@@ -1536,8 +1526,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
   margin-bottom: 2%;
 
@@ -1569,6 +1557,7 @@ footer {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
@@ -1583,125 +1572,9 @@ footer {
 .columns {
   float: left;
   width: 33.33%;
+  margin: 2% 0px;
 }
 
-
-
-/*----------------------------------------------------------------- page formule --------------------------------------------------------------------*/
-
-.contenu_formules {
-  height: auto;
-  width: 100%;
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-  position: relative;
-}
-
-#formule_ocalme, #formule_gourmande {
-  height: 70vh;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  flex-direction: column;
-}
-
-.formule_ocalme, .formule_gourmande {
-  height: 35vh;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-    .formule_ocalme h2, .formule_gourmande h2 {
-      height: 8vh;
-      width: 50%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: white;
-
-      color: #172042;
-      font-size: 140%;
-      font-weight: 600;
-
-      border: none;
-      border-radius: 5px;
-
-      box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
-      margin-top: 5%;
-    }
-
-    .formule_ocalme p, .formule_gourmande p {
-      height: 10vh;
-      width: 90%;
-
-      display: flex;
-      align-items: center;
-      margin-left: 5%;
-
-      color: white;
-      font-size: 110%;
-      font-weight: 400;
-      margin-top: 2%;
-    }
-
-    .bag {
-      transform: scale(0.1);
-    }
-
-#gallerie_ocalme {
-  height: 30vh;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.ligne_ocalme {
-  height: 30vh !important;
-  width: 30vw !important;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider_ocalme {
-  height: 100% !important;
-  width: 100% !important;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex_ocalme {
-  /* height: 100% !important; */
-  width: 30% !important;
-  margin-left: 2px;
-  margin-right: 2px;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.flex_ocalme img {
-  height: 30vh !important;
-  width: auto !important;
-}
-
-/*----------------------------------------------------------------- fin page formule --------------------------------------------------------------------*/
 
 /*!----------------------------------------------------------------- image deco + bouton top --------------------------------------------------------------------*/
 
@@ -1761,13 +1634,13 @@ footer {
   width: 30%;
   
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 10%;
 
 
-  z-index: -100;
+  z-index: -110;
 
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 
@@ -1776,7 +1649,7 @@ footer {
   width: 20%;
   
   position: absolute;
-  top: 141.5%;
+  top: 161.5%;
   right: 10%;
 
 
@@ -1791,13 +1664,13 @@ footer {
   width: 25%;
   
   position: absolute;
-  top: 206%;
+  top: 226%;
   right: 60%;
 
 
   z-index: 0;
 
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /*----------------------- deco sandwich ---------------------------------*/
@@ -1810,13 +1683,13 @@ footer {
   width: 30%;
   
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 10%;
 
 
-  z-index: -100;
+  z-index: -110;
 
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 
@@ -1825,7 +1698,7 @@ footer {
   width: 20%;
   
   position: absolute;
-  top: 85%;
+  top: 96.5%;
   right: 10%;
 
 
@@ -1840,13 +1713,13 @@ footer {
   width: 25%;
   
   position: absolute;
-  top: 149.5%;
+  top: 161%;
   right: 60%;
 
 
   z-index: 0;
 
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /*----------------------- deco autre ---------------------------------*/
@@ -1859,13 +1732,13 @@ footer {
   width: 30%;
   
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 10%;
 
 
-  z-index: -100;
+  z-index: -110;
 
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 
@@ -1895,7 +1768,7 @@ footer {
 
   z-index: 0;
 
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /*----------------------- deco boisson ---------------------------------*/
@@ -1913,7 +1786,7 @@ footer {
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 
@@ -1922,7 +1795,7 @@ footer {
   width: 20%;
   
   position: absolute;
-  top: 81.5%;
+  top: 85%;
   right: 10%;
 
 
@@ -1937,13 +1810,13 @@ footer {
   width: 25%;
   
   position: absolute;
-  top: 146%;
+  top: 149.5%;
   right: 60%;
 
 
   z-index: 0;
 
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /*----------------------- fin deco contact ---------------------------------*/
@@ -1961,10 +1834,9 @@ footer {
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   
-  border:none;
+  border: 2px solid transparent;
   border-radius: 4px;
   font-size: 120%; /* Increase font size */
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #myBtn:hover {
