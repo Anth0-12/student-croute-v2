@@ -17,7 +17,7 @@ body {
 
 /*----------------------------------------------------------------- header --------------------------------------------------------------------*/
 
-header {
+#header_ordi {
     height: 10vh;
     width: 100%;
 
@@ -37,7 +37,9 @@ header {
 
 }
 
-
+#header_tel {
+  display: none;
+}
 
 /*----------------------------- affichage menu deroulant page accueil --------------------------------*/
 
@@ -475,8 +477,7 @@ header {
     align-items: center;
     
     background: url("/assets/img/etoiles.png");
-    background-size: 30%;
-    background-position: 5px 15px;
+    background-size: 20%;
 }
 
  #produit_fav a {
@@ -865,7 +866,6 @@ header {
   width: 100%;
   background: url("/assets/img/etoiles.png");
   background-size: 50%;
-  background-position: 5px 30px;
 }
 
 #formule_ocalme, #formule_gourmande {
@@ -1045,8 +1045,7 @@ border-radius: 50px;
     width: 100%;
 
     background: url("/assets/img/etoiles.png");
-    background-size: 30%;
-    background-position: 5px 15px;
+    background-size: 25%;
     }
 
 
@@ -1602,17 +1601,19 @@ border-radius: 50px;
 /*----------------------- deco accueil ---------------------------------*/
 
 #fusee_accueil {
-  height: auto;
-  width: 30%;
+  height: 70%;
+  width: auto;
   
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: fixed;
+  top: 30%;
+  left: 20%;
 
 
   z-index: -110;
 
   opacity: 0.5;
+
+  rotate: 315deg;
 }
 
 
@@ -1651,17 +1652,19 @@ border-radius: 50px;
 /*----------------------- deco sandwich ---------------------------------*/
 
 #fusee_sandwich {
-  height: auto;
-  width: 30%;
+  height: 70%;
+  width: auto;
   
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: fixed;
+  top: 30%;
+  left: 20%;
 
 
   z-index: -110;
 
   opacity: 0.5;
+
+  rotate: 315deg;
 }
 
 
@@ -1700,17 +1703,19 @@ border-radius: 50px;
 /*----------------------- deco autre ---------------------------------*/
 
 #fusee_autre {
-  height: auto;
-  width: 30%;
+  height: 70%;
+  width: auto;
   
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: fixed;
+  top: 30%;
+  left: 20%;
 
 
   z-index: -110;
 
   opacity: 0.5;
+
+  rotate: 315deg;
 }
 
 
@@ -1749,17 +1754,19 @@ border-radius: 50px;
 /*----------------------- deco boisson ---------------------------------*/
 
 #fusee_boisson {
-  height: auto;
-  width: 30%;
+  height: 70%;
+  width: auto;
   
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: fixed;
+  top: 30%;
+  left: 20%;
 
 
   z-index: -110;
 
   opacity: 0.5;
+
+  rotate: 315deg;
 }
 
 
@@ -1797,17 +1804,19 @@ border-radius: 50px;
 /*----------------------- deco contact ---------------------------------*/
 
 #fusee_contact {
-  height: auto;
-  width: 30%;
+  height: 70%;
+  width: auto;
   
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  position: fixed;
+  top: 30%;
+  left: 20%;
 
 
-  z-index: -100;
+  z-index: -110;
 
   opacity: 0.5;
+
+  rotate: 315deg;
 }
 
 
@@ -1877,3 +1886,110 @@ border-radius: 50px;
 }
 
 /*!----------------------------------------------------------------- fin fin image deco + bouton top --------------------------------------------------------------------*/
+
+
+
+
+
+
+/*!----------------------------------------------------------------- responsive telephone --------------------------------------------------------------------*/
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+   
+    /* font-family: 'Bakbak One', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/*----------------------------- header --------------------------------*/
+
+#header_ordi {
+    display: none;
+}
+
+#header_tel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10vh;
+  background-color: aqua;
+}
+
+.logo_horaire {
+display: flex;
+justify-content: center;
+width: 100%;
+height: 5vh;
+}
+
+#logo {
+    height: 80%;
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+}
+
+        #logo img {
+            height: 100%;
+            width: 90%;
+        }
+
+#horaire-contact {
+    height: 100%;
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    font-size: 50%;
+}
+
+.horaire, .contacts {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horaire > a, .contacts > a {
+  color: #172042;
+  text-decoration: none;
+}
+
+.horaire > a:after, .contacts > a:after {
+  display:block;
+  content: '';
+  border-bottom: 2px solid #141d3a;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.horaire > a:hover:after, .contacts > a:hover:after {
+  transform: scaleX(1);
+}
+
+.conteneur {
+  display: none;
+}
+}
