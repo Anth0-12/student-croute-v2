@@ -11,118 +11,121 @@ body {
   background-color: aqua;
 }
 
-.conteneur {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.collapsible {
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  color: white;
+  cursor: pointer;
   width: 100%;
-  gap: 2px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
-#carrousel {
-  width: 1200px !important;
-  height: 200px !important;
-
-  position: relative;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
 }
 
-#container, #container2 {
-  width: 400px;
-  height: 200px;
-
-  display: flex;
-
-  gap: 2px;
-}
-
-.contenu_carousel {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-}
-
-.photo_carousel {
-  width: 400px;
-  height: 200px;
-
-  margin: 0;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
-  background-size: cover;
-}
-
-    .photo_carousel:hover + .paraC {
-      background-color: #d32424;
-      display: block;
-    }
-
-.paraC {
-  position: absolute;
-  top: 150px;
-  z-index: 1000;
-
+/* Style the collapsible content. Note: hidden by default */
+.content {
   display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.t {
+  height: 3vh;
+  width: 100%;
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+
+.y {
+  height: 3vh;
+  width: 100%;
+  background: url("/assets/img/etoiles.png");
+  background-size: 20%;
+}
+
+#produit_fav {
+  height: 30vh;
+  width: 100%;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+
+#produit_fav2 {
+  height: 30vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: url("/assets/img/etoiles.png");
+  background-size: 20%;
+
+  flex-wrap: wrap;
+  gap: 0%;
+}
+
+#produit_fav2 a {
+  height: 25%;
+  width: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-decoration: none;
+
+  gap: 0%;
+}
+
+.titre_fav {
+  height: 40%;
+
+  font-weight: 400;
+  font-size: 60%;
+
+  color:white;
   text-align: center;
 
-  height: 50px;
-  width: 400px;
-
-  background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
-
-  color: white;
-}
-
-.paraC p {
-  
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.bouton {
-  position: absolute;
-  top: 69%;
+.titre_fav:after {
+display:block;
+content: '';
+border-bottom: 2px solid white;  
+padding-bottom: 2px;
+transform: scaleX(0);  
+transition: transform 250ms ease-in-out;
 
+
+}
+.fav:hover > .titre_fav:after {
+transform: scaleX(1);
+}
+
+  .fav:hover > .choix {
+    transform: scale(1) rotate(0deg);
+    transition: 0.5s
+  }
+
+.choix {
+  height: 50%;
   width: auto;
-
-  background-color: transparent;
-
-  cursor: pointer;
-
   transform: scale(1);
   transition: 0.5s;
 
-  outline: none;
-  border: none;
-
-  margin: 0;
-  padding: 0;
-
-  overflow: visible !important;
-
-  color: #172042;
-}
-
-    .bouton:hover {
-      transform: scale(1.5);
-      transition: 0.5s;
-      color: red;
-    }
-
-#gauche {
-  left: 14%;
-}
-
-#droit {
-  right: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,17 +1,10 @@
 
-$('.container').slick({
-  rows: 2,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-      {
-      breakpoint: 768,
-      settings: {
-         slidesToShow: 1           
-      }
-     }
-   ]            
- }); 
+$('.container_tel').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+}); 
 
 // $(".slick-next").text("Suivant");
 

@@ -460,6 +460,9 @@ body {
 
 
   /*----------------------------------------------------------------- nav --------------------------------------------------------------------*/
+.t{
+  display: none;
+}
 
 #produit_fav {
     height: 20vh;
@@ -590,6 +593,10 @@ body {
   flex-direction: column;
   width: 100%;
   gap: 2px;
+}
+
+.conteneur_tel {
+  display: none;
 }
 
 #carrousel {
@@ -1895,7 +1902,7 @@ border-radius: 50px;
 /*!----------------------------------------------------------------- responsive telephone --------------------------------------------------------------------*/
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+@media only screen and (min-device-width : 360px) and (max-device-width : 740px) {
   * {
     margin: 0;
     padding: 0;
@@ -1921,56 +1928,25 @@ body {
 }
 
 #header_tel {
-  display: flex;
-  flex-direction: column;
+  height: 20vh;
   width: 100%;
-  height: 9vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   position: sticky;
-  top: 0px;
-  z-index: 1;
+  z-index: 100;
+  top: 0;
 
   background-color: white;
 
   box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.3);
 }
 
-.logo_horaire {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 5vh;
-}
-
 #logo {
-    height: 70%;
-    width: 30%;
-
-    display: flex;
-    justify-content: center;
-}
-
-        #logo img {
-            height: 100%;
-            width: 90%;
-        }
-
-#horaire-contact {
-    height: 100%;
-    width: 70%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: white;
-
-    font-size: 60%;
-}
-
-.horaire, .contacts {
-  height: 100%;
+  height: 6vh;
   width: 50%;
 
   display: flex;
@@ -1978,27 +1954,67 @@ height: 5vh;
   align-items: center;
 }
 
-.horaire > a, .contacts > a {
+      #logo img {
+          height: 70%;
+          width: auto;
+      }
+
+#horaire-contact {
+    height: 7vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    font-size: 70%;
+}
+
+.accueil, .horaire, .contacts {
+  height: 100%;
+  width: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.acccueil a, .horaire > a, .contacts > a {
   color: #172042;
   text-decoration: none;
 }
 
+.accueil a:after {
+  display:block;
+  content: '';
+  border-bottom: 2px solid #141d3a;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.accueil a:hover:after {
+  transform: scaleX(1)
+}
+
 #formule_tel {
   width: 100%;
-  height: 4vh;
+  height: 7vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 50%;
+  font-size: 60%;
 
   gap: 10%;
 }
 
   #formule_tel a {
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 50%;
 
     background: rgb(41,59,117);
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
@@ -2012,7 +2028,7 @@ height: 5vh;
     text-decoration: none;
 
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
   }
 
   /*----------------------------- fin header --------------------------------*/
@@ -2020,16 +2036,80 @@ height: 5vh;
 
 
   /*----------------------------- produit fav --------------------------------*/
-
-
   #produit_fav {
+    display: none;
+  }
+  
+  .t {
+    display: flex;
+
+    min-height: 4vh;
+    max-height: auto;
+    width: 100%;
+
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  }
+  
+  .y {
+    min-height: 4vh;
+    max-height: auto;
+    width: 100%;
+
+    background: url("/assets/img/etoiles.png");
+    background-size: 20%;
+  }
+  
+  .collapsible {
+    color: white;
+
+    cursor: pointer;
+
+    height: 6vh;
+    width: 100%;
+
+    border: none;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    outline: none;
+
+    font-size: 60%;
+
+    background-color: transparent;
+
+    gap: 10%;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: transparent;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 0;
+    height: 30vh;
+    width: 100%;
+  }
+  
+
+  #produit_fav_tel {
     height: 30vh;
     width: 100%;
 
     background: rgb(41,59,117);
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
-#produit_fav2 {
+#produit_fav2_tel {
     height: 30vh;
     width: 100%;
 
@@ -2044,7 +2124,7 @@ height: 5vh;
     gap: 0%;
 }
 
- #produit_fav2 a {
+ #produit_fav2_tel a {
     height: 25%;
     width: 30%;
 
@@ -2058,7 +2138,7 @@ height: 5vh;
     gap: 0%;
 }
 
-.titre_fav {
+.titre_fav_tel {
     height: 40%;
 
     font-weight: 400;
@@ -2072,7 +2152,7 @@ height: 5vh;
     align-items: center;
 }
 
-.titre_fav:after {
+.titre_fav_tel:after {
   display:block;
   content: '';
   border-bottom: 2px solid white;  
@@ -2082,7 +2162,7 @@ height: 5vh;
 
   
 }
-.fav:hover > .titre_fav:after {
+.fav_tel:hover > .titre_fav_tel:after {
   transform: scaleX(1);
 }
 
@@ -2091,7 +2171,7 @@ height: 5vh;
       transition: 0.5s
     }
 
-.choix {
+.choix_tel {
     height: 50%;
     width: auto;
     transform: scale(1);
@@ -2104,11 +2184,117 @@ height: 5vh;
 
 
   /*----------------------------- fin produit fav --------------------------------*/
-.conteneur {
-  display: none;
+  .conteneur {
+    display: none;
+  }
+
+  #gallerie {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 10%;
+    margin-bottom: 6%;
 }
 
-#arrousel {
-  display: none;
+#gallerie h1 {
+  height: 20px;
+  width: 70%;
+
+  /* background-color:  #141d3a; */
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+  color: white !important;
+  font-size: 70%;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0%;
+
+  border:none;
+  border-radius: 4px;
 }
+
+.conteneur_tel {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 2px;
+  overflow: hidden;
+}
+
+
+.container_tel {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+
+  gap: 2px;
+}
+
+.contenu_carousel {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  height: 70px;
+  width: 20%;
+}
+
+.photo_carousel {
+  width: 95%;
+  height: auto;
+
+  margin: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background-size: cover;
+}
+
+
+.paraC {
+  position: absolute;
+  z-index: 1000;
+  top:0;
+
+  transition: opacity 1s ease-out;
+  opacity: 0;
+
+  height: 200px;
+  width: 400px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,0.5) 37%, rgba(23,32,66,0.5) 100%);
+
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.lni {
+  font-size: 150% !important;
+}
+
 }

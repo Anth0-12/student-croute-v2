@@ -1,50 +1,14 @@
-document.body.onload=function(){
-  nbr = 6;
-  position = 0;
-  container=document.getElementById("container");
-  container2=document.getElementById("container2");
-  
-  gauche=document.getElementById("gauche");
-  droit=document.getElementById("droit");
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-  // container.style.width=(400*nbr)+"px";
-  // container2.style.width=(400*nbr)+"px";
-
-  // for(i=1; i<=nbr; i++){
-  //   div=document.createElement("div");
-  //   div.className="photo_carousel";
-  //   div.style.backgroundImage="url('assets/img/sandwich" +i+ ".jpg')";
-  //   container.appendChild(div);
-
-  //   div1=document.createElement("div");
-  //   div1.className="paraC";
-  //   div.appendChild(div1);
-  // }
-
-  // for(i=1; i<=nbr; i++){
-  //   var div=document.createElement("div");
-  //   div.className="photo_carousel";
-  //   div.style.backgroundImage="url('assets/img/sandwich" +i+ ".jpg')";
-  //   container2.appendChild(div);
-  // }
-}
-
-gauche.onclick=function(){
-  if (position > -nbr+1)
-    position--;
-    container.style.transform="translate(" +-1200+ "px)";
-    container.style.transition="all 1s ease";
-
-    container2.style.transform="translate(" +-1200+ "px)";
-    container2.style.transition="all 1s ease";
-}
-
-droit.onclick=function(){
-  if (position < 0)
-    position++;
-    container.style.transform="translate(" +position*0+ "px)";
-    container.style.transition="all 1s ease";
-
-    container2.style.transform="translate(" +position*0+ "px)";
-    container2.style.transition="all 1s ease";
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
