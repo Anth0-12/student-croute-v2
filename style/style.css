@@ -2293,6 +2293,10 @@ body {
   transition: 0.5s;
 }
 
+.bouton {
+  display: none;
+}
+
 .lni {
   font-size: 150% !important;
 }
