@@ -791,11 +791,11 @@ body {
       border-radius: 3px;
     } */
 
-/* .slick-track {
+.slick-track {
   height: 100%;
   display: flex;
   justify-content: space-around;
-} */
+}
 
 /* .slick-list {
   width: 100%;
