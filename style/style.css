@@ -1594,7 +1594,7 @@ border-radius: 50px;
 /*!----------------------------------------------------------------- responsive telephone --------------------------------------------------------------------*/
 
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 740px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 800px) {
   * {
     margin: 0;
     padding: 0;
@@ -2183,7 +2183,7 @@ body {
   width: 25%;
   
   position: absolute;
-  top: 203%;
+  top: 200%;
   right: 60%;
 }
 
