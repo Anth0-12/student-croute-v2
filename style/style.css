@@ -138,33 +138,6 @@ body {
             color: white;
           }
 
-          /* .menu-deroulant-accueil > a:after{
-            content: '❯';
-            font-size: 20px;
-            margin-left: 7px;
-            display: inline-block;
-          }
-          
-          .menu-deroulant-accueil:hover > a:after{
-            animation: rotationFleche 0.2s linear forwards;
-          }
-
-          .menu-deroulant-accueil:hover > a:after{
-            animation: rotationFleche 0.2s linear forwards;
-          }
-          
-          @keyframes rotationFleche {
-            0% {
-              transform: rotate(0deg);
-            }
-            50% {
-              transform: rotate(45deg);
-            }
-            100%{
-              transform: rotate(90deg);
-            }
-          } */
-
           .derouler i {
             font-size: 100% !important;
             transform: rotate(0deg);
@@ -250,29 +223,6 @@ body {
                   box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
                 }
               }
-    
-              /* .menu-deroulant > a:after{
-                content: '❯';
-                font-size: 20px;
-                margin-left: 7px;
-                display: inline-block;
-              }
-              
-              .menu-deroulant:hover > a:after{
-                animation: rotationFleche 0.2s linear forwards;
-              }
-              
-              @keyframes rotationFleche {
-                0% {
-                  transform: rotate(0deg);
-                }
-                50% {
-                  transform: rotate(45deg);
-                }
-                100%{
-                  transform: rotate(90deg);
-                }
-              } */
 
               /*----------------------------- fin affichage menu deroulant pour autre page --------------------------------*/
 
@@ -331,128 +281,6 @@ body {
 .horaire > a:hover:after, .contacts > a:hover:after {
   transform: scaleX(1);
 }
-/* 
-        .formulaire {
-            height: 100%;
-            width: 50%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-                .recherche {
-                    height: 30%;
-                    width: 80%;
-                
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    text-align: center;
-
-                    border: 1px solid #1f305e;
-                    border-radius: 5px;
-                }
-
-                .recherche:focus {
-                    outline: none;
-                    border: 1px solid #1f305e;
-                    border-radius: 5px;
-                }
-
-        .connex {
-            height: 100%;
-            width: 50%;
-        
-            display: flex;
-            justify-content: start;
-            align-items: center;
-        } */
-  
-  /* nav {
-    width: 100%;
-    font-size: 18px;
-    position: sticky;
-    top: 0;
-  }
-  
-  nav > ul {
-    display: flex;
-    text-align: center;
-    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
-  }
-  
-
-  nav > ul > li {
-    background-color: white;
-    position: relative;
-    height: 100%;
-    flex: 1;
-  }
-  
-  nav > ul > li:hover > a{
-    color: #2169EC;
-  }
-  
-  nav > ul > li > a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  li a {
-    text-decoration: none;
-    color: black;
-  } */
-  
-  
-  
-  /* .sous-menu {
-    margin-top: var(--hauteur-menu);
-    width: 100%;
-    text-align: left;
-    overflow: hidden;
-    max-height: 0;
-    border-radius: 2px;
-    background-color: white;
-  }
-  
-  .menu-deroulant:hover > .sous-menu {
-    animation: apparitionSousMenu 1s forwards;
-  }
-  
-  @keyframes apparitionSousMenu {
-    0% {
-      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-      border-top: 3px solid rgb(202, 182, 0);
-    }
-    30% {
-      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-    }
-    100% {
-      max-height: 50em;
-      border-top: 3px solid rgb(202, 182, 0);
-      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-    }
-  }
-  
-  .sous-menu > li:hover {
-    background-color: rgba(33, 105, 236, 0.3);
-  }
-  
-  .sous-menu > li > a {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 50px;
-    width: 100%;
-  }
-  
-  .sous-menu > li:hover > a {
-    color: white;
-  } */
 
   /*----------------------------------------------------------------- fin header --------------------------------------------------------------------*/
 
@@ -460,7 +288,7 @@ body {
 
 
   /*----------------------------------------------------------------- nav --------------------------------------------------------------------*/
-.t{
+#afficher_masquer {
   display: none;
 }
 
@@ -567,7 +395,6 @@ body {
   height: 60px;
   width: 70%;
 
-  /* background-color:  #141d3a; */
   background: rgb(41,59,117);
   background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
@@ -743,121 +570,12 @@ body {
   font-size: 150% !important;
 }
 
-/* .ligne {
-    height: 60vh;
-    width: 85vw;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .slider {
-  height: 100%;
-  width: 90%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-    /* .slick-next, .slick-prev  {
-      color:#ffffff;
-
-      height: 40px;
-      width: 40%;
-
-      background-color: #141d3a;
-      background: rgb(31,46,94);
-      background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%);
- 
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-
-      font-size: 100%;
-      cursor: pointer;
-
-      border:none;
-      border-radius: 2px;
-
-      transform: scale(1);
-      transition: 0.5s;
-    }
-
-    .slick-next:hover, .slick-prev:hover  {
-      transform: scale(1.1);
-      transition: 0.5s;
-
-      border:none;
-      border-radius: 3px;
-    } */
-
 .slick-track {
   height: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-/* .slick-list {
-  width: 100%;
-  height: 100%;
-  display: flex !important;
-  justify-content: space-around;
-  flex-direction: column;
-} */
-
-/* .slick-slide {
-  width: 100%;
-  height: 100%;
-  display: flex !important;
-  justify-content: space-around;
-  flex-direction: column;
-} */
-
-/* .flex {
-  height: 100%;
-  width: 100%;
-  margin-left: 2px;
-  margin-right: 2px;
-  text-align: center;
-} */
-
-/* .photo {
-  height: 20vh !important;
-  width: 100% !important;
-} */
-
-
-/* .photo {
-    height: 100%;
-    width: 20%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    color: rgb(0, 0, 0);
-    gap: 5%;
-    
-}
-
-.photo img {
-    height: auto;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    border: 20px solid #1f305e;
-} */
-
-/* .flex h3 {
-  font-size: 110%;
-  font-weight: 400;
-  color: #172042;
-  margin-top: 3%;
-}  */
 
 
 /*--------------------- formule --------------------------------*/
@@ -1150,6 +868,9 @@ border-radius: 50px;
     }
 
     
+.fb_insta_tel {
+  display: none;
+}
 
 .fb_insta {
     height: 20%;
@@ -1345,19 +1066,11 @@ border-radius: 50px;
   height: 165vh;
   width: 80%;
   margin: 5% 10%;
-  /* background-color: #141d3a17;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6); */
 }
 
 .main h2 {
   height: 60px;
   width: 70%;
-
-  /* background-color:  #141d3a; */
-  /* background: rgb(31,46,94);
-  background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
 
   color: white !important;
   font-size: 170%;
@@ -1366,25 +1079,11 @@ border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-
-  margin:auto;
-  margin-bottom: 2%;
-
-  border:none;
-  border-radius: 4px; */
 }
 
 .row {
   margin: 4% 0px;
 }
-
-/* Add padding BETWEEN each column */
-/* .row,
-.row > .column {
-  padding: 8px;
-} */
 
 /* Create three equal columns that floats next to each other */
 .column {
@@ -1393,13 +1092,6 @@ border-radius: 50px;
   display: none; /* Hide all elements by default */
   margin: 2% 0px;
 }
-
-/* Clear floats after rows */ 
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 /* Content */
 .content {
@@ -1892,7 +1584,7 @@ border-radius: 50px;
   width: 75px;
 }
 
-/*!----------------------------------------------------------------- fin fin image deco + bouton top --------------------------------------------------------------------*/
+/*!----------------------------------------------------------------- fin image deco + bouton top --------------------------------------------------------------------*/
 
 
 
@@ -2033,7 +1725,7 @@ body {
     display: none;
   }
   
-  .t {
+  #afficher_masquer {
     display: flex;
 
     min-height: 4vh;
@@ -2044,7 +1736,7 @@ body {
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
   }
   
-  .y {
+  .afficher_masquer {
     min-height: 4vh;
     max-height: auto;
     width: 100%;
@@ -2085,7 +1777,7 @@ body {
   }
   
   /* Style the collapsible content. Note: hidden by default */
-  .content {
+  .contenu {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
@@ -2146,23 +1838,8 @@ body {
 }
 
 .titre_fav_tel:after {
-  display:block;
-  content: '';
-  border-bottom: 2px solid white;  
-  padding-bottom: 2px;
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
-
-  
+  display:none;
 }
-.fav_tel:hover > .titre_fav_tel:after {
-  transform: scaleX(1);
-}
-
-    .fav:hover > .choix {
-      transform: scale(1) rotate(0deg);
-      transition: 0.5s
-    }
 
 .choix_tel {
     height: 50%;
@@ -2185,14 +1862,6 @@ body {
   }
 
   #gallerie {
-    height: auto;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
     margin-top: 10%;
     margin-bottom: 6%;
 }
@@ -2201,11 +1870,6 @@ body {
   height: 30px;
   width: 70%;
 
-  /* background-color:  #141d3a; */
-  background: rgb(41,59,117);
-  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
-
-  color: white !important;
   font-size: 90%;
   font-weight: 600;
 
@@ -2261,10 +1925,6 @@ body {
   background-size: cover;
 }
 
-.paraC {
-  display: none;
-}
-
 .bouton {
   display: none;
 }
@@ -2279,26 +1939,10 @@ body {
   margin-bottom: 5%;
   position: absolute;
 }
-.contenu_formules {
-  height: auto;
-  width: 100%;
-  background: rgb(41,59,117);
-  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
-}
-.contenu_formules2 {
-  height: auto;
-  width: 100%;
-  background: url("/assets/img/etoiles.png");
-  background-size: 50%;
-}
 
 #formule_ocalme, #formule_gourmande {
   height: 35vh;
   width: 100%;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .formule_ocalme, .formule_gourmande {
@@ -2315,18 +1959,8 @@ body {
       height: 30px;
       width: 50%;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: rgb(255, 255, 255);
-
-      color: #172042;
       font-size: 80%;
       font-weight: 600;
-
-      border: none;
-      border-radius: 5px;
     }
 
     .formule_ocalme h2 {
@@ -2334,7 +1968,7 @@ body {
     }
 
     .formule_ocalme p, .formule_gourmande p {
-      height: 5vh;
+      height: 8vh;
       width: 90%;
 
       display: flex;
@@ -2428,38 +2062,348 @@ body {
     height: 40vh;
     width: 70%;
   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
     font-size: 80%;
-    
-  
-    color: #172042;
   }
   
       .semaine {
         height: 100%;
         width: 40%;
   
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-  
         margin-top: 5%;
-
-        
       }
   
           .semaine div {
             height: 12%;
             width: 100%;
-  
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
             font-weight: 600;
           }
 /*------------------ fin horaire ---------------------*/
+
+  /*----------------------------------------------------------------- footer --------------------------------------------------------------------*/
+
+
+
+.logo_footer {
+    display: none;
+}
+
+.contact {
+    height: 100%;
+    width: 50vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+        .adresse {
+            height: 30%;
+            width: 100%;
+
+            font-size: 80%;
+        }
+
+        .tel {
+            font-size: 80%;
+        }
+
+        .mentions {
+            height: 10%;
+            width: 40vw;
+
+            font-size: 50%;
+        }
+
+.reseaux {
+    height: 100%;
+    width: 45vw;
+}
+
+
+    .reseaux p{
+      font-size: 80%;
+    }
+
+    
+
+    .fb_insta {
+      display: none;
+    }
+    
+    .fb_insta_tel {
+        height: 20%;
+        width: 50%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fb_insta_tel a {
+          color: white;
+          font-size: 80%;
+          text-decoration: none;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 10%;
+        }
+  /*----------------------------------------------------------------- fin footer --------------------------------------------------------------------*/
+
+/*!----------------------------------------------------------------- image deco + bouton top tel --------------------------------------------------------------------*/
+
+/*----------------------- deco accueil ---------------------------------*/
+
+#fusee_accueil {
+  height: 20%;
+  width: auto;
+  
+  position: fixed;
+  top: 25%;
+  left: 20%;
+}
+
+
+#astronaute_accueil {
+  height: auto;
+  width: 15%;
+  
+  position: absolute;
+  top: 125%;
+  right: 10%;
+}
+
+
+#lune_accueil {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 203%;
+  right: 60%;
+}
+
+/*----------------------- fin deco accueil ---------------------------------*/
+
+
+/*----------------------- deco sandwich ---------------------------------*/
+
+#fusee_sandwich {
+  height: 70%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute_sandwich {
+  height: auto;
+  width: 15%;
+  
+  position: absolute;
+  top: 174.8%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#lune_sandwich {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 226%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 0.5;
+}
+
+/*----------------------- deco sandwich ---------------------------------*/
+
+
+/*----------------------- deco autre ---------------------------------*/
+
+#fusee_autre {
+  height: 70%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute_autre {
+  height: auto;
+  width: 15%;
+  
+  position: absolute;
+  top: 109.8%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#lune_autre {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 161%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 0.5;
+}
+
+/*----------------------- deco autre ---------------------------------*/
+
+
+/*----------------------- deco boisson ---------------------------------*/
+
+#fusee_boisson {
+  height: 70%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute_boisson {
+  height: auto;
+  width: 15%;
+  
+  position: absolute;
+  top: 109.8%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#lune_boisson {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 161%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 0.5;
+}
+
+/*----------------------- deco boisson ---------------------------------*/
+
+/*----------------------- deco contact ---------------------------------*/
+
+#fusee_contact {
+  height: 70%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute_contact {
+  height: auto;
+  width: 15%;
+  
+  position: absolute;
+  top: 98.3%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.2;
+}
+
+
+#lune_contact {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 149.5%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 0.5;
+}
+
+/*----------------------- fin deco contact ---------------------------------*/
+
+
+#myBtn {
+  bottom: 23%; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+ 
+  font-size: 80%; /* Increase font size */
+}
+
+
+.top {
+  height: 55px;
+  width: 35px;
+}
+
+/*!----------------------------------------------------------------- fin image deco + bouton top tel --------------------------------------------------------------------*/
 }
