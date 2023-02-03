@@ -1909,8 +1909,8 @@ border-radius: 50px;
    
     /* font-family: 'Bakbak One', cursive; */
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 100%;
+    /* font-weight: 500;
+    font-size: 100%; */
 }
 
 body {
@@ -1969,7 +1969,7 @@ body {
 
     background-color: white;
 
-    font-size: 70%;
+    font-size: 80%;
 }
 
 .accueil, .horaire, .contacts {
@@ -2000,13 +2000,13 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 60%;
+  font-size: 80%;
 
   gap: 10%;
 }
 
   #formule_tel a {
-    width: 35%;
+    width: 40%;
     height: 50%;
 
     background: rgb(41,59,117);
@@ -2072,7 +2072,7 @@ body {
 
     outline: none;
 
-    font-size: 60%;
+    font-size: 80%;
 
     background-color: transparent;
 
@@ -2135,7 +2135,7 @@ body {
     height: 40%;
 
     font-weight: 400;
-    font-size: 60%;
+    font-size: 80%;
 
     color:white;
     text-align: center;
@@ -2206,7 +2206,7 @@ body {
   background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
   color: white !important;
-  font-size: 80%;
+  font-size: 90%;
   font-weight: 600;
 
   display: flex;
@@ -2322,7 +2322,7 @@ body {
       background-color: rgb(255, 255, 255);
 
       color: #172042;
-      font-size: 70%;
+      font-size: 80%;
       font-weight: 600;
 
       border: none;
@@ -2342,7 +2342,7 @@ body {
       margin-left: 5%;
 
       color: white;
-      font-size: 70%;
+      font-size: 80%;
       font-weight: 400;
       margin-top: 5%;
     }
@@ -2409,7 +2409,7 @@ body {
   height: 30px;
   width: 70%;
   
-  margin-top: 3%;
+  margin-top: 10%;
   
   display: flex;
   align-items: center;
@@ -2425,7 +2425,7 @@ body {
   }
   
   #horaire {
-    height: 50vh;
+    height: 40vh;
     width: 70%;
   
     display: flex;
@@ -2452,7 +2452,7 @@ body {
       }
   
           .semaine div {
-            height: 10%;
+            height: 12%;
             width: 100%;
   
             display: flex;
