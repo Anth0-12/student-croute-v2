@@ -1,63 +1,215 @@
+
+
+
+
+
+
+
+/*!----------------------------------------------------------------- responsive telephone --------------------------------------------------------------------*/
+
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 800px) {
+* {
+  margin: 0;
+  padding: 0;
+ 
+  /* font-family: 'Bakbak One', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: 500;
+  font-size: 100%; */
+}
+
 body {
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+/*----------------------------- header --------------------------------*/
+
+#header_ordi {
+  display: none;
+}
+
+#header_tel {
+height: 20vh;
+width: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+position: sticky;
+z-index: 100;
+top: -6vh;
+
+background-color: white;
+
+box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.3);
+}
+
+#logo {
+height: 6vh;
+width: 50%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+    #logo img {
+        height: 70%;
+        width: auto;
+    }
+
+#horaire-contact {
+  height: 7vh;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
-  margin: 0;
+  background-color: white;
 
-  min-height: 100vh;
-
-  background-color: aqua;
+  font-size: 80%;
 }
 
-.collapsible {
+.accueil, .horaire, .contacts {
+height: 100%;
+width: 30%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.acccueil a, .horaire > a, .contacts > a {
+color: #172042;
+text-decoration: none;
+}
+
+.accueil a:after,  .horaire > a:after, .contacts > a:after {
+display:none;
+}
+
+
+#formule_tel {
+width: 100%;
+height: 7vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 80%;
+
+gap: 5%;
+}
+
+#formule_tel a {
+  padding: 7px 15px;
+  /* height: 50%; */
+
   background: rgb(41,59,117);
   background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: white;
-  cursor: pointer;
-  width: 100%;
+
+  text-decoration: none;
+
   border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  border-radius: 3px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
+/*----------------------------- fin header --------------------------------*/
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
+
+
+/*----------------------------- produit fav --------------------------------*/
+#produit_fav {
   display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
 }
 
-.t {
-  height: 3vh;
+#afficher_masquer {
+  display: flex;
+
+  min-height: 4vh;
+  max-height: auto;
   width: 100%;
+
   background: rgb(41,59,117);
   background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 
-.y {
-  height: 3vh;
+.afficher_masquer {
+  min-height: 4vh;
+  max-height: auto;
   width: 100%;
+
   background: url("/assets/img/etoiles.png");
   background-size: 20%;
 }
 
-#produit_fav {
+.collapsible {
+  color: white;
+
+  cursor: pointer;
+
+  height: 6vh;
+  width: 100%;
+
+  border: none;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  outline: none;
+
+  font-size: 80%;
+
+  background-color: transparent;
+
+  gap: 10%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: transparent;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.contenu {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 0;
+  height: 30vh;
+  width: 100%;
+}
+
+
+#produit_fav_tel {
   height: 30vh;
   width: 100%;
 
   background: rgb(41,59,117);
   background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
-
-#produit_fav2 {
+#produit_fav2_tel {
   height: 30vh;
   width: 100%;
 
@@ -72,7 +224,7 @@ body {
   gap: 0%;
 }
 
-#produit_fav2 a {
+#produit_fav2_tel a {
   height: 25%;
   width: 30%;
 
@@ -86,11 +238,11 @@ body {
   gap: 0%;
 }
 
-.titre_fav {
+.titre_fav_tel {
   height: 40%;
 
   font-weight: 400;
-  font-size: 60%;
+  font-size: 80%;
 
   color:white;
   text-align: center;
@@ -100,26 +252,11 @@ body {
   align-items: center;
 }
 
-.titre_fav:after {
-display:block;
-content: '';
-border-bottom: 2px solid white;  
-padding-bottom: 2px;
-transform: scaleX(0);  
-transition: transform 250ms ease-in-out;
-
-
-}
-.fav:hover > .titre_fav:after {
-transform: scaleX(1);
+.titre_fav_tel:after {
+display:none;
 }
 
-  .fav:hover > .choix {
-    transform: scale(1) rotate(0deg);
-    transition: 0.5s
-  }
-
-.choix {
+.choix_tel {
   height: 50%;
   width: auto;
   transform: scale(1);
@@ -128,4 +265,575 @@ transform: scaleX(1);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/*----------------------------- fin produit fav --------------------------------*/
+
+
+/*----------------------------- carrousel auto --------------------------------*/
+.conteneur {
+  display: none;
+}
+
+#gallerie {
+  margin-top: 10%;
+  margin-bottom: 6%;
+}
+
+#gallerie h1 {
+height: 30px;
+width: 70%;
+
+font-size: 90%;
+font-weight: 600;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin-bottom: 0%;
+
+border:none;
+border-radius: 4px;
+}
+
+.conteneur_tel {
+height: auto;
+width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+overflow: hidden;
+}
+
+
+.container_tel {
+height: auto;
+width: 100%;
+
+display: flex;
+}
+
+.contenu_carousel {
+display: flex !important;
+align-items: center;
+justify-content: center;
+
+height: 100%;
+width: 20%;
+}
+
+.photo_carousel {
+width: 100%;
+height: auto;
+
+margin: 0;
+
+display: flex;
+align-items: flex-end;
+justify-content: center;
+
+background-size: cover;
+}
+
+.bouton {
+display: none;
+}
+/*----------------------------- fin carrousel auto --------------------------------*/
+
+
+/*--------------------- formule --------------------------------*/
+#lien_formule_gourmande {
+margin-bottom: 62%;
+}
+#lien_formule_ocalme {
+margin-bottom: 5%;
+position: absolute;
+}
+
+.contenu_formules {
+height: 70vh;
+width: 100%;
+background: rgb(41,59,117);
+background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+.contenu_formules2 {
+height: 70vh;
+width: 100%;
+background: url("/assets/img/etoiles.png");
+background-size: 50%;
+}
+
+#formule_ocalme, #formule_gourmande {
+height: 35vh;
+width: 100%;
+}
+
+.formule_ocalme, .formule_gourmande {
+height: 20vh;
+width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+  .formule_ocalme h2, .formule_gourmande h2 {
+    height: 30px;
+    width: 50%;
+
+    font-size: 80%;
+    font-weight: 600;
+  }
+
+  .formule_ocalme h2 {
+    margin-top: 5%;
+  }
+
+  .formule_ocalme p, .formule_gourmande p {
+    height: 8vh;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+
+    color: white;
+    font-size: 80%;
+    font-weight: 400;
+    margin-top: 5%;
+  }
+
+#gallerie_ocalme {
+height: 10vh;
+width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 3%;
+}
+
+.ligne_ocalme {
+height: 15vh !important;
+width: 30vw !important;
+}
+
+.slider_ocalme {
+height: 100% !important;
+width: 100% !important;
+}
+.slider_ocalme > .slick-list {
+height: 100% ;
+width: 100%;
+}
+.slider_ocalme > .slick-list > .slick-track {
+height: 100% ;
+width: 100%;
+
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+}
+
+.flex_ocalme {
+height: 100% !important;
+width: 30vw !important;
+
+margin: 0;
+
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+}
+
+.flex_ocalme img {
+height: 100% !important;
+width: auto !important;
+}
+
+/*------------------ fin formule ---------------------*/
+
+
+
+/*------------------ horaire ---------------------*/
+#horaires_tel {
+margin-top: 46%;
+position: absolute;
+}
+
+.titre_ouverture {
+height: 30px;
+width: 70%;
+
+margin-top: 10%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: red;
+font-weight: 600;
+font-size: 80%;
+
+border: 1px solid #172042;
+border-radius: 50px;
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+#horaire {
+  height: 40vh;
+  width: 70%;
+
+  font-size: 80%;
+}
+
+    .semaine {
+      height: 90%;
+      width: 40%;
+
+      margin-top: 5%;
+    }
+
+        .semaine div {
+          height: 12%;
+          width: 100%;
+
+          font-weight: 600;
+        }
+/*------------------ fin horaire ---------------------*/
+
+/*----------------------------------------------------------------- footer --------------------------------------------------------------------*/
+
+
+
+.logo_footer {
+  display: none;
+}
+
+.contact {
+  height: 100%;
+  width: 50vw;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+      .adresse {
+          height: 30%;
+          width: 100%;
+
+          font-size: 80%;
+      }
+
+      .tel {
+          font-size: 80%;
+      }
+
+      .mentions {
+          height: 10%;
+          width: 40vw;
+
+          font-size: 50%;
+      }
+
+.reseaux {
+  height: 100%;
+  width: 45vw;
+}
+
+
+  .reseaux p{
+    font-size: 80%;
+  }
+
+  
+
+  .fb_insta {
+    display: none;
+  }
+  
+  .fb_insta_tel {
+      height: 20%;
+      width: 50%;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .fb_insta_tel a {
+        color: white;
+        font-size: 80%;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10%;
+      }
+/*----------------------------------------------------------------- fin footer --------------------------------------------------------------------*/
+
+/*!----------------------------------------------------------------- image deco + bouton top tel --------------------------------------------------------------------*/
+
+/*----------------------- deco accueil ---------------------------------*/
+
+#fusee_accueil {
+height: 20%;
+width: auto;
+
+position: fixed;
+top: 25%;
+left: 20%;
+}
+
+
+#astronaute_accueil {
+height: auto;
+width: 17%;
+
+position: relative;
+top: -50%;
+right: 0%;
+z-index: 1;
+}
+
+
+#lune_accueil {
+height: auto;
+width: 25%;
+
+position: absolute;
+top: 221.5%;
+right: 60%;
+}
+
+/*----------------------- fin deco accueil ---------------------------------*/
+
+
+/*----------------------- deco sandwich ---------------------------------*/
+
+#fusee_sandwich {
+height: 70%;
+width: auto;
+
+position: fixed;
+top: 30%;
+left: 20%;
+
+
+z-index: -110;
+
+opacity: 0.5;
+
+rotate: 315deg;
+}
+
+
+#astronaute_sandwich {
+height: auto;
+width: 15%;
+
+position: absolute;
+top: 174.8%;
+right: 10%;
+
+
+z-index: -100;
+
+opacity: 0.2;
+}
+
+
+#lune_sandwich {
+height: auto;
+width: 25%;
+
+position: absolute;
+top: 226%;
+right: 60%;
+
+
+z-index: 0;
+
+opacity: 0.5;
+}
+
+/*----------------------- deco sandwich ---------------------------------*/
+
+
+/*----------------------- deco autre ---------------------------------*/
+
+#fusee_autre {
+height: 70%;
+width: auto;
+
+position: fixed;
+top: 30%;
+left: 20%;
+
+
+z-index: -110;
+
+opacity: 0.5;
+
+rotate: 315deg;
+}
+
+
+#astronaute_autre {
+height: auto;
+width: 15%;
+
+position: absolute;
+top: 109.8%;
+right: 10%;
+
+
+z-index: -100;
+
+opacity: 0.2;
+}
+
+
+#lune_autre {
+height: auto;
+width: 25%;
+
+position: absolute;
+top: 161%;
+right: 60%;
+
+
+z-index: 0;
+
+opacity: 0.5;
+}
+
+/*----------------------- deco autre ---------------------------------*/
+
+
+/*----------------------- deco boisson ---------------------------------*/
+
+#fusee_boisson {
+height: 70%;
+width: auto;
+
+position: fixed;
+top: 30%;
+left: 20%;
+
+
+z-index: -110;
+
+opacity: 0.5;
+
+rotate: 315deg;
+}
+
+
+#astronaute_boisson {
+height: auto;
+width: 15%;
+
+position: absolute;
+top: 109.8%;
+right: 10%;
+
+
+z-index: -100;
+
+opacity: 0.2;
+}
+
+
+#lune_boisson {
+height: auto;
+width: 25%;
+
+position: absolute;
+top: 161%;
+right: 60%;
+
+
+z-index: 0;
+
+opacity: 0.5;
+}
+
+/*----------------------- deco boisson ---------------------------------*/
+
+/*----------------------- deco contact ---------------------------------*/
+
+#fusee_contact {
+height: 70%;
+width: auto;
+
+position: fixed;
+top: 30%;
+left: 20%;
+
+
+z-index: -110;
+
+opacity: 0.5;
+
+rotate: 315deg;
+}
+
+
+#astronaute_contact {
+height: auto;
+width: 15%;
+
+position: absolute;
+top: 98.3%;
+right: 10%;
+
+
+z-index: -100;
+
+opacity: 0.2;
+}
+
+
+#lune_contact {
+height: auto;
+width: 25%;
+
+position: absolute;
+top: 149.5%;
+right: 60%;
+
+
+z-index: 0;
+
+opacity: 0.5;
+}
+
+/*----------------------- fin deco contact ---------------------------------*/
+
+
+#myBtn {
+bottom: 23%; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+
+font-size: 80%; /* Increase font size */
+}
+
+
+.top {
+height: 55px;
+width: 35px;
+}
+
+/*!----------------------------------------------------------------- fin image deco + bouton top tel --------------------------------------------------------------------*/
 }
