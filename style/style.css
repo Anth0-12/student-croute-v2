@@ -1923,6 +1923,34 @@ body {
   height: 100%;
 }
 
+#paraC {
+  position: absolute;
+  z-index: 1000;
+  top:0;
+
+  transition: opacity 1s ease-out;
+  opacity: 0;
+
+  height: 200px;
+  width: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,0.5) 37%, rgba(23,32,66,0.5) 100%);
+ 
+}
+#paraC:target {
+  opacity: 1;
+}
+
+
+
+
 .bouton {
   display: none;
 }
