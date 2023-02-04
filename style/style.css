@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -411,7 +415,9 @@ body {
   border:none;
   border-radius: 4px;
 }
-
+#slider {
+  display: none;
+}
 .conteneur {
   height: auto;
   display: flex;
@@ -1783,24 +1789,24 @@ body {
   
   /* Style the collapsible content. Note: hidden by default */
   .contenu {
-    display: none;
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 0;
-    height: 30vh;
+    max-height: 0;
     width: 100%;
+    transition: max-height 0.2s ease-out;
   }
   
 
   #produit_fav_tel {
-    height: 30vh;
+    height: 200px;
     width: 100%;
 
     background: rgb(41,59,117);
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 #produit_fav2_tel {
-    height: 30vh;
+    height: 200px;
     width: 100%;
 
     display: flex;
@@ -1896,46 +1902,25 @@ body {
   background-size: 20%;
 }
 
-.conteneur_tel {
-  height: auto;
+#slider {
+  display: block;
+  position: relative;
   width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+  height: 200px;
   overflow: hidden;
 }
 
-
-.container_tel {
-  height: auto;
-  width: 100%;
-
+.slider-container {
+  position: absolute;
   display: flex;
-}
-
-.contenu_carousel {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-
+  width: 100%;
   height: 100%;
-  width: 20%;
+  transition: all 0.5s ease-in-out;
 }
 
-.photo_carousel {
+.slider-container img {
   width: 100%;
-  height: auto;
-
-  margin: 0;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
-  background-size: cover;
+  height: 100%;
 }
 
 .bouton {
