@@ -311,7 +311,7 @@ body {
     justify-content: center;
     align-items: center;
     
-    background: url("/assets/img/etoiles.png");
+    background: url("../assets/img/etoiles.png");
     background-size: 20%;
 }
 
@@ -595,7 +595,7 @@ body {
 .contenu_formules2 {
   height: auto;
   width: 100%;
-  background: url("/assets/img/etoiles.png");
+  background: url("../assets/img/etoiles.png");
   background-size: 50%;
 }
 
@@ -765,7 +765,7 @@ border-radius: 50px;
     height: 25vh;
     width: 100%;
 
-    /* background-color: #141d3a; */
+    
     background: rgb(41,59,117);
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
@@ -775,7 +775,7 @@ border-radius: 50px;
     height: 25vh;
     width: 100%;
 
-    background: url("/assets/img/etoiles.png");
+    background: url("../assets/img/etoiles.png");
     background-size: 25%;
     }
 
@@ -1392,7 +1392,7 @@ border-radius: 50px;
 }
 
 
-#lune_sandwich {
+#lune2_sandwich {
   height: auto;
   width: 25%;
   
@@ -1403,7 +1403,10 @@ border-radius: 50px;
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
+}
+#lune_sandwich {
+  display: none;
 }
 
 /*----------------------- deco sandwich ---------------------------------*/
@@ -1443,7 +1446,7 @@ border-radius: 50px;
 }
 
 
-#lune_autre {
+#lune2_autre {
   height: auto;
   width: 25%;
   
@@ -1454,7 +1457,10 @@ border-radius: 50px;
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
+}
+#lune_autre {
+  display: none;
 }
 
 /*----------------------- deco autre ---------------------------------*/
@@ -1505,7 +1511,7 @@ border-radius: 50px;
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /*----------------------- deco boisson ---------------------------------*/
@@ -1923,6 +1929,34 @@ body {
   height: 100%;
 }
 
+#paraC {
+  position: absolute;
+  z-index: 1000;
+  top:0;
+
+  transition: opacity 1s ease-out;
+  opacity: 0;
+
+  height: 200px;
+  width: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,0.5) 37%, rgba(23,32,66,0.5) 100%);
+ 
+}
+#paraC:target {
+  opacity: 1;
+}
+
+
+
+
 .bouton {
   display: none;
 }
@@ -2249,7 +2283,11 @@ body {
 }
 
 
+#lune2_sandwich {
+ display: none;
+}
 #lune_sandwich {
+  display: block;
   height: auto;
   width: 25%;
   
@@ -2260,7 +2298,7 @@ body {
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /*----------------------- deco sandwich ---------------------------------*/
@@ -2299,8 +2337,12 @@ body {
   opacity: 0.2;
 }
 
+#lune2_autre {
+  display: none;
+}
 
 #lune_autre {
+  display: block;
   height: auto;
   width: 25%;
   
@@ -2311,7 +2353,7 @@ body {
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /*----------------------- deco autre ---------------------------------*/
@@ -2362,7 +2404,7 @@ body {
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /*----------------------- deco boisson ---------------------------------*/
@@ -2412,7 +2454,7 @@ body {
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /*----------------------- fin deco contact ---------------------------------*/

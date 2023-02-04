@@ -37,92 +37,9 @@
 <!---------------------------------------------------------------- header -------------------------------------------------------------------------------------->
 
             <!---------------------------------------------- header ordinateur ----------------------------------------------------------------->
-            <header id="header_ordi">
-
-
-              <div id="menu">
-      
-                <div class="accueil">
-                  <a href="index.html">Accueil</a>
-                </div>
-                
-                  <ul class="liste-accueil">
-                      <li class="menu-deroulant-accueil">
-      
-                      <a href="#" class="derouler">Les formules<i class="lni lni-chevron-right"></i></a>
-                          <ul class="sous-menu">
-                              <li class="liste_sous_menu"><a href="#formule_ocalme" class="produit">Formule O'calme</a></li>
-                              <li class="liste_sous_menu"><a href="#lien_formule" class="produit">Formule Gourmande</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-      
-              </div>
-              
-      
-              <div id="logo">
-      
-                  <img src="assets/img/logo Student Croute 2.jpg" alt="logo boulangerie">
-      
-              </div>
-      
-              <div id="horaire-contact">
-      
-                  <div class="horaire">
-      
-                          <a href="#horaires">Horaires d'ouverture</a>
-      
-                      </div>
-      
-                      <div class="contacts">
-      
-                          <a href="page_contact.html">Nous joindre</a>
-      
-                      </div>
-              </div>
-              
-          </header>
-                  <!---------------------------------------------- fin header ordinateur ----------------------------------------------------------------->
-      
-      
-      
-                  <header id="header_tel">
-
-                          <div id="logo">
-                              
-                              <img src="assets/img/logo Student Croute 2.jpg" alt="logo boulangerie">
-                              
-                          </div>
-
-                          
-                          <div id="horaire-contact">
-
-                              <div class="accueil">
-                                <a href="index.html">Accueil</a>
-                              </div>
-                              
-                              <div class="horaire">
-                                  
-                                  <a href="#horaires">Horaires d'ouverture</a>
-                                  
-                              </div>
-                              
-                              <div class="contacts">
-                                  
-                                  <a href="page_contact.html">Nous joindre</a>
-                                  
-                              </div>
-                          </div>
-      
-                     
-                      
-                      
-                      <div id="formule_tel">
-                          <a href="#formule_ocalme">Formule O'calme</a>
-                          <a href="#lien_formule">Formule Gourmande</a>
-                      </div>
-                      
-                  </header>
+            <?php
+include 'partie_page/header/header_autre.html'
+?>
       
 
 <!---------------------------------------------------------------- fin header -------------------------------------------------------------------------------------->
@@ -130,54 +47,9 @@
 
 <!---------------------------------------------------------------- contenu page -------------------------------------------------------------------------------------->
     
-<nav id="produit_fav">
-  <nav id="produit_fav2">
-  
-  
-      <a href="page_sandwich.html" class="fav">
-          <img src="assets/img/sandwich21.png" alt="sandwich" class="choix">
-
-          <h2 class="titre_fav">Sandwiches</h2>
-      </a>
-
-
-      <a href="page_panini.html" class="fav">
-      <img src="assets/img/panini2.png" alt="panini" class="choix">
-
-      <h2 class="titre_fav">Panini</h2>
-      </a>
-
-      <a href="page_wraps.html" class="fav">
-      <img src="assets/img/wrap21.png" alt="wrap" class="choix">
-
-      <h2 class="titre_fav">Wraps</h2>
-      </a>
-
-      <a href="page_pates.html" class="fav">
-      <img src="assets/img/pate.png" alt="pâtes" class="choix">
-
-      <h2 class="titre_fav">Pâtes</h2>
-      </a>
-
-      <a href="page_salades.html" class="fav">
-      <img src="assets/img/salade.png" alt="salade" class="choix">
-
-      <h2 class="titre_fav">Salades</h2>
-      </a>
-
-      <a href="page_delices_sucres.html" class="fav">
-      <img src="assets/img/cupcake1.png" alt="desserts" class="choix">
-
-      <h2 class="titre_fav">Desserts</h2>
-      </a>
-
-      <a href="page_boissons.html" class="fav">
-      <img src="assets/img/soda1.png" alt="boissons" class="choix">
-
-      <h2 class="titre_fav">Boissons</h2>
-      </a>
-  </nav>
-</nav>
+<?php
+include 'partie_page/barre_favoris.html'
+?>
 
 
 <div class="main">
@@ -356,70 +228,21 @@
 
 <!---------------------------------------------------------------- footer -------------------------------------------------------------------------------------->
 
+            
+<?php
+include 'partie_page/footer/footer_sandwich.html'
+?>
 
-<footer id="deco">
-          
-  <footer id="deco2">
-
-  
-
-      <div id="footer">
-
-          <div class="logo_footer">
-              <img src="assets/img/logo Student Croute.jpg" alt="">
-          </div>
-
-          <div class="contact">
-              <div class="adresse">
-                  65 Avenue Raoul Briquet, Lens 62300, France
-              </div>
-
-              <div class="tel">
-                  06 00 00 00 00
-              </div>
-
-              <div class="mentions">
-                  Mentions légales
-              </div>
-          </div>
-
-          <div class="reseaux">
-
-              <p>Retrouvez-nous sur</p>
-
-              <div class="fb_insta">
-                  <a href=""><i class="fa-brands fa-instagram fa-2x"></i> Instagram</a>
-              </div>
-              
-              <div class="fb_insta">
-                  <a href=""><i class="fa-brands fa-snapchat fa-2x"></i> Snapchat</a>
-              </div>
-
-              <div class="fb_insta ">
-                  <a href=""><i class="fa-brands fa-facebook fa-2x"></i> Facebook</a>
-              </div>
-  
-
-          </div>
-      </div>
-  
-  
-  </footer>
-</footer>
 
 <!---------------------------------------------------------------- image deco + bouton top -------------------------------------------------------------------------------------->
 
 <img src="assets/img/astronaute.png" alt="" id="astronaute_sandwich">
-<img src="assets/img/lune-2.png" alt="" id="lune_sandwich">
+
 <img src="assets/img/fusee.png" alt="" id="fusee_sandwich">
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">
-  <div class="top">
-      <i class="lni lni-chevron-up"></i>
-      <div>Top</div>
-      <i class="lni lni-chevron-up"></i>
-  </div>
-</button>
+<?php
+include 'partie_page/bouton_top.html'
+?>
 
 <!---------------------------------------------------------------- fin image deco + bouton top -------------------------------------------------------------------------------------->
 
