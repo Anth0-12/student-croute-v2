@@ -38,9 +38,46 @@
 
 <!---------------------------------------------------------------- header -------------------------------------------------------------------------------------->
 
-<?php
-include 'partie_page/header/header_accueil.html'
-?>
+<header id="header_ordi">
+
+    <div id="menu">
+
+        <ul class="liste-accueil">
+            <li class="menu-deroulant-accueil">
+
+            <a href="#" class="derouler">Les formules<i class="lni lni-chevron-right"></i></a>
+                <ul class="sous-menu">
+                    <li class="liste_sous_menu"><a href="#formule_ocalme" class="produit">Formule O'calme</a></li>
+                    <li class="liste_sous_menu"><a href="#lien_formule" class="produit">Formule Gourmande</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    
+
+    <div id="logo">
+
+        <img src="assets/img/logo Student Croute 2.jpg" alt="logo boulangerie">
+
+    </div>
+
+    <div id="horaire-contact">
+
+        <div class="horaire">
+
+                <a href="#horaires">Horaires d'ouverture</a>
+
+            </div>
+
+            <div class="contacts">
+
+                <a href="page_contact.php">Nous joindre</a>
+
+            </div>
+    </div>
+    
+</header>
 
 
 <!---------------------------------------------------------------- page -------------------------------------------------------------------------------------->
@@ -48,32 +85,363 @@ include 'partie_page/header/header_accueil.html'
 
                         <!---------------------------- fav -------------------------------------->
             
-        <?php
-        include 'partie_page/barre_favoris.html'
-        ?>
+                        <nav id="produit_fav">
+                            <nav id="produit_fav2">
+                            
+                            
+                                <a href="page_sandwich.php" class="fav">
+                                    <img src="assets/img/sandwich21.png" alt="sandwich" class="choix">
+                        
+                                    <h2 class="titre_fav">Sandwiches</h2>
+                                </a>
+                        
+                        
+                                <a href="page_panini.php" class="fav">
+                                    <img src="assets/img/panini2.png" alt="panini" class="choix">
+                        
+                                    <h2 class="titre_fav">Panini</h2>
+                                </a>
+                        
+                                <a href="page_wraps.php" class="fav">
+                                    <img src="assets/img/wrap21.png" alt="wrap" class="choix">
+                        
+                                    <h2 class="titre_fav">Wraps</h2>
+                                </a>
+                        
+                                <a href="page_pates.php" class="fav">
+                                    <img src="assets/img/pate.png" alt="pâtes" class="choix">
+                        
+                                    <h2 class="titre_fav">Pâtes</h2>
+                                </a>
+                        
+                                <a href="page_salades.php" class="fav">
+                                    <img src="assets/img/salade.png" alt="salade" class="choix">
+                        
+                                    <h2 class="titre_fav">Salades</h2>
+                                </a>
+                        
+                                <a href="page_delices_sucres.php" class="fav">
+                                    <img src="assets/img/cupcake1.png" alt="desserts" class="choix">
+                        
+                                    <h2 class="titre_fav">Desserts</h2>
+                                </a>
+                        
+                                <a href="page_boissons.php" class="fav">
+                                    <img src="assets/img/soda1.png" alt="boissons" class="choix">
+                        
+                                    <h2 class="titre_fav">Boissons</h2>
+                                </a>
+                            </nav>
+                        </nav>
+                        
+                                    <!--------------------------------------- fin fav ordi ----------------------------------------------------------------->
+                        
+                        
+                                    <!--------------------------------------- fav tel ----------------------------------------------------------------->
+                        <div id="afficher_masquer">
+                        
+                            <div class="afficher_masquer">
+                          
+                          <button type="button" class="collapsible">Cliquez pour choisir<i class="lni lni-angle-double-down"></i></button>
+                          
+                              <div class="contenu">
+                                <nav id="produit_fav_tel">
+                                  <nav id="produit_fav2_tel">
+                                  
+                                  
+                                      <a href="page_sandwich.php" class="fav_tel">
+                                          <img src="assets/img/sandwich21.png" alt="sandwich" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Sandwiches</h2>
+                                      </a>
+                          
+                          
+                                      <a href="page_panini.html" class="fav_tel">
+                                          <img src="assets/img/panini2.png" alt="panini" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Panini</h2>
+                                      </a>
+                          
+                                      <a href="page_wraps.html" class="fav_tel">
+                                          <img src="assets/img/wrap21.png" alt="wrap" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Wraps</h2>
+                                      </a>
+                          
+                                      <a href="page_pates.html" class="fav_tel">
+                                          <img src="assets/img/pate.png" alt="pâtes" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Pâtes</h2>
+                                      </a>
+                          
+                                      <a href="page_salades.html" class="fav_tel">
+                                          <img src="assets/img/salade.png" alt="salade" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Salades</h2>
+                                      </a>
+                          
+                                      <a href="page_delices_sucres.html" class="fav_tel">
+                                          <img src="assets/img/cupcake1.png" alt="desserts" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Desserts</h2>
+                                      </a>
+                          
+                                      <a href="page_boissons.html" class="fav_tel">
+                                          <img src="assets/img/soda1.png" alt="boissons" class="choix_tel">
+                          
+                                          <h2 class="titre_fav_tel">Boissons</h2>
+                                      </a>
+                                  </nav>
+                              </nav>
+                              </div>
+                          
+                            </div>
+                              
+                          
+                        </div>
 
                         <!---------------------------- carrousel ---------------------------------->
 
 
         <main id="page_accueil">
 
-            <?php
-            include 'partie_page/carrousel.html'
-            ?>
+            <div id="gallerie">
+
+                <h1> Meilleures ventes </h1>
+            
+                <div class="conteneur">
+            
+                    <div id="carrousel">
+                
+                      <div id="container">
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich jambon beurre</p> </div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                       
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                      </div>
+                         
+                    </div>
+                
+                    <div id="carrousel">
+                
+                      <div id="container2">
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich jambon beurre</p> </div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                       
+                        <div class="contenu_carousel">
+                          <img src="assets/img/sandwich.jpg" class="photo_carousel">
+                          <div class="paraC"><p>Sandwich thon mayonnaise</p></div>
+                        </div>
+                
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                 
+                
+                    <div id="gauche" class="bouton"> <i class="lni lni-chevron-left"></i> Suivant <i class="lni lni-chevron-left"></i></div>
+                    <div id="droit" class="bouton"> <i class="lni lni-chevron-right"></i> Précédent <i class="lni lni-chevron-right"></i> </div>
+            
+            
+            </div>
+                    <!--------------------------------------- fin carrousel ordi ----------------------------------------------------------------->
+            
+                    <!--------------------------------------- carrousel tel ----------------------------------------------------------------->
+            
+                    <div id="slider">
+                        <div class="slider-container">
+                          <img src="assets/img/sandwich.jpg" alt="Image 1" class="astro">
+                          <img src="assets/img/sandwich.jpg" alt="Image 2" class="astro2">
+                          <img src="assets/img/sandwich.jpg" alt="Image 3" class="astro3">
+                          <img src="assets/img/sandwich.jpg" alt="Image 4" class="astro4">
+                          <img src="assets/img/sandwich.jpg" alt="Image 5" class="astro5">
+                          <img src="assets/img/sandwich.jpg" alt="Image 6" class="astro6">
+                        </div>
+                    
+                        <span id="lien_formule_ocalme"></span>
+                      </div>
                 
                     
 
                         <!--------------------------- formule -------------------------------------->
 
-            <?php
-            include 'partie_page/formule.html'
-            ?>
+                        <div class="contenu_formules">
+    
+                            <div class="contenu_formules2">
+                        
+                        
+                            
+                                <div id="formule_ocalme">
+                        
+                                    <div class="formule_ocalme">
+                                        <h2>La formule O'calme</h2>
+                                        <p>La formule O'calme se compose d'un sandwich froid (uniquement) + une boisson de votre choix pour un montant de 3,80€</p> 
+                                    </div>
+                                    
+                                    <div id="gallerie_ocalme">
+                                    
+                                        <div class="ligne_ocalme">
+                                    
+                                            <div class="slider_ocalme">
+                                    
+                                                <div class="flex_ocalme">
+                                                    <img src="assets/img/formule ocalme.png">
+                                                </div>
+                                    
+                                                    <div class="flex_ocalme">
+                                                        <img src="assets/img/formule gourmande.png">
+                                                    </div>
+                                    
+                                                <div class="flex_ocalme">
+                                                    <img src="assets/img/formule ocalme.png">
+                                                </div>
+                                    
+                                                    <div class="flex_ocalme">
+                                                        <img src="assets/img/formule gourmande.png">
+                                                    </div>
+                                                    
+                                            </div>
+                                            <span id="lien_formule_gourmande"></span>
+                            
+                                        </div>
+                                        
+                                    </div>
+                                    <span id="lien_formule"></span>
+                        
+                                </div>
+                                    
+                        
+                        
+                                <div id="formule_gourmande">
+                                    
+                        
+                                    <div class="formule_gourmande">
+                                        <h2>La formule Gourmande</h2>
+                                        <p>La formule Gourmande se compose d'un sandwich froid (uniquement) + une boisson de votre choix + un dessert pour un montant de 4,80€</p> 
+                                    </div>
+                                    
+                                    <div id="gallerie_ocalme">
+                                    
+                                        <div class="ligne_ocalme">
+                                    
+                                            <div class="slider_ocalme">
+                                    
+                                                <div class="flex_ocalme">
+                                                    <img src="assets/img/formule ocalme.png">
+                                                </div>
+                                    
+                                                    <div class="flex_ocalme">
+                                                        <img src="assets/img/formule gourmande.png">
+                                                    </div>
+                                    
+                                                <div class="flex_ocalme">
+                                                    <img src="assets/img/formule ocalme.png">
+                                                </div>
+                                    
+                                                    <div class="flex_ocalme">
+                                                        <img src="assets/img/formule gourmande.png">
+                                                    </div>
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                    </div>
+                        
+                                </div>   
+                                <img src="assets/img/fusee.png" alt="" id="fusee_accueil">
+                                <img src="assets/img/astronaute3.png" alt="" id="astronaute_accueil">
+                            </div>
+                            
+                        </div>
 
                         <!------------------------- horaire --------------------------------------->
                                         
-            <?php
-            include 'partie_page/horaire.html'
-            ?>
+                        <span id="horaires_tel"></span>
+
+                        <h2 class="titre_ouverture" id="horaires">Les horaires d'ouvertures</h2>
+                
+                        <div id="horaire">
+                            
+                            <div class="semaine">
+                
+                                <div>Lundi</div>
+                                <div>Mardi</div>
+                                <div>Mercredi</div>
+                                <div>Jeudi</div>
+                                <div>Vendredi</div>
+                                <div>Samedi</div>
+                                <div>Dimanche</div>
+                
+                            </div>
+                
+                                
+                            <div class="semaine">
+                
+                                <div>10h00 - 16h00</div>
+                                <div>10h00 - 16h00</div>
+                                <div>10h00 - 16h00</div>
+                                <div>10h00 - 16h00</div>
+                                <div>10h00 - 16h00</div>
+                                <div>Fermé</div>
+                                <div>Fermé</div>
+                
+                            </div>
+                
+                                
+                
+                        </div>
                                         
         </main>
 
@@ -81,16 +449,78 @@ include 'partie_page/header/header_accueil.html'
 <!---------------------------------------------------------------- footer -------------------------------------------------------------------------------------->
 
             
-            <?php
-            include 'partie_page/footer_accueil.html'
-            ?>
+<footer id="deco">
+          
+    <footer id="deco2">
+
+        <div id="footer">
+
+            <div class="logo_footer">
+                <img src="assets/img/logo Student Croute.jpg" alt="">
+            </div>
+
+            <div class="contact">
+                <div class="adresse">
+                    65 Avenue Raoul Briquet, Lens 62300, France
+                </div>
+
+                <div class="tel">
+                    06 00 00 00 00
+                </div>
+
+                <div class="mentions">
+                    Mentions légales
+                </div>
+                <img src="assets/img/lune.png" alt="" id="lune_accueil">
+                <img src="assets/img/lune-2.png" alt="" id="lune2_accueil">
+            </div>
+
+            <div class="reseaux">
+
+                <p>Retrouvez-nous sur</p>
+
+                <div class="fb_insta">
+                    <a href=""><i class="fa-brands fa-instagram fa-2x"></i> Instagram</a>
+                </div>
+                
+                <div class="fb_insta">
+                    <a href=""><i class="fa-brands fa-snapchat fa-2x"></i> Snapchat</a>
+                </div>
+
+                <div class="fb_insta ">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i> Facebook</a>
+                </div>
+    
+
+                <div class="fb_insta_tel">
+                    <a href=""><i class="fa-brands fa-instagram "></i> Instagram</a>
+                </div>
+                
+                <div class="fb_insta_tel">
+                    <a href=""><i class="fa-brands fa-snapchat "></i> Snapchat</a>
+                </div>
+
+                <div class="fb_insta_tel">
+                    <a href=""><i class="fa-brands fa-facebook "></i> Facebook</a>
+                </div>
+
+            </div>
+        </div>
+        
+    
+    </footer>
+</footer>
 
 
         <!-------------------------------------- bouton top ------------------------------------------>
 
-        <?php
-        include 'partie_page/bouton_top.html'
-        ?>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <div class="top">
+                <i class="lni lni-chevron-up"></i>
+                <div>Top</div>
+                <i class="lni lni-chevron-up"></i>
+            </div>
+        </button>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
