@@ -1550,7 +1550,7 @@ border-radius: 50px;
 }
 
 
-#lune_contact {
+#lune2_contact {
   height: auto;
   width: 25%;
   
@@ -1562,6 +1562,9 @@ border-radius: 50px;
   z-index: 0;
 
   opacity: 0.5;
+}
+#lune_contact {
+  display: none;
 }
 
 /*----------------------- fin deco contact ---------------------------------*/
@@ -2443,7 +2446,11 @@ body {
 }
 
 
+#lune2_contact {
+  display: none;
+}
 #lune_contact {
+  display: block;
   height: auto;
   width: 25%;
   
