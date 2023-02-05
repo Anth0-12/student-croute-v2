@@ -28,10 +28,10 @@ document.body.onload=function(){
   gauche.onclick=function(){
     // if (position > -nbr+1)
       // position--;
-      container.style.transform="translate(" +-1200+ "px)";
+      container.style.transform="translate(" +-1650+ "px)";
       container.style.transition="all 1s ease";
   
-      container2.style.transform="translate(" +-1200+ "px)";
+      container2.style.transform="translate(" +-1650+ "px)";
       container2.style.transition="all 1s ease";
   }
   

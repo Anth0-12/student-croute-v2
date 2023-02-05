@@ -301,7 +301,7 @@ body {
     width: 100%;
 
     background: rgb(41,59,117);
-    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 #produit_fav2 {
     height: 20vh;
@@ -390,17 +390,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    margin-top: 6%;
-    margin-bottom: 10%;
 }
 
 #gallerie h1 {
-  height: 60px;
-  width: 70%;
+  height: 120px;
+  width: 100%;
 
   background: rgb(41,59,117);
-  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
   color: white !important;
   font-size: 170%;
@@ -410,11 +407,10 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 2%;
 
   border:none;
-  border-radius: 4px;
 }
+
 #slider {
   display: none;
 }
@@ -424,8 +420,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  gap: 2px;
+  width: 100%; 
 }
 
 .conteneur_tel {
@@ -433,8 +428,8 @@ body {
 }
 
 #carrousel {
-  width: 1200px !important;
-  height: 200px !important;
+  height: 350px !important;
+  width: 1650px !important;
 
   position: relative;
   overflow: hidden;
@@ -443,23 +438,22 @@ body {
 }
 
 #container, #container2 {
-  width: 400px;
-  height: 200px;
+  height: 350px;
+  width: 550px;
 
   display: flex;
-
-  gap: 2px;
 }
 
 .contenu_carousel {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 350px;
+  width: 550px;
 }
 
 .photo_carousel {
-  width: 398px;
-  height: 200px;
+  height: 350px;
+  width: 550px;
 
   margin: 0;
 
@@ -484,8 +478,8 @@ body {
   transition: opacity 1s ease-out;
   opacity: 0;
 
-  height: 200px;
-  width: 400px;
+  height: 350px;
+  width: 550px;
 
   display: flex;
   align-items: center;
@@ -507,8 +501,8 @@ body {
     }
 
 .paraC p {
-  height: 100px;
-  width: 300px;
+  height: 150px;
+  width: 350px;
 
   display: flex;
   align-items: center;
@@ -520,20 +514,20 @@ body {
 
 .bouton {
   position: absolute;
-  top: 70%;
+  top: 42.4%;
 
-  height: 50px;
+  height: 700px;
 
   cursor: pointer;
 
-  transform: scale(1);
+ 
   transition: 0.5s;
 
   outline: none;
   border: none;
 
   margin: 0;
-  padding: 0px 10px;
+  padding: 1px 40px;
 
   overflow: visible !important;
 
@@ -546,30 +540,34 @@ body {
   font-size: 100%;
   font-weight: 400;
 
-  border: 1px solid #141d3a;
-  border-radius: 5px;
-
-  background: rgb(41,59,117);
-  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  
 }
 
-    .bouton:hover {
-      transform: scale(1.2);
+    #gauche, #droit {
+      
       transition: 0.5s;
       color: #141d3a;
-
       background: rgb(255, 255, 255);
       background: linear-gradient(45deg, rgb(255, 255, 255) 36%, rgb(255, 255, 255) 100%);
-
-      border: 1px solid #141d3a;
     }
 
 #gauche {
-  left: 8%;
+  left: 0% 
+}
+#gauche:hover {
+  left: 0%;
+  color: white;
+  background: rgba(41,59,117,1); 
+
 }
 
 #droit {
-  right: 8%;
+  right: 0%;
+}
+#droit:hover {
+  right: 0%;
+  color: white;
+  background: rgba(23,32,66,1);
 }
 
 .lni {
