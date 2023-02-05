@@ -1882,7 +1882,7 @@ body {
   #gallerie {
     margin-top: 0%;
     margin-bottom: 0%;
-    height: 10vh;
+    height: 6vh;
 
     background: rgb(41,59,117);
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
