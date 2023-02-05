@@ -30,7 +30,7 @@ body {
     align-items: center;
 
     position: sticky;
-    z-index: 100;
+    z-index: 1000;
     top: 0;
 
     gap: 5%;
