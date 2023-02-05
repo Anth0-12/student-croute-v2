@@ -303,7 +303,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background: rgb(41,59,117);
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
@@ -598,7 +598,7 @@ body {
   height: auto;
   width: 100%;
   background: url("../assets/img/etoiles.png");
-  background-size: 50%;
+  background-size: 20%;
 }
 
 #formule_ocalme, #formule_gourmande {
