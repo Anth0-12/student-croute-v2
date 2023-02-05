@@ -300,10 +300,14 @@ body {
     height: 20vh;
     width: 100%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background: rgb(41,59,117);
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
-#produit_fav2 {
+/* #produit_fav2 {
     height: 20vh;
     width: 100%;
 
@@ -313,9 +317,9 @@ body {
     
     background: url("../assets/img/etoiles.png");
     background-size: 20%;
-}
+} */
 
- #produit_fav2 a {
+ #produit_fav a {
     height: 50%;
     width: 10%;
 
