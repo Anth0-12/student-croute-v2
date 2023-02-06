@@ -307,7 +307,7 @@ body {
     background: rgb(41,59,117);
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
-/* #produit_fav2 {
+#produit_fav2 {
     height: 20vh;
     width: 100%;
 
@@ -317,7 +317,7 @@ body {
     
     background: url("../assets/img/etoiles.png");
     background-size: 20%;
-} */
+}
 
  #produit_fav a {
     height: 50%;
@@ -1682,8 +1682,6 @@ body {
     align-items: center;
 
     background-color: white;
-
-    font-size: 80%;
 }
 
 .accueil, .horaire, .contacts {
@@ -1696,9 +1694,11 @@ body {
   text-align: center;
 }
 
-.acccueil a, .horaire > a, .contacts > a {
+.accueil a, .horaire > a, .contacts > a {
   color: #172042;
   text-decoration: none;
+
+  font-size: 65%;
 }
 
 .accueil a:after,  .horaire > a:after, .contacts > a:after {
@@ -1955,9 +1955,11 @@ body {
   background: linear-gradient(45deg, rgba(41,59,117,0.5) 37%, rgba(23,32,66,0.5) 100%);
  
 }
-#paraC:target {
+/* .contenu_carousel:hover + #paraC {
   opacity: 1;
-}
+  transform: scale(1);
+  transition: 0.5s;
+} */
 
 
 
@@ -2209,6 +2211,175 @@ body {
           gap: 10%;
         }
   /*----------------------------------------------------------------- fin footer --------------------------------------------------------------------*/
+
+
+
+  /*----------------------------------------------------------------- page sandwich --------------------------------------------------------------------*/
+  
+  
+  .main {
+    height: auto;
+    width: 100%;
+    margin: 0 0 5% 0;
+  }
+  
+  .main h2 {
+    height: 30px;
+    width: 70%;
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 500;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    margin: 4% 0px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide all elements by default */
+    margin: 2% 0px;
+  }
+  
+  /* Content */
+  .content {
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
+    height: 25vh;
+  }
+  
+  .content:hover > .description {
+    color: #141d3a;
+  
+    background-color: rgba(255, 255, 255, 0.7);
+  
+    visibility: visible;
+    text-align: center;
+    width: 90%;
+    border: 1px solid #141d3a;
+  }
+  
+  .description {
+    visibility: hidden;
+    border:none;
+    border-radius: 2px;
+    height: 8vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 80%;
+  }
+  
+  .content h4 {
+    margin-bottom: 10px;
+  
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  
+    height: 3vh;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+  
+    border: none;
+    border-radius: 2px;
+
+    font-size: 60%;
+  }
+  
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 50%;
+    height: 15vh;
+  }
+  
+      .img:hover > .image {
+        transform: scale(0.8) rotate(-5deg);
+        transition: 0.5s;   
+      }
+  
+  .image {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  
+  #myBtnContainer {
+    height: 80px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  
+    gap: 1%;
+  
+    border:none;
+    border-radius: 0px;
+    }
+  
+  /* Style the buttons */
+  .btn {
+    padding: 6px 8px;
+    background-color: transparent;
+  
+    color: #ffffff;
+    cursor: pointer;
+  
+    font-size: 80%;
+    font-weight: 400;
+    border:none;
+    border-radius: 2px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #172042;
+  }
+  
+  .btn.active {
+    background-color: rgb(255, 255, 255);
+    color: #172042;
+  }
+  
+  .categ_boutons {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
 
 /*!----------------------------------------------------------------- image deco + bouton top tel --------------------------------------------------------------------*/
 
