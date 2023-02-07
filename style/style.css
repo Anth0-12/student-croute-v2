@@ -1390,7 +1390,7 @@ border-radius: 50px;
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
@@ -1444,7 +1444,7 @@ border-radius: 50px;
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
@@ -1498,12 +1498,11 @@ border-radius: 50px;
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
-
-#lune_boisson {
-  height: auto;
+#lune2_boisson {
+   height: auto;
   width: 25%;
   
   position: absolute;
@@ -1514,6 +1513,9 @@ border-radius: 50px;
   z-index: 0;
 
   opacity: 1;
+}
+#lune_boisson {
+ display: none;
 }
 
 /*----------------------- deco boisson ---------------------------------*/
@@ -1548,7 +1550,7 @@ border-radius: 50px;
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
@@ -1563,7 +1565,7 @@ border-radius: 50px;
 
   z-index: 0;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 #lune_contact {
   display: none;
@@ -2357,7 +2359,7 @@ body {
     color: #ffffff;
     cursor: pointer;
   
-    font-size: 80%;
+    font-size: 75%;
     font-weight: 400;
     border:none;
     border-radius: 2px;
@@ -2375,11 +2377,95 @@ body {
   
   .categ_boutons {
     height: 40px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   
   /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
+  
+  
+  /*----------------------------------------------------------------- autre page --------------------------------------------------------------------*/
+
+  .main_autre {
+    height: auto;
+    width: 100%;
+    margin: 0 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .main_autre h2 {
+    height: 40px;
+    width: 100%;
+  
+    /* background-color:  #1b2750; */
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 400;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-bottom: 0%;
+  
+    border:none;
+    border-radius: 0px;
+  }
+  
+  .main_boisson {
+    height: auto;
+    width: 100%;
+    margin: 0 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .main_boisson h2 {
+    height: 30px;
+    width: 70%;
+  
+    /* background-color:  #141d3a; */
+    /* background: rgb(31,46,94);
+    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 500;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  
+    margin:auto;
+    margin-bottom: 2%;
+  
+    border:none;
+    border-radius: 4px; */
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .columns {
+    float: left;
+    width: 50%;
+    margin: 2% 0px;
+  }
+
+   /*----------------------------------------------------------------- autre page --------------------------------------------------------------------*/
+
 
 /*!----------------------------------------------------------------- image deco + bouton top tel --------------------------------------------------------------------*/
 
@@ -2483,11 +2569,11 @@ body {
 /*----------------------- deco autre ---------------------------------*/
 
 #fusee_autre {
-  height: 70%;
+  height: 30%;
   width: auto;
   
   position: fixed;
-  top: 30%;
+  top: 40%;
   left: 20%;
 
 
@@ -2501,16 +2587,16 @@ body {
 
 #astronaute_autre {
   height: auto;
-  width: 15%;
+  width: 25%;
   
   position: absolute;
-  top: 109.8%;
+  top: 117.7%;
   right: 10%;
 
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 #lune2_autre {
@@ -2520,10 +2606,10 @@ body {
 #lune_autre {
   display: block;
   height: auto;
-  width: 25%;
+  width: 40%;
   
   position: absolute;
-  top: 161%;
+  top: 58%;
   right: 60%;
 
 
@@ -2538,11 +2624,11 @@ body {
 /*----------------------- deco boisson ---------------------------------*/
 
 #fusee_boisson {
-  height: 70%;
+  height: 30%;
   width: auto;
   
   position: fixed;
-  top: 30%;
+  top: 40%;
   left: 20%;
 
 
@@ -2556,25 +2642,30 @@ body {
 
 #astronaute_boisson {
   height: auto;
-  width: 15%;
+  width: 25%;
   
   position: absolute;
-  top: 109.8%;
+  top: 123.2%;
   right: 10%;
 
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
+#lune2_boisson {
+  display: none;
+}
+
 #lune_boisson {
+  display: block;
   height: auto;
-  width: 25%;
+  width: 40%;
   
   position: absolute;
-  top: 161%;
+  top: 58%;
   right: 60%;
 
 
