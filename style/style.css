@@ -396,12 +396,26 @@ body {
     flex-direction: column;
 }
 
-#gallerie h1 {
+#gallerie > .h1 {
   height: 120px;
   width: 100%;
 
   background: rgb(41,59,117);
   background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  border:none;
+}
+#gallerie .h1 h1 {
+  height: 120px;
+  width: 100%;
+
+  background: url("../assets/img/etoiles.png");
+    background-size: 20%;
 
   color: white !important;
   font-size: 170%;
@@ -968,11 +982,13 @@ border-radius: 50px;
           
             font-size: 120%;
           }
-
-          .contact_telephone i {
+          #fa_ordi {
             color: #ffffff;
 
             margin-bottom: 2%;
+          }
+          #fa_tel {
+            display: none;
           }
 
           span {
@@ -1004,7 +1020,7 @@ border-radius: 50px;
       margin-bottom: 2%;
     }
 
-    .contact_reseau a {
+    #icone_ordi {
       height: 70px;
       text-decoration: none;
       color: white;
@@ -1014,6 +1030,9 @@ border-radius: 50px;
       justify-content: center;
       gap: 15%;
       font-size: 110%;
+    }
+    #icone_tel {
+      display: none;
     }
 
 .contact_map {
@@ -1179,7 +1198,9 @@ border-radius: 50px;
   display: block;
 }
 
-
+.arriere_plan_bouton {
+  height: auto;
+}
 #myBtnContainer {
   height: 140px;
   width: 100%;
@@ -1766,7 +1787,7 @@ body {
     width: 100%;
 
     background: url("/assets/img/etoiles.png");
-    background-size: 20%;
+    background-size: 50%;
   }
   
   .collapsible {
@@ -1827,7 +1848,7 @@ body {
     align-items: center;
     
     background: url("/assets/img/etoiles.png");
-    background-size: 20%;
+    background-size: 50%;
 
     flex-wrap: wrap;
     gap: 0%;
@@ -1889,12 +1910,29 @@ body {
     margin-top: 0%;
     margin-bottom: 0%;
     height: 6vh;
-
-    background: rgb(41,59,117);
-    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 
-#gallerie h1 {
+#gallerie .h1 {
+  height: 100%;
+  width: 100%;
+
+  font-size: 90%;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0%;
+
+  border:none;
+  border-radius: 4px;
+  background-color: transparent;
+
+  background: rgb(41,59,117);
+    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+#gallerie .h1 h1 {
   height: 100%;
   width: 100%;
 
@@ -1912,7 +1950,7 @@ body {
   background-color: transparent;
 
   background: url("/assets/img/etoiles.png");
-  background-size: 20%;
+  background-size: 50%;
 }
 
 #slider {
@@ -2137,7 +2175,10 @@ body {
 
   /*----------------------------------------------------------------- footer --------------------------------------------------------------------*/
 
-
+  #deco2 {
+    background: url("../assets/img/etoiles.png");
+    background-size: 50%;
+    }
 
 .logo_footer {
     display: none;
@@ -2213,6 +2254,180 @@ body {
           gap: 10%;
         }
   /*----------------------------------------------------------------- fin footer --------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------- page contact --------------------------------------------------------------------*/
+
+#page_contact {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 10%;
+  margin-bottom: 5%;
+  }
+
+    .para_contact {
+      font-size: 90%;
+      color: #172042;
+      margin: 0 5%;
+    }
+
+.contact_res_tel {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+    border:none;
+    border-radius: 0px;
+}
+
+    .contact_telephone {
+        height: 35vh;
+        width: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        border: none;
+      }
+
+          .contact_telephone p {
+            height: 60px;
+            width: 100%;
+          
+            color: #ffffff;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          
+            font-size: 90%;
+          }
+          .contact_telephone p span {
+            margin-top: 2%;
+            margin-right: 5px;
+          }
+
+          #fa_ordi {
+            display: none;
+          }
+          #fa_tel {
+            display: block;
+            color: #ffffff;
+            
+            margin-bottom: 2%;
+          }
+
+          span {
+            font-size: 130%;
+          }
+
+.contact_reseau {
+  height: 35vh;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    .contact_reseau p {
+      height: 60px;
+      width: auto;
+
+      color: #ffffff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 80%;
+
+      padding: 0% 1% 0% 0%;
+    }
+
+    #icone_ordi {
+      display: none;
+    }
+    #icone_tel {
+      height: 50px;
+      width: 100%;
+      text-decoration: none;
+      color: white;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      font-size: 90%;
+    }
+
+.contact_map {
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 2%;
+}
+
+    .contact_map p {
+      height: 60px;
+      width: 70%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 120%;
+      color: white;
+
+      margin-bottom: 3%;
+
+      background: rgb(41,59,117);
+      background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+      border:none;
+      border-radius: 4px;
+    }
+
+    .contact_map iframe {
+      height: 80%;
+      width: 60%;
+    
+      box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+
+      border:none;
+      border-radius: 4px;
+    }
+
+  /*----------------------------------------------------------------- fin page contact --------------------------------------------------------------------*/
+
 
 
 
@@ -2332,7 +2547,11 @@ body {
     display: block;
   }
   
-  
+  .arriere_plan_bouton {
+    background: rgb(41,59,117);
+    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+    width: 100%;
+  }
   #myBtnContainer {
     height: 80px;
     width: 100%;
@@ -2342,8 +2561,8 @@ body {
     justify-content: center;
     flex-direction: column;
    
-    background: rgb(41,59,117);
-    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+    background: url("../assets/img/etoiles.png");
+    background-size: 50%;
   
     gap: 1%;
   
@@ -2398,13 +2617,21 @@ body {
     flex-direction: column;
   }
   
-  .main_autre h2 {
+  .main_autre .h2 {
     height: 40px;
     width: 100%;
   
     /* background-color:  #1b2750; */
     background: rgb(41,59,117);
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  }
+  .main_autre .h2 h2 {
+    height: 40px;
+    width: 100%;
+  
+    /* background-color:  #1b2750; */
+    background: url("../assets/img/etoiles.png");
+    background-size: 50%;
   
     color: white !important;
     font-size: 90%;
