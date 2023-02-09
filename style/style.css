@@ -2203,6 +2203,7 @@ body {
             font-size: 80%;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
 
         .tel {
@@ -2397,14 +2398,14 @@ body {
 }
 
     .contact_map p {
-      height: 60px;
-      width: 70%;
+      height: 40px;
+      width: 100%;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      font-size: 120%;
+      font-size: 80%;
       color: white;
 
       margin-bottom: 3%;
@@ -2413,17 +2414,19 @@ body {
       background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 
       border:none;
-      border-radius: 4px;
+      border-radius: 0px;
     }
 
     .contact_map iframe {
       height: 80%;
-      width: 60%;
+      width: 80%;
     
       box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
 
       border:none;
-      border-radius: 4px;
+      border-radius: 3px;
+
+      opacity: 0.9;
     }
 
   /*----------------------------------------------------------------- fin page contact --------------------------------------------------------------------*/
@@ -2745,7 +2748,7 @@ body {
   width: auto;
   
   position: fixed;
-  top: 40%;
+  top: 30%;
   left: 20%;
 
 
@@ -2761,14 +2764,14 @@ body {
   height: auto;
   width: 25%;
   
-  position: absolute;
-  top: 217%;
+  position: fixed;
+  top: 75%;
   right: 10%;
 
 
   z-index: -100;
 
-  opacity: 1;
+  opacity: 0.5;
 }
 
 
@@ -2800,7 +2803,7 @@ body {
   width: auto;
   
   position: fixed;
-  top: 40%;
+  top: 30%;
   left: 20%;
 
 
@@ -2816,14 +2819,14 @@ body {
   height: auto;
   width: 25%;
   
-  position: absolute;
-  top: 117.7%;
+  position: fixed;
+  top: 75%;
   right: 10%;
 
 
   z-index: -100;
 
-  opacity: 1;
+  opacity: 0.5;
 }
 
 #lune2_autre {
@@ -2855,7 +2858,7 @@ body {
   width: auto;
   
   position: fixed;
-  top: 40%;
+  top: 30%;
   left: 20%;
 
 
@@ -2871,14 +2874,14 @@ body {
   height: auto;
   width: 25%;
   
-  position: absolute;
-  top: 123.2%;
+  position: fixed;
+  top: 75%;
   right: 10%;
 
 
   z-index: -100;
 
-  opacity: 1;
+  opacity: 0.5;
 }
 
 
@@ -2906,11 +2909,11 @@ body {
 /*----------------------- deco contact ---------------------------------*/
 
 #fusee_contact {
-  height: 70%;
+  height: 30%;
   width: auto;
   
   position: fixed;
-  top: 30%;
+  top: 40%;
   left: 20%;
 
 
@@ -2924,16 +2927,16 @@ body {
 
 #astronaute_contact {
   height: auto;
-  width: 15%;
+  width: 25%;
   
   position: absolute;
-  top: 98.3%;
+  top: 116.6%;
   right: 10%;
 
 
   z-index: -100;
 
-  opacity: 0.2;
+  opacity: 1;
 }
 
 
@@ -2943,10 +2946,10 @@ body {
 #lune_contact {
   display: block;
   height: auto;
-  width: 25%;
+  width: 40%;
   
   position: absolute;
-  top: 149.5%;
+  top: 58%;
   right: 60%;
 
 
@@ -2965,6 +2968,11 @@ body {
   font-size: 80%; /* Increase font size */
 }
 
+#myBtn:hover {
+  color: red;
+  background-color: #ffffff;
+  border: 1px solid red;
+}
 
 .top {
   height: 55px;
