@@ -538,14 +538,8 @@ body {
 
   cursor: pointer;
 
- 
-  transition: 0.5s;
-
   outline: none;
   border: none;
-
-  margin: 0;
-  padding: 1px 40px;
 
   overflow: visible !important;
 
@@ -565,27 +559,28 @@ body {
       
       transition: 0.5s;
       color: #141d3a;
-      background: rgb(255, 255, 255);
-      background: linear-gradient(45deg, rgb(255, 255, 255) 36%, rgb(255, 255, 255) 100%);
+      background-color: white;
+
+      margin: 0;
+      padding: 0px 40px;
     }
 
 #gauche {
-  left: 0% 
+  left: 0%;
 }
 #gauche:hover {
-  left: 0%;
   color: white;
   background: rgba(41,59,117,1); 
-
+  transition: 0.5s;
 }
 
 #droit {
   right: 0%;
 }
 #droit:hover {
-  right: 0%;
   color: white;
   background: rgba(23,32,66,1);
+  transition: 0.5s;
 }
 
 .lni {
