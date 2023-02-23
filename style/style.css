@@ -441,9 +441,10 @@ body {
   width: 100%; 
 }
 
-.conteneur_tel {
-  display: none;
-}
+              #slider {
+                display: none;
+              }
+              
 
 #carrousel {
   height: 350px !important;
@@ -1683,7 +1684,7 @@ border-radius: 50px;
 /*!----------------------------------------------------------------- responsive telephone --------------------------------------------------------------------*/
 
 
-@media only screen and (min-device-width : 360px) and (max-device-width : 800px) {
+@media only screen and (min-width : 360px) and (max-width : 599px) {
   * {
     margin: 0;
     padding: 0;
@@ -1971,7 +1972,7 @@ body {
   margin-bottom: 0%;
 
   border:none;
-  border-radius: 4px;
+  border-radius: 0px;
   background-color: transparent;
 
   background: rgb(41,59,117);
@@ -1991,12 +1992,13 @@ body {
   margin-bottom: 0%;
 
   border:none;
-  border-radius: 4px;
+  border-radius: 0px;
   background-color: transparent;
 
   background: url("/assets/img/etoiles.png");
   background-size: 50%;
 }
+
 
 #slider {
   display: block;
@@ -2096,8 +2098,18 @@ body {
       height: 30px;
       width: 50%;
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgb(255, 255, 255);
+
+      color: #172042;
       font-size: 80%;
       font-weight: 600;
+
+      border: none;
+      border-radius: 3px;
     }
 
     .formule_ocalme h2 {
@@ -2819,6 +2831,1418 @@ body {
   position: absolute;
   top: 58%;
   right: 60%;
+  z-index: 1;
+}
+
+/*----------------------- fin deco accueil ---------------------------------*/
+
+
+/*----------------------- deco sandwich ---------------------------------*/
+
+#fusee_sandwich {
+  height: 30%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute2_sandwich {
+  display: flex;
+  height: auto;
+  width: 25%;
+  
+  position: fixed;
+  top: 75%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.5;
+}
+#astronaute_sandwich {
+  display: none;
+}
+
+
+#lune2_sandwich {
+ display: none;
+}
+#lune_sandwich {
+  display: block;
+  height: auto;
+  width: 40%;
+  
+  position: absolute;
+  top: 58%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 1;
+}
+
+/*----------------------- deco sandwich ---------------------------------*/
+
+
+/*----------------------- deco autre ---------------------------------*/
+
+#fusee_autre {
+  height: 30%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+#astronaute2_autre {
+  display: flex;
+  height: auto;
+  width: 25%;
+  
+  position: fixed;
+  top: 75%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.5;
+}
+#astronaute_autre {
+  display: none;
+}
+
+#lune2_autre {
+  display: none;
+}
+
+#lune_autre {
+  display: block;
+  height: auto;
+  width: 40%;
+  
+  position: absolute;
+  top: 58%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 1;
+}
+
+/*----------------------- deco autre ---------------------------------*/
+
+
+/*----------------------- deco boisson ---------------------------------*/
+
+#fusee_boisson {
+  height: 30%;
+  width: auto;
+  
+  position: fixed;
+  top: 30%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute2_boisson {
+  display: flex;
+  height: auto;
+  width: 25%;
+  
+  position: fixed;
+  top: 75%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 0.5;
+}
+#astronaute_boisson {
+  display: none;
+}
+
+
+#lune2_boisson {
+  display: none;
+}
+
+#lune_boisson {
+  display: block;
+  height: auto;
+  width: 40%;
+  
+  position: absolute;
+  top: 58%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 1;
+}
+
+/*----------------------- deco boisson ---------------------------------*/
+
+/*----------------------- deco contact ---------------------------------*/
+
+#fusee_contact {
+  height: 30%;
+  width: auto;
+  
+  position: fixed;
+  top: 40%;
+  left: 20%;
+
+
+  z-index: -110;
+
+  opacity: 0.5;
+
+  rotate: 315deg;
+}
+
+
+#astronaute_contact {
+  height: auto;
+  width: 25%;
+  
+  position: absolute;
+  top: 116.6%;
+  right: 10%;
+
+
+  z-index: -100;
+
+  opacity: 1;
+}
+
+
+#lune2_contact {
+  display: none;
+}
+#lune_contact {
+  display: block;
+  height: auto;
+  width: 40%;
+  
+  position: absolute;
+  top: 58%;
+  right: 60%;
+
+
+  z-index: 0;
+
+  opacity: 1;
+}
+
+/*----------------------- fin deco contact ---------------------------------*/
+
+
+#myBtn {
+  bottom: 23%; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+ 
+  font-size: 80%; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: red;
+  background-color: #ffffff;
+  border: 1px solid red;
+}
+
+.top {
+  height: 55px;
+  width: 35px;
+}
+
+/*!----------------------------------------------------------------- fin image deco + bouton top tel --------------------------------------------------------------------*/
+}
+
+
+
+
+
+
+/*!----------------------------------------------------------------- responsive tel paysage --------------------------------------------------------------------*/
+
+@media only screen and (min-width : 599px) and (max-width : 780px) {
+  * {
+    margin: 0;
+    padding: 0;
+   
+    /* font-family: 'Bakbak One', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 500;
+    font-size: 100%; */
+}
+
+body {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/*----------------------------- header --------------------------------*/
+
+#header_ordi {
+    display: none;
+}
+
+#header_tel {
+  height: 35vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: sticky;
+  z-index: 100;
+  top: -6vh;
+
+  background-color: rgb(255, 255, 255);
+
+  box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.3);
+}
+
+#logo {
+  height: 10vh;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+      #logo img {
+          height: 100%;
+          width: auto;
+      }
+
+#horaire-contact {
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+.accueil, .horaire, .contacts {
+  height: 100%;
+  width: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.accueil a, .horaire > a, .contacts > a {
+  color: #172042;
+  text-decoration: none;
+
+  font-size: 65%;
+}
+
+.accueil a:after,  .horaire > a:after, .contacts > a:after {
+  display:none;
+}
+
+
+#formule_tel {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 80%;
+
+  gap: 5%;
+}
+
+  #formule_tel a {
+    padding: 7px 15px;
+    /* height: 50%; */
+
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 3px;
+  }
+
+  /*----------------------------- fin header --------------------------------*/
+
+
+
+  /*----------------------------- produit fav --------------------------------*/
+  #produit_fav {
+    display: none;
+  }
+  
+  #afficher_masquer {
+    display: flex;
+
+    min-height: 4vh;
+    max-height: auto;
+    width: 100%;
+
+    background: rgb(41,59,117);
+    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  }
+  
+  .afficher_masquer {
+    min-height: 4vh;
+    max-height: auto;
+    width: 100%;
+
+    background: url("/assets/img/etoiles.png");
+    background-size: 50%;
+  }
+  
+  .collapsible {
+    color: white;
+
+    cursor: pointer;
+
+    height: 15vh;
+    width: 100%;
+
+    border: none;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    outline: none;
+
+    font-size: 80%;
+
+    background-color: transparent;
+
+    gap: 10%;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: transparent;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .contenu {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 0;
+    max-height: 0;
+    width: 100%;
+    transition: max-height 0.2s ease-out;
+  }
+  
+
+  #produit_fav_tel {
+    height: 200px;
+    width: 100%;
+
+    background: rgb(41,59,117);
+    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+#produit_fav2_tel {
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: url("/assets/img/etoiles.png");
+    background-size: 50%;
+
+    flex-wrap: wrap;
+    gap: 0%;
+}
+
+ #produit_fav2_tel a {
+    height: 25%;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    gap: 0%;
+}
+
+.titre_fav_tel {
+    height: 40%;
+
+    font-weight: 400;
+    font-size: 80%;
+
+    color:white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre_fav_tel:after {
+  display:none;
+}
+
+.choix_tel {
+    height: 50%;
+    width: auto;
+    transform: scale(1);
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  /*----------------------------- fin produit fav --------------------------------*/
+
+
+  /*----------------------------- carrousel auto --------------------------------*/
+  .conteneur {
+    display: none;
+  }
+
+  #gallerie {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    height: 10vh;
+}
+
+#gallerie .h1 {
+  height: 100%;
+  width: 100%;
+
+  font-size: 90%;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0%;
+
+  border:none;
+  border-radius: 0px;
+  background-color: transparent;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+#gallerie .h1 h1 {
+  height: 100%;
+  width: 100%;
+
+  font-size: 90%;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0%;
+
+  border:none;
+  border-radius: 0px;
+  background-color: transparent;
+
+  background: url("/assets/img/etoiles.png");
+  background-size: 50%;
+}
+
+#slider {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#paraC {
+  position: absolute;
+  z-index: 1000;
+  top:0;
+
+  transition: opacity 1s ease-out;
+  opacity: 0;
+
+  height: 200px;
+  width: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,0.5) 37%, rgba(23,32,66,0.5) 100%);
+ 
+}
+/* .contenu_carousel:hover + #paraC {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.5s;
+} */
+
+
+
+
+.bouton {
+  display: none;
+}
+/*----------------------------- fin carrousel auto --------------------------------*/
+
+
+/*--------------------- formule --------------------------------*/
+#lien_formule_gourmande {
+  margin-bottom: 62%;
+}
+#lien_formule_ocalme {
+  margin-bottom: 5%;
+  position: absolute;
+}
+
+.contenu_formules {
+  height: 110vh;
+  width: 100%;
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+.contenu_formules2 {
+  height: 110vh;
+  width: 100%;
+  background: url("/assets/img/etoiles.png");
+  background-size: 50%;
+}
+
+#formule_ocalme, #formule_gourmande {
+  height: 55vh;
+  width: 100%;
+}
+
+.formule_ocalme, .formule_gourmande {
+  height: 35vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    .formule_ocalme h2, .formule_gourmande h2 {
+      height: 30px;
+      width: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgb(255, 255, 255);
+
+      color: #172042;
+      font-size: 80%;
+      font-weight: 600;
+
+      border: none;
+      border-radius: 2px;
+    }
+
+    .formule_ocalme h2 {
+      margin-top: 5%;
+    }
+
+    .formule_ocalme p, .formule_gourmande p {
+      height: 8vh;
+      width: 90%;
+
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+
+      color: white;
+      font-size: 80%;
+      font-weight: 400;
+      margin-top: 3%;
+    }
+
+#gallerie_ocalme {
+  height: 25vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.ligne_ocalme {
+  height: 15vh !important;
+  width: 30vw !important;
+}
+
+.slider_ocalme {
+  height: 100% !important;
+  width: 100% !important;
+}
+.slider_ocalme > .slick-list {
+  height: 100% ;
+  width: 100%;
+}
+.slider_ocalme > .slick-list > .slick-track {
+  height: 100% ;
+  width: 100%;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.flex_ocalme {
+  height: 100% !important;
+  width: 30vw !important;
+
+  margin: 0;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.flex_ocalme img {
+  height: 200% !important;
+  width: auto !important;
+}
+
+/*------------------ fin formule ---------------------*/
+
+
+
+/*------------------ horaire ---------------------*/
+#horaires_tel {
+  margin-top: 46%;
+  position: absolute;
+}
+
+.titre_ouverture {
+  height: 30px;
+  width: 70%;
+  
+  margin-top: 5%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: red;
+  font-weight: 600;
+  font-size: 80%;
+  
+  border: 1px solid #172042;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  #horaire {
+    height: 40vh;
+    width: 70%;
+  
+    font-size: 80%;
+    margin-bottom: 2%;
+  }
+  
+      .semaine {
+        height: 90%;
+        width: 40%;
+  
+        margin-top: 5%;
+      }
+  
+          .semaine div {
+            height: 12%;
+            width: 100%;
+
+            font-weight: 600;
+          }
+/*------------------ fin horaire ---------------------*/
+
+  /*----------------------------------------------------------------- footer --------------------------------------------------------------------*/
+
+  #deco2 {
+    background: url("../assets/img/etoiles.png");
+    background-size: 50%;
+    }
+
+.logo_footer {
+    display: none;
+}
+
+.contact {
+    position: relative;
+    z-index: 10;
+
+    height: 100%;
+    width: 50vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .adresse {
+            height: 20%;
+            width: 100%;
+
+            font-size: 80%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tel {
+            font-size: 80%;
+            height: 20%;
+        }
+
+        .mentions {
+            height: 10%;
+            width: 40vw;
+
+            font-size: 50%;
+        }
+
+        .mentions a {
+          color: white;
+          text-decoration: none;
+      }
+
+.reseaux {
+    height: 100%;
+    width: 45vw;
+}
+
+
+    .reseaux p{
+      font-size: 80%;
+    }
+
+    
+
+    .fb_insta {
+      display: none;
+    }
+    
+    .fb_insta_tel {
+        height: 20%;
+        width: 50%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fb_insta_tel a {
+          color: white;
+          font-size: 80%;
+          text-decoration: none;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 10%;
+        }
+  /*----------------------------------------------------------------- fin footer --------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------- page contact --------------------------------------------------------------------*/
+
+#page_contact {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 10%;
+  margin-bottom: 5%;
+  }
+
+    .para_contact {
+      font-size: 90%;
+      color: #172042;
+      margin: 0 5%;
+    }
+
+.contact_res_tel {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+    border:none;
+    border-radius: 0px;
+}
+
+    .contact_telephone {
+        height: 35vh;
+        width: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        border: none;
+      }
+
+          .contact_telephone p {
+            height: 60px;
+            width: 100%;
+          
+            color: #ffffff;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          
+            font-size: 90%;
+          }
+          .contact_telephone p span {
+            margin-top: 2%;
+            margin-right: 5px;
+          }
+
+          #fa_ordi {
+            display: none;
+          }
+          #fa_tel {
+            display: block;
+            color: #ffffff;
+            
+            margin-bottom: 2%;
+          }
+
+          span {
+            font-size: 130%;
+          }
+
+.contact_reseau {
+  height: 35vh;
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    .contact_reseau p {
+      height: 60px;
+      width: auto;
+
+      color: #ffffff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 80%;
+
+      padding: 0% 1% 0% 0%;
+    }
+
+    #icone_ordi {
+      display: none;
+    }
+    #icone_tel {
+      height: 50px;
+      width: 100%;
+      text-decoration: none;
+      color: white;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      font-size: 90%;
+    }
+
+.contact_map {
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 2%;
+}
+
+    .contact_map p {
+      height: 40px;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 80%;
+      color: white;
+
+      margin-bottom: 3%;
+
+      background: rgb(41,59,117);
+      background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+
+      border:none;
+      border-radius: 0px;
+    }
+
+    .contact_map iframe {
+      height: 80%;
+      width: 80%;
+    
+      box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+
+      border:none;
+      border-radius: 3px;
+
+      opacity: 0.9;
+    }
+
+  /*----------------------------------------------------------------- fin page contact --------------------------------------------------------------------*/
+
+
+
+
+  /*----------------------------------------------------------------- page sandwich --------------------------------------------------------------------*/
+  
+  
+  .main {
+    height: auto;
+    width: 100%;
+    margin: 0 0 5% 0;
+  }
+  
+  .main h2 {
+    height: 30px;
+    width: 70%;
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 500;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    margin: 4% 0px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide all elements by default */
+    margin: 2% 0px;
+  }
+  
+  /* Content */
+  .content {
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
+    height: 25vh;
+  }
+  
+  .content:hover > .description {
+    color: #141d3a;
+  
+    background-color: rgba(255, 255, 255, 0.7);
+  
+    visibility: visible;
+    text-align: center;
+    width: 90%;
+    border: 1px solid #141d3a;
+  }
+  
+  .description {
+    visibility: hidden;
+    border:none;
+    border-radius: 2px;
+    height: 8vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 80%;
+  }
+  
+  .content h4 {
+    margin-bottom: 10px;
+  
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  
+    height: 3vh;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+  
+    border: none;
+    border-radius: 2px;
+
+    font-size: 60%;
+  }
+  
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 50%;
+    height: 15vh;
+  }
+  
+      .img:hover > .image {
+        transform: scale(0.8) rotate(-5deg);
+        transition: 0.5s;   
+      }
+  
+  .image {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  .arriere_plan_bouton {
+    background: rgb(41,59,117);
+    background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+    width: 100%;
+  }
+  #myBtnContainer {
+    height: 80px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    background: url("../assets/img/etoiles.png");
+    background-size: 50%;
+  
+    gap: 1%;
+  
+    border:none;
+    border-radius: 0px;
+    }
+  
+  /* Style the buttons */
+  .btn {
+    padding: 6px 8px;
+    background-color: transparent;
+  
+    color: #ffffff;
+    cursor: pointer;
+  
+    font-size: 75%;
+    font-weight: 400;
+    border:none;
+    border-radius: 2px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #172042;
+  }
+  
+  .btn.active {
+    background-color: rgb(255, 255, 255);
+    color: #172042;
+  }
+  
+  .categ_boutons {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
+  
+  
+  /*----------------------------------------------------------------- autre page --------------------------------------------------------------------*/
+
+  .main_autre {
+    height: auto;
+    width: 100%;
+    margin: 0 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .main_autre .h2 {
+    height: 40px;
+    width: 100%;
+  
+    /* background-color:  #1b2750; */
+    background: rgb(41,59,117);
+    background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+  }
+  .main_autre .h2 h2 {
+    height: 40px;
+    width: 100%;
+  
+    /* background-color:  #1b2750; */
+    background: url("../assets/img/etoiles.png");
+    background-size: 50%;
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 400;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-bottom: 0%;
+  
+    border:none;
+    border-radius: 0px;
+  }
+  
+  .main_boisson {
+    height: auto;
+    width: 100%;
+    margin: 0 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .main_boisson h2 {
+    height: 30px;
+    width: 70%;
+  
+    /* background-color:  #141d3a; */
+    /* background: rgb(31,46,94);
+    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 500;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  
+    margin:auto;
+    margin-bottom: 2%;
+  
+    border:none;
+    border-radius: 4px; */
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .columns {
+    float: left;
+    width: 50%;
+    margin: 2% 0px;
+  }
+
+   /*----------------------------------------------------------------- autre page --------------------------------------------------------------------*/
+
+
+   /*----------------------------------------------------------------- mention --------------------------------------------------------------------*/
+
+.fond_couleur {
+  height: 100vh;
+  width: 100vw;
+
+  background: rgb(41,59,117);
+  background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
+}
+
+.fond_image {
+  height: 100vh;
+  width: 100vw;
+
+  background: url("/assets/img/etoiles.png");
+  background-size: 20%;
+  background-repeat: repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texte {
+  height: 80%;
+  width: 80%;
+
+  background-color: #141d3aa6;
+
+  border-radius: 4px;
+  border: none;
+}
+/*----------------------------------------------------------------- fin mention --------------------------------------------------------------------*/
+
+/*!----------------------------------------------------------------- image deco + bouton top tel --------------------------------------------------------------------*/
+
+/*----------------------- deco accueil ---------------------------------*/
+
+#fusee_accueil {
+  height: 20%;
+  width: auto;
+  
+  position: relative;
+  top: -115%;
+  left: 23%;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+#astronaute_accueil {
+  height: auto;
+  width: 15%;
+  
+  position: relative;
+  top: -16%;
+  left: 68%;
+  z-index: 1;
+}
+
+
+#lune2_accueil {
+  display: none;
+}
+#lune_accueil {
+  display: flex;
+  height: auto;
+  width: 15%;
+  
+  position: absolute;
+  top: 37%;
+  right: 70%;
   z-index: 1;
 }
 
