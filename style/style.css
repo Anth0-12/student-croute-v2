@@ -2520,19 +2520,7 @@ body {
     width: 100%;
     margin: 0 0 5% 0;
   }
-  
-  .main h2 {
-    height: 30px;
-    width: 70%;
-  
-    color: white !important;
-    font-size: 90%;
-    font-weight: 500;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   
   .row {
     margin: 4% 0px;
@@ -2650,6 +2638,18 @@ body {
     border:none;
     border-radius: 0px;
     }
+  #myBtnContainer h2 {
+    height: 30px;
+    width: 70%;
+  
+    color: white !important;
+    font-size: 90%;
+    font-weight: 500;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
   
   /* Style the buttons */
   .btn {
@@ -2699,7 +2699,7 @@ body {
   }
   
   .main_autre .h2 {
-    height: 40px;
+    height: 30px;
     width: 100%;
   
     /* background-color:  #1b2750; */
@@ -2707,7 +2707,7 @@ body {
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
   }
   .main_autre .h2 h2 {
-    height: 40px;
+    height: 30px;
     width: 100%;
   
     /* background-color:  #1b2750; */
@@ -2715,8 +2715,8 @@ body {
     background-size: 50%;
   
     color: white !important;
-    font-size: 90%;
-    font-weight: 400;
+    font-size: 50%;
+    font-weight: 500;
   
     display: flex;
     align-items: center;
@@ -3933,18 +3933,6 @@ body {
     margin: 0 0 5% 0;
   }
   
-  .main h2 {
-    height: 30px;
-    width: 70%;
-  
-    color: white !important;
-    font-size: 90%;
-    font-weight: 500;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
   .row {
     margin: 4% 0px;
@@ -4045,6 +4033,7 @@ body {
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
     width: 100%;
   }
+
   #myBtnContainer {
     height: 80px;
     width: 100%;
@@ -4062,6 +4051,19 @@ body {
     border:none;
     border-radius: 0px;
     }
+
+    #myBtnContainer h2 {
+      height: 30px;
+      width: 70%;
+    
+      color: white !important;
+      font-size: 90%;
+      font-weight: 500;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
   
   /* Style the buttons */
   .btn {
@@ -4111,7 +4113,7 @@ body {
   }
   
   .main_autre .h2 {
-    height: 40px;
+    height: 30px;
     width: 100%;
   
     /* background-color:  #1b2750; */
@@ -4119,7 +4121,7 @@ body {
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
   }
   .main_autre .h2 h2 {
-    height: 40px;
+    height: 30px;
     width: 100%;
   
     /* background-color:  #1b2750; */
@@ -4127,8 +4129,8 @@ body {
     background-size: 50%;
   
     color: white !important;
-    font-size: 90%;
-    font-weight: 400;
+    font-size: 50%;
+    font-weight: 500;
   
     display: flex;
     align-items: center;
@@ -4148,33 +4150,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .main_boisson h2 {
-    height: 30px;
-    width: 70%;
-  
-    /* background-color:  #141d3a; */
-    /* background: rgb(31,46,94);
-    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
-  
-    color: white !important;
-    font-size: 90%;
-    font-weight: 500;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-  
-    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  
-    margin:auto;
-    margin-bottom: 2%;
-  
-    border:none;
-    border-radius: 4px; */
   }
   
   /* Create three equal columns that floats next to each other */
