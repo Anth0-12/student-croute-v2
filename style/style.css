@@ -1700,7 +1700,7 @@ border-radius: 50px;
 /*!----------------------------------------------------------------- responsive telephone portrait --------------------------------------------------------------------*/
 
 
-@media only screen and (min-width : 360px) and (max-width : 780px) and (orientation : portrait){
+@media only screen and (min-width : 360px) and (max-width : 800px) and (orientation : portrait){
   * {
     margin: 0;
     padding: 0;
@@ -3112,7 +3112,7 @@ body {
 
 /*!----------------------------------------------------------------- responsive tel paysage --------------------------------------------------------------------*/
 
-@media only screen and (min-width : 360px) and (max-width : 780px) and (orientation : landscape) {
+@media only screen and (min-width : 360px) and (max-width : 800px) and (orientation : landscape) {
   * {
     margin: 0;
     padding: 0;
@@ -3760,7 +3760,7 @@ body {
   justify-content: center;
   flex-direction: column;
 
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   }
 
@@ -3791,7 +3791,7 @@ body {
 }
 
     .contact_telephone {
-        height: 35vh;
+        height: 60vh;
         width: 50%;
 
         display: flex;
@@ -3835,7 +3835,7 @@ body {
           }
 
 .contact_reseau {
-  height: 35vh;
+  height: 60vh;
   width: 50%;
 
   display: flex;
@@ -3876,7 +3876,7 @@ body {
     }
 
 .contact_map {
-    height: 50vh;
+    height: 65vh;
     width: 100%;
 
     display: flex;
@@ -3884,11 +3884,11 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
     .contact_map p {
-      height: 40px;
+      height: 50px;
       width: 100%;
 
       display: flex;
@@ -3909,7 +3909,7 @@ body {
 
     .contact_map iframe {
       height: 80%;
-      width: 80%;
+      width: 60%;
     
       box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
 
@@ -3967,7 +3967,7 @@ body {
     justify-content: center;
     align-items: center;
     /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
-    height: 25vh;
+    height: 45vh;
   }
   
   .content:hover > .description {
@@ -3985,7 +3985,7 @@ body {
     visibility: hidden;
     border:none;
     border-radius: 2px;
-    height: 8vh;
+    height: 13vh;
   
     display: flex;
     flex-direction: column;
@@ -4000,7 +4000,7 @@ body {
     background: rgb(41,59,117);
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
   
-    height: 3vh;
+    height: 7vh;
     width: 100%;
   
     display: flex;
@@ -4021,7 +4021,7 @@ body {
     align-items: center;
   
     width: 50%;
-    height: 15vh;
+    height: 25vh;
   }
   
       .img:hover > .image {
@@ -4030,7 +4030,7 @@ body {
       }
   
   .image {
-    width: 100%;
+    width: 70%;
     transform: scale(1);
     transition: 0.5s;
   }
@@ -4287,10 +4287,10 @@ body {
 #astronaute2_sandwich {
   display: flex;
   height: auto;
-  width: 25%;
+  width: 20%;
   
   position: fixed;
-  top: 75%;
+  top: 30%;
   right: 10%;
 
 
@@ -4307,18 +4307,14 @@ body {
  display: none;
 }
 #lune_sandwich {
-  display: block;
+  display: flex;
   height: auto;
-  width: 40%;
+  width: 15%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- deco sandwich ---------------------------------*/
@@ -4365,18 +4361,14 @@ body {
 }
 
 #lune_autre {
-  display: block;
+  display: flex;
   height: auto;
-  width: 40%;
+  width: 15%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- deco autre ---------------------------------*/
@@ -4425,18 +4417,14 @@ body {
 }
 
 #lune_boisson {
-  display: block;
+  display: flex;
   height: auto;
-  width: 40%;
+  width: 15%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- deco boisson ---------------------------------*/
@@ -4462,10 +4450,10 @@ body {
 
 #astronaute_contact {
   height: auto;
-  width: 25%;
+  width: 10%;
   
   position: absolute;
-  top: 116.6%;
+  top: 224.5%;
   right: 10%;
 
 
@@ -4479,18 +4467,14 @@ body {
   display: none;
 }
 #lune_contact {
-  display: block;
+  display: flex;
   height: auto;
-  width: 40%;
+  width: 15%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- fin deco contact ---------------------------------*/
