@@ -2681,6 +2681,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1%;
   }
   
   /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
@@ -2814,12 +2815,12 @@ body {
 /*----------------------- deco accueil ---------------------------------*/
 
 #fusee_accueil {
-  height: 20%;
+  height: 15%;
   width: auto;
   
   position: relative;
   top: -101%;
-  left: 12%;
+  left: 20%;
   z-index: 1;
   opacity: 1;
 }
@@ -4482,14 +4483,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
+/*!----------------------------------------------------------------- responsive tablette portrait --------------------------------------------------------------------*/
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
   * {
@@ -4574,7 +4568,7 @@ body {
   color: #172042;
   text-decoration: none;
 
-  font-size: 65%;
+  font-size: 80%;
 }
 
 .accueil a:after,  .horaire > a:after, .contacts > a:after {
@@ -4590,7 +4584,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 80%;
+  font-size: 90%;
 
   gap: 5%;
 }
@@ -4648,7 +4642,7 @@ body {
 
     cursor: pointer;
 
-    height: 15vh;
+    height: 8vh;
     width: 100%;
 
     border: none;
@@ -4662,7 +4656,7 @@ body {
 
     outline: none;
 
-    font-size: 80%;
+    font-size: 90%;
 
     background-color: transparent;
 
@@ -4686,14 +4680,14 @@ body {
   
 
   #produit_fav_tel {
-    height: 200px;
+    height: 300px;
     width: 100%;
 
     background: rgb(41,59,117);
     background: linear-gradient(90deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 #produit_fav2_tel {
-    height: 200px;
+    height: 300px;
     width: 100%;
 
     display: flex;
@@ -4705,10 +4699,11 @@ body {
 
     flex-wrap: wrap;
     gap: 0%;
+    row-gap: 5%;
 }
 
  #produit_fav2_tel a {
-    height: 25%;
+    height: 30%;
     width: 30%;
 
     display: flex;
@@ -4718,14 +4713,14 @@ body {
 
     text-decoration: none;
 
-    gap: 0%;
+    gap: 10%;
 }
 
 .titre_fav_tel {
-    height: 40%;
+    height: 30%;
 
     font-weight: 400;
-    font-size: 80%;
+    font-size: 90%;
 
     color:white;
     text-align: center;
@@ -4740,7 +4735,7 @@ body {
 }
 
 .choix_tel {
-    height: 50%;
+    height: 45%;
     width: auto;
     transform: scale(1);
     transition: 0.5s;
@@ -4762,7 +4757,7 @@ body {
   #gallerie {
     margin-top: 0%;
     margin-bottom: 0%;
-    height: 10vh;
+    height: 5vh;
 }
 
 #gallerie .h1 {
@@ -4789,7 +4784,7 @@ body {
   height: 100%;
   width: 100%;
 
-  font-size: 90%;
+  font-size: 110%;
   font-weight: 600;
 
   display: flex;
@@ -4873,20 +4868,20 @@ body {
 }
 
 .contenu_formules {
-  height: 110vh;
+  height: 80vh;
   width: 100%;
   background: rgb(41,59,117);
   background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
 }
 .contenu_formules2 {
-  height: 110vh;
+  height: 80vh;
   width: 100%;
   background: url("/assets/img/etoiles.png");
   background-size: 50%;
 }
 
 #formule_ocalme, #formule_gourmande {
-  height: 55vh;
+  height: 40vh;
   width: 100%;
 }
 
@@ -4981,7 +4976,7 @@ body {
 }
 
 .flex_ocalme img {
-  height: 200% !important;
+  height: 150% !important;
   width: auto !important;
 }
 
@@ -5015,11 +5010,11 @@ body {
   }
   
   #horaire {
-    height: 40vh;
+    height: 30vh;
     width: 70%;
   
     font-size: 80%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
   }
   
       .semaine {
@@ -5038,10 +5033,14 @@ body {
 /*------------------ fin horaire ---------------------*/
 
   /*----------------------------------------------------------------- footer --------------------------------------------------------------------*/
+#deco {
+height: 20vh;
+}
 
   #deco2 {
     background: url("../assets/img/etoiles.png");
     background-size: 50%;
+    height: 20vh;
     }
 
 .logo_footer {
@@ -5098,7 +5097,6 @@ body {
     }
 
     
-
     .fb_insta {
       display: none;
     }
@@ -5139,7 +5137,7 @@ body {
   justify-content: center;
   flex-direction: column;
 
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   }
 
@@ -5170,7 +5168,7 @@ body {
 }
 
     .contact_telephone {
-        height: 35vh;
+        height: 25vh;
         width: 50%;
 
         display: flex;
@@ -5192,7 +5190,7 @@ body {
             justify-content: center;
             flex-direction: column;
           
-            font-size: 90%;
+            font-size: 100%;
           }
           .contact_telephone p span {
             margin-top: 2%;
@@ -5210,11 +5208,11 @@ body {
           }
 
           span {
-            font-size: 130%;
+            font-size: 150%;
           }
 
 .contact_reseau {
-  height: 35vh;
+  height: 25vh;
   width: 50%;
 
   display: flex;
@@ -5232,8 +5230,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
 
-      font-size: 80%;
+      font-size: 90%;
 
       padding: 0% 1% 0% 0%;
     }
@@ -5251,7 +5250,7 @@ body {
       align-items: center;
       justify-content: center;
       gap: 5%;
-      font-size: 90%;
+      font-size: 100%;
     }
 
 .contact_map {
@@ -5267,14 +5266,14 @@ body {
 }
 
     .contact_map p {
-      height: 40px;
+      height: 50px;
       width: 100%;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      font-size: 80%;
+      font-size: 90%;
       color: white;
 
       margin-bottom: 3%;
@@ -5310,19 +5309,6 @@ body {
     height: auto;
     width: 100%;
     margin: 0 0 5% 0;
-  }
-  
-  .main h2 {
-    height: 30px;
-    width: 70%;
-  
-    color: white !important;
-    font-size: 90%;
-    font-weight: 500;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .row {
@@ -5441,6 +5427,18 @@ body {
     border:none;
     border-radius: 0px;
     }
+  #myBtnContainer h2 {
+    height: 30px;
+    width: 70%;
+  
+    color: white !important;
+    font-size: 130%;
+    font-weight: 500;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
   
   /* Style the buttons */
   .btn {
@@ -5450,7 +5448,7 @@ body {
     color: #ffffff;
     cursor: pointer;
   
-    font-size: 75%;
+    font-size: 85%;
     font-weight: 400;
     border:none;
     border-radius: 2px;
@@ -5472,6 +5470,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1%;
   }
   
   /*----------------------------------------------------------------- fin page sandwich --------------------------------------------------------------------*/
@@ -5490,7 +5489,7 @@ body {
   }
   
   .main_autre .h2 {
-    height: 40px;
+    height: 50px;
     width: 100%;
   
     /* background-color:  #1b2750; */
@@ -5498,7 +5497,7 @@ body {
     background: linear-gradient(45deg, rgba(41,59,117,1) 37%, rgba(23,32,66,1) 100%);
   }
   .main_autre .h2 h2 {
-    height: 40px;
+    height: 50px;
     width: 100%;
   
     /* background-color:  #1b2750; */
@@ -5506,8 +5505,8 @@ body {
     background-size: 50%;
   
     color: white !important;
-    font-size: 90%;
-    font-weight: 400;
+    font-size: 80%;
+    font-weight: 500;
   
     display: flex;
     align-items: center;
@@ -5519,42 +5518,6 @@ body {
     border-radius: 0px;
   }
   
-  .main_boisson {
-    height: auto;
-    width: 100%;
-    margin: 0 0 5% 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .main_boisson h2 {
-    height: 30px;
-    width: 70%;
-  
-    /* background-color:  #141d3a; */
-    /* background: rgb(31,46,94);
-    background: linear-gradient(45deg, rgba(31,46,94,1) 36%, rgba(23,32,66,1) 100%); */
-  
-    color: white !important;
-    font-size: 90%;
-    font-weight: 500;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-  
-    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  
-    margin:auto;
-    margin-bottom: 2%;
-  
-    border:none;
-    border-radius: 4px; */
-  }
   
   /* Create three equal columns that floats next to each other */
   .columns {
@@ -5605,11 +5568,11 @@ body {
 /*----------------------- deco accueil ---------------------------------*/
 
 #fusee_accueil {
-  height: 20%;
+  height: 15%;
   width: auto;
   
   position: relative;
-  top: -115%;
+  top: -101%;
   left: 23%;
   z-index: 1;
   opacity: 1;
@@ -5633,7 +5596,7 @@ body {
 #lune_accueil {
   display: flex;
   height: auto;
-  width: 15%;
+  width: 20%;
   
   position: absolute;
   top: 37%;
@@ -5651,8 +5614,8 @@ body {
   width: auto;
   
   position: fixed;
-  top: 30%;
-  left: 20%;
+  top: 25%;
+  left: 15%;
 
 
   z-index: -110;
@@ -5669,7 +5632,7 @@ body {
   width: 25%;
   
   position: fixed;
-  top: 75%;
+  top: 60%;
   right: 10%;
 
 
@@ -5688,7 +5651,7 @@ body {
 #lune_sandwich {
   display: block;
   height: auto;
-  width: 40%;
+  width: 20%;
   
   position: absolute;
   top: 58%;
@@ -5710,8 +5673,8 @@ body {
   width: auto;
   
   position: fixed;
-  top: 30%;
-  left: 20%;
+  top: 25%;
+  left: 15%;
 
 
   z-index: -110;
@@ -5727,7 +5690,7 @@ body {
   width: 25%;
   
   position: fixed;
-  top: 75%;
+  top: 60%;
   right: 10%;
 
 
@@ -5746,7 +5709,7 @@ body {
 #lune_autre {
   display: block;
   height: auto;
-  width: 40%;
+  width: 20%;
   
   position: absolute;
   top: 58%;
@@ -5768,8 +5731,8 @@ body {
   width: auto;
   
   position: fixed;
-  top: 30%;
-  left: 20%;
+  top: 25%;
+  left: 15%;
 
 
   z-index: -110;
@@ -5786,7 +5749,7 @@ body {
   width: 25%;
   
   position: fixed;
-  top: 75%;
+  top: 60%;
   right: 10%;
 
 
@@ -5806,7 +5769,7 @@ body {
 #lune_boisson {
   display: block;
   height: auto;
-  width: 40%;
+  width: 20%;
   
   position: absolute;
   top: 58%;
@@ -5823,7 +5786,7 @@ body {
 /*----------------------- deco contact ---------------------------------*/
 
 #fusee_contact {
-  height: 30%;
+  height: 20%;
   width: auto;
   
   position: fixed;
@@ -5844,7 +5807,7 @@ body {
   width: 25%;
   
   position: absolute;
-  top: 116.6%;
+  top: 84.9%;
   right: 10%;
 
 
@@ -5860,7 +5823,7 @@ body {
 #lune_contact {
   display: block;
   height: auto;
-  width: 40%;
+  width: 20%;
   
   position: absolute;
   top: 58%;
@@ -5879,7 +5842,7 @@ body {
   bottom: 23%; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
  
-  font-size: 80%; /* Increase font size */
+  font-size: 100%; /* Increase font size */
 }
 
 #myBtn:hover {
@@ -5889,8 +5852,8 @@ body {
 }
 
 .top {
-  height: 55px;
-  width: 35px;
+  height: 75px;
+  width: 55px;
 }
 
 /*!----------------------------------------------------------------- fin image deco + bouton top tel --------------------------------------------------------------------*/
