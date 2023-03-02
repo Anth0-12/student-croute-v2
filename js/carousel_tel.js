@@ -18,7 +18,7 @@ function changeSlide() {
 
 setInterval(() => {
   index++;
-  if (index === images.length - 2) {
+  if (index === images.length - 0) {
     index = 0;
   }
   changeSlide();
