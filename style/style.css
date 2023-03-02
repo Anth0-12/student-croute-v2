@@ -6519,7 +6519,7 @@ height: 20vh;
   }
 
     .para_contact {
-      font-size: 90%;
+      font-size: 100%;
       color: #172042;
       margin: 0 5%;
     }
@@ -6545,7 +6545,7 @@ height: 20vh;
 }
 
     .contact_telephone {
-        height: 25vh;
+        height: 30vh;
         width: 50%;
 
         display: flex;
@@ -6567,7 +6567,7 @@ height: 20vh;
             justify-content: center;
             flex-direction: column;
           
-            font-size: 100%;
+            font-size: 110%;
           }
           .contact_telephone p span {
             margin-top: 2%;
@@ -6585,11 +6585,11 @@ height: 20vh;
           }
 
           span {
-            font-size: 150%;
+            font-size: 140%;
           }
 
 .contact_reseau {
-  height: 25vh;
+  height: 30vh;
   width: 50%;
 
   display: flex;
@@ -6609,7 +6609,7 @@ height: 20vh;
       justify-content: center;
       text-align: center;
 
-      font-size: 90%;
+      font-size: 110%;
 
       padding: 0% 1% 0% 0%;
     }
@@ -6627,7 +6627,7 @@ height: 20vh;
       align-items: center;
       justify-content: center;
       gap: 5%;
-      font-size: 100%;
+      font-size: 110%;
     }
 
 .contact_map {
@@ -6639,18 +6639,18 @@ height: 20vh;
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
     .contact_map p {
-      height: 50px;
+      height: 55px;
       width: 100%;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      font-size: 90%;
+      font-size: 110%;
       color: white;
 
       margin-bottom: 3%;
