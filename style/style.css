@@ -7026,18 +7026,14 @@ height: 20vh;
  display: none;
 }
 #lune_sandwich {
-  display: block;
+  display: flex;
   height: auto;
-  width: 20%;
+  width: 18%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- deco sandwich ---------------------------------*/
@@ -7084,18 +7080,14 @@ height: 20vh;
 }
 
 #lune_autre {
-  display: block;
+  display: flex;
   height: auto;
-  width: 20%;
+  width: 18%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- deco autre ---------------------------------*/
@@ -7144,18 +7136,14 @@ height: 20vh;
 }
 
 #lune_boisson {
-  display: block;
+  display: flex;
   height: auto;
-  width: 20%;
+  width: 18%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- deco boisson ---------------------------------*/
@@ -7198,18 +7186,14 @@ height: 20vh;
   display: none;
 }
 #lune_contact {
-  display: block;
+  display: flex;
   height: auto;
-  width: 20%;
+  width: 18%;
   
   position: absolute;
-  top: 58%;
-  right: 60%;
-
-
-  z-index: 0;
-
-  opacity: 1;
+  top: 37%;
+  right: 70%;
+  z-index: 1;
 }
 
 /*----------------------- fin deco contact ---------------------------------*/
