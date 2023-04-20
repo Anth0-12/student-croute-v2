@@ -1,5 +1,5 @@
 // On cible tous les éléments ayant l'id "myBtn"
-let mybutton = document.getElementById("myBtn");  
+let mybutton = document.getElementById("boutonScrollTop");  
 
 // On ajoute une fonction onscroll à la fenêtre pour surveiller les événements de défilement 
 // de la page et on appelle la fonction "scrollFunction"
@@ -17,6 +17,6 @@ function scrollFunction() {
 
 // Quand l'utilisateur clique sur le bouton le scroll s'active pour revenir tout en haut de la page
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // Pour safari
+  document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
 }
