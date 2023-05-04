@@ -1655,7 +1655,7 @@ border-radius: 50px;
 /*----------------------- bouton top ---------------------------------*/
 
 
-#myBtn {
+#boutonScrollTop {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -1672,7 +1672,7 @@ border-radius: 50px;
   font-size: 120%; /* Increase font size */
 }
 
-#myBtn:hover {
+#boutonScrollTop:hover {
   color: red;
   background-color: #ffffff;
   border: 2px solid red;
@@ -3085,14 +3085,14 @@ body {
 /*----------------------- fin deco contact ---------------------------------*/
 
 
-#myBtn {
+#boutonScrollTop {
   bottom: 23%; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
  
   font-size: 80%; /* Increase font size */
 }
 
-#myBtn:hover {
+#boutonScrollTop:hover {
   color: red;
   background-color: #ffffff;
   border: 1px solid red;
@@ -4456,14 +4456,14 @@ body {
 /*----------------------- fin deco contact ---------------------------------*/
 
 
-#myBtn {
+#boutonScrollTop {
   bottom: 23%; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
  
   font-size: 80%; /* Increase font size */
 }
 
-#myBtn:hover {
+#boutonScrollTop:hover {
   color: red;
   background-color: #ffffff;
   border: 1px solid red;
@@ -5835,14 +5835,14 @@ height: 20vh;
 /*----------------------- fin deco contact ---------------------------------*/
 
 
-#myBtn {
+#boutonScrollTop {
   bottom: 23%; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
  
   font-size: 100%; /* Increase font size */
 }
 
-#myBtn:hover {
+#boutonScrollTop:hover {
   color: red;
   background-color: #ffffff;
   border: 1px solid red;
@@ -7199,14 +7199,14 @@ height: 20vh;
 /*----------------------- fin deco contact ---------------------------------*/
 
 
-#myBtn {
+#boutonScrollTop {
   bottom: 23%; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
  
   font-size: 100%; /* Increase font size */
 }
 
-#myBtn:hover {
+#boutonScrollTop:hover {
   color: red;
   background-color: #ffffff;
   border: 1px solid red;
@@ -8558,14 +8558,14 @@ height: 20vh;
 /*----------------------- fin deco contact ---------------------------------*/
 
 
-#myBtn {
+#boutonScrollTop {
   bottom: 23%; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
  
   font-size: 100%; /* Increase font size */
 }
 
-#myBtn:hover {
+#boutonScrollTop:hover {
   color: red;
   background-color: #ffffff;
   border: 1px solid red;
