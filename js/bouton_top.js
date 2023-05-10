@@ -1,5 +1,5 @@
-// On cible tous les éléments ayant l'id "myBtn"
-let mybutton = document.getElementById("boutonScrollTop");  
+// On cible tous les éléments ayant l'id "boutonScrollTop"
+let bouton = document.getElementById("boutonScrollTop");  
 
 // On ajoute une fonction onscroll à la fenêtre pour surveiller les événements de défilement 
 // de la page et on appelle la fonction "scrollFunction"
@@ -9,9 +9,9 @@ window.onscroll = function() {scrollFunction()};
 // avec le "display: block" sinon il reste invisible avec le "display: none"
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    bouton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    bouton.style.display = "none";
   }
 }
 
